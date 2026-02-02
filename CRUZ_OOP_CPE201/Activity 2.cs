@@ -95,5 +95,10 @@ namespace CRUZ_OOP_CPE201
         {
 
         }
+
+        private void name5lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
