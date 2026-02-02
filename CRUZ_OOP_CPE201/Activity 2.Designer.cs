@@ -40,16 +40,16 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.name10lbl = new System.Windows.Forms.Label();
+            this.name9lbl = new System.Windows.Forms.Label();
+            this.name8lbl = new System.Windows.Forms.Label();
+            this.name7lbl = new System.Windows.Forms.Label();
+            this.name6lbl = new System.Windows.Forms.Label();
+            this.name5lbl = new System.Windows.Forms.Label();
+            this.name4lbl = new System.Windows.Forms.Label();
+            this.name3lbl = new System.Windows.Forms.Label();
+            this.name2lbl = new System.Windows.Forms.Label();
+            this.name1lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -155,16 +155,16 @@
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.name10lbl);
+            this.groupBox1.Controls.Add(this.name9lbl);
+            this.groupBox1.Controls.Add(this.name8lbl);
+            this.groupBox1.Controls.Add(this.name7lbl);
+            this.groupBox1.Controls.Add(this.name6lbl);
+            this.groupBox1.Controls.Add(this.name5lbl);
+            this.groupBox1.Controls.Add(this.name4lbl);
+            this.groupBox1.Controls.Add(this.name3lbl);
+            this.groupBox1.Controls.Add(this.name2lbl);
+            this.groupBox1.Controls.Add(this.name1lbl);
             this.groupBox1.Controls.Add(this.pictureBox16);
             this.groupBox1.Controls.Add(this.pictureBox17);
             this.groupBox1.Controls.Add(this.pictureBox18);
@@ -295,106 +295,106 @@
             this.label25.TabIndex = 46;
             this.label25.Text = "Double Aloha Champ Jr. Burger";
             // 
-            // label24
+            // name10lbl
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(932, 436);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 16);
-            this.label24.TabIndex = 45;
-            this.label24.Text = "Coke Float";
+            this.name10lbl.AutoSize = true;
+            this.name10lbl.Location = new System.Drawing.Point(932, 436);
+            this.name10lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name10lbl.Name = "name10lbl";
+            this.name10lbl.Size = new System.Drawing.Size(44, 16);
+            this.name10lbl.TabIndex = 45;
+            this.name10lbl.Text = "Name";
             // 
-            // label23
+            // name9lbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(694, 436);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(118, 16);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "Chocolate Sundae";
+            this.name9lbl.AutoSize = true;
+            this.name9lbl.Location = new System.Drawing.Point(694, 436);
+            this.name9lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name9lbl.Name = "name9lbl";
+            this.name9lbl.Size = new System.Drawing.Size(44, 16);
+            this.name9lbl.TabIndex = 44;
+            this.name9lbl.Text = "Name";
             // 
-            // label22
+            // name8lbl
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(502, 436);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(93, 16);
-            this.label22.TabIndex = 43;
-            this.label22.Text = "Champ Burger";
+            this.name8lbl.AutoSize = true;
+            this.name8lbl.Location = new System.Drawing.Point(502, 436);
+            this.name8lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name8lbl.Name = "name8lbl";
+            this.name8lbl.Size = new System.Drawing.Size(44, 16);
+            this.name8lbl.TabIndex = 43;
+            this.name8lbl.Text = "Name";
             // 
-            // label21
+            // name7lbl
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(245, 436);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(165, 16);
-            this.label21.TabIndex = 42;
-            this.label21.Text = "Bacon Cheese Yumburger";
+            this.name7lbl.AutoSize = true;
+            this.name7lbl.Location = new System.Drawing.Point(245, 436);
+            this.name7lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name7lbl.Name = "name7lbl";
+            this.name7lbl.Size = new System.Drawing.Size(44, 16);
+            this.name7lbl.TabIndex = 42;
+            this.name7lbl.Text = "Name";
             // 
-            // label20
+            // name6lbl
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(36, 436);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(148, 16);
-            this.label20.TabIndex = 41;
-            this.label20.Text = "Aloha Champ Jr. Burger";
+            this.name6lbl.AutoSize = true;
+            this.name6lbl.Location = new System.Drawing.Point(36, 436);
+            this.name6lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name6lbl.Name = "name6lbl";
+            this.name6lbl.Size = new System.Drawing.Size(44, 16);
+            this.name6lbl.TabIndex = 41;
+            this.name6lbl.Text = "Name";
             // 
-            // label19
+            // name5lbl
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(913, 212);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(115, 16);
-            this.label19.TabIndex = 40;
-            this.label19.Text = "8 pcs Chicken Joy";
+            this.name5lbl.AutoSize = true;
+            this.name5lbl.Location = new System.Drawing.Point(913, 212);
+            this.name5lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name5lbl.Name = "name5lbl";
+            this.name5lbl.Size = new System.Drawing.Size(115, 16);
+            this.name5lbl.TabIndex = 40;
+            this.name5lbl.Text = "8 pcs Chicken Joy";
             // 
-            // label18
+            // name4lbl
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(671, 212);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 16);
-            this.label18.TabIndex = 39;
-            this.label18.Text = "2 pcs Chicken Joy w Coke";
+            this.name4lbl.AutoSize = true;
+            this.name4lbl.Location = new System.Drawing.Point(671, 212);
+            this.name4lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name4lbl.Name = "name4lbl";
+            this.name4lbl.Size = new System.Drawing.Size(44, 16);
+            this.name4lbl.TabIndex = 39;
+            this.name4lbl.Text = "Name";
             // 
-            // label17
+            // name3lbl
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(443, 212);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(190, 16);
-            this.label17.TabIndex = 38;
-            this.label17.Text = "8 pcs Chicken Joy w Spag Pan";
+            this.name3lbl.AutoSize = true;
+            this.name3lbl.Location = new System.Drawing.Point(443, 212);
+            this.name3lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name3lbl.Name = "name3lbl";
+            this.name3lbl.Size = new System.Drawing.Size(44, 16);
+            this.name3lbl.TabIndex = 38;
+            this.name3lbl.Text = "Name";
             // 
-            // label16
+            // name2lbl
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(245, 212);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(159, 16);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "1pc Chicken Joy w BurStk";
+            this.name2lbl.AutoSize = true;
+            this.name2lbl.Location = new System.Drawing.Point(245, 212);
+            this.name2lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name2lbl.Name = "name2lbl";
+            this.name2lbl.Size = new System.Drawing.Size(44, 16);
+            this.name2lbl.TabIndex = 37;
+            this.name2lbl.Text = "Name";
             // 
-            // label15
+            // name1lbl
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(14, 212);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(196, 16);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "1pc Chicken Joy w BurStk/Spag";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+            this.name1lbl.AutoSize = true;
+            this.name1lbl.Location = new System.Drawing.Point(14, 212);
+            this.name1lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name1lbl.Name = "name1lbl";
+            this.name1lbl.Size = new System.Drawing.Size(44, 16);
+            this.name1lbl.TabIndex = 36;
+            this.name1lbl.Text = "Name";
+            this.name1lbl.Click += new System.EventHandler(this.label15_Click);
             // 
             // label1
             // 
@@ -915,7 +915,6 @@
             // pictureBox16
             // 
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox16.Image = global::CRUZ_OOP_CPE201.Properties.Resources._10_pcs_Chicken_Nuggets;
             this.pictureBox16.Location = new System.Drawing.Point(876, 698);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox16.Name = "pictureBox16";
@@ -927,7 +926,6 @@
             // pictureBox17
             // 
             this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox17.Image = global::CRUZ_OOP_CPE201.Properties.Resources._3pcs_Tuna_Pie;
             this.pictureBox17.Location = new System.Drawing.Point(661, 698);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox17.Name = "pictureBox17";
@@ -939,7 +937,6 @@
             // pictureBox18
             // 
             this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox18.Image = global::CRUZ_OOP_CPE201.Properties.Resources.Bucket_Fries;
             this.pictureBox18.Location = new System.Drawing.Point(447, 698);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox18.Name = "pictureBox18";
@@ -951,7 +948,6 @@
             // pictureBox19
             // 
             this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox19.Image = global::CRUZ_OOP_CPE201.Properties.Resources.Iced_Vanilla_Coffee;
             this.pictureBox19.Location = new System.Drawing.Point(232, 698);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox19.Name = "pictureBox19";
@@ -963,7 +959,6 @@
             // pictureBox20
             // 
             this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox20.Image = global::CRUZ_OOP_CPE201.Properties.Resources._8_pcs_Burger_Steak_w_Spaghetti_Pan;
             this.pictureBox20.Location = new System.Drawing.Point(17, 698);
             this.pictureBox20.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox20.Name = "pictureBox20";
@@ -1303,15 +1298,15 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label name10lbl;
+        private System.Windows.Forms.Label name9lbl;
+        private System.Windows.Forms.Label name8lbl;
+        private System.Windows.Forms.Label name7lbl;
+        private System.Windows.Forms.Label name6lbl;
+        private System.Windows.Forms.Label name5lbl;
+        private System.Windows.Forms.Label name4lbl;
+        private System.Windows.Forms.Label name3lbl;
+        private System.Windows.Forms.Label name2lbl;
+        private System.Windows.Forms.Label name1lbl;
     }
 }
