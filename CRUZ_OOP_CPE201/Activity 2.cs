@@ -56,5 +56,10 @@ namespace CRUZ_OOP_CPE201
         {
 
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

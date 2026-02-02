@@ -118,49 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1pc Chicken Joy w Burger Steak &amp; Spaghetti" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1pc Chicken Joy w Burger Steak &amp; Spaghetti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="1pc Chicken Joy w Burger Steak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1pc Chicken Joy w Burger Steak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2pcs Chicken Joy w Coke" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2pcs Chicken Joy w Coke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8 pcs Chicken Joy w Spaghetti Pan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8 pcs Chicken Joy w Spaghetti Pan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8 pcs Chicken Joy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8 pcs Chicken Joy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Aloha Champ Jr. Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Aloha Champ Jr. Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bacon Cheese Yumburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bacon Cheese Yumburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Champ Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Champ Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Chocolate Sundae" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chocolate Sundae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Palabok " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palabok .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Coke Float" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coke Float.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Double Aloha Champ Jr. Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Double Aloha Champ Jr. Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1pc Chicken Joy w Burger Steak &amp; Spaghetti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1pc Chicken Joy w Burger Steak &amp; Spaghetti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jolly Hotdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jolly Hotdog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Palabok " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Palabok .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Double Aloha Champ Jr. Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Double Aloha Champ Jr. Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bacon Cheese Yumburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bacon Cheese Yumburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aloha Champ Jr. Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aloha Champ Jr. Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Peach Mango Pie 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Peach Mango Pie 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Spaghetti Kiddie Meal w Drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Spaghetti Kiddie Meal w Drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Champ Burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Champ Burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8 pcs Chicken Joy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8 pcs Chicken Joy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2pcs Chicken Joy w Coke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2pcs Chicken Joy w Coke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3pcs Tuna Pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3pcs Tuna Pie1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8 pcs Burger Steak w Spaghetti Pan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8 pcs Burger Steak w Spaghetti Pan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10 pcs Chicken Nuggets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10 pcs Chicken Nuggets1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bucket Fries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bucket Fries1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iced Vanilla Coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iced Vanilla Coffee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

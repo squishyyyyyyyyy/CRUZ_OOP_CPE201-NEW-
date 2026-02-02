@@ -19,7 +19,7 @@ namespace CRUZ_OOP_CPE201.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,6 +63,16 @@ namespace CRUZ_OOP_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10_pcs_Chicken_Nuggets {
+            get {
+                object obj = ResourceManager.GetObject("10 pcs Chicken Nuggets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1pc_Chicken_Joy_w_Burger_Steak {
             get {
                 object obj = ResourceManager.GetObject("1pc Chicken Joy w Burger Steak", resourceCulture);
@@ -86,6 +96,26 @@ namespace CRUZ_OOP_CPE201.Properties {
         internal static System.Drawing.Bitmap _2pcs_Chicken_Joy_w_Coke {
             get {
                 object obj = ResourceManager.GetObject("2pcs Chicken Joy w Coke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3pcs_Tuna_Pie {
+            get {
+                object obj = ResourceManager.GetObject("3pcs Tuna Pie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8_pcs_Burger_Steak_w_Spaghetti_Pan {
+            get {
+                object obj = ResourceManager.GetObject("8 pcs Burger Steak w Spaghetti Pan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +163,16 @@ namespace CRUZ_OOP_CPE201.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bucket_Fries {
+            get {
+                object obj = ResourceManager.GetObject("Bucket Fries", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Champ_Burger {
             get {
                 object obj = ResourceManager.GetObject("Champ Burger", resourceCulture);
@@ -166,6 +206,16 @@ namespace CRUZ_OOP_CPE201.Properties {
         internal static System.Drawing.Bitmap Double_Aloha_Champ_Jr__Burger {
             get {
                 object obj = ResourceManager.GetObject("Double Aloha Champ Jr. Burger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iced_Vanilla_Coffee {
+            get {
+                object obj = ResourceManager.GetObject("Iced Vanilla Coffee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

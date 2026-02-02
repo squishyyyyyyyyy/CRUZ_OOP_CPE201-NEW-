@@ -134,5 +134,20 @@
   <ItemGroup>
     <None Include="Resources\Spaghetti Kiddie Meal w Drink.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3pcs Tuna Pie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 pcs Burger Steak w Spaghetti Pan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10 pcs Chicken Nuggets1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bucket Fries1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iced Vanilla Coffee1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
