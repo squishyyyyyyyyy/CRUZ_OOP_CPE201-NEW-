@@ -61,5 +61,21 @@ namespace CRUZ_OOP_CPE201
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            itemnametxtbox.Enabled = false;
+            pricetextbox.Enabled = false;
+            discountedtxtbox.Enabled = false;
+            qty_totaltxtbox.Enabled = false;
+            discount_totaltxtbox.Enabled = false;
+            discounted_totaltxtbox.Enabled = false;
+            changetxtbox.Enabled = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

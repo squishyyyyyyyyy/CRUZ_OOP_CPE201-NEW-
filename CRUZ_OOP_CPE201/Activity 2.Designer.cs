@@ -59,27 +59,27 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.discountedtxtbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.discounttxtbox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pricetextbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.qtytxtbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.itemnametxtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.discounted_totaltxtbox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.discount_totaltxtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.qty_totaltxtbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.changetxtbox = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -447,15 +447,15 @@
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.discountedtxtbox);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.discounttxtbox);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.pricetextbox);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.qtytxtbox);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.itemnametxtbox);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(17, 123);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -510,13 +510,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // discountedtxtbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(192, 197);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(396, 22);
-            this.textBox5.TabIndex = 9;
+            this.discountedtxtbox.Location = new System.Drawing.Point(192, 197);
+            this.discountedtxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discountedtxtbox.Name = "discountedtxtbox";
+            this.discountedtxtbox.Size = new System.Drawing.Size(396, 22);
+            this.discountedtxtbox.TabIndex = 9;
             // 
             // label9
             // 
@@ -529,13 +529,13 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Discounted Amount:";
             // 
-            // textBox4
+            // discounttxtbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(192, 154);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(396, 22);
-            this.textBox4.TabIndex = 7;
+            this.discounttxtbox.Location = new System.Drawing.Point(192, 154);
+            this.discounttxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discounttxtbox.Name = "discounttxtbox";
+            this.discounttxtbox.Size = new System.Drawing.Size(396, 22);
+            this.discounttxtbox.TabIndex = 7;
             // 
             // label8
             // 
@@ -548,13 +548,13 @@
             this.label8.TabIndex = 6;
             this.label8.Text = "Discount Amount:";
             // 
-            // textBox3
+            // pricetextbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(192, 111);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(396, 22);
-            this.textBox3.TabIndex = 5;
+            this.pricetextbox.Location = new System.Drawing.Point(192, 111);
+            this.pricetextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pricetextbox.Name = "pricetextbox";
+            this.pricetextbox.Size = new System.Drawing.Size(396, 22);
+            this.pricetextbox.TabIndex = 5;
             // 
             // label7
             // 
@@ -567,13 +567,13 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Price:";
             // 
-            // textBox2
+            // qtytxtbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 65);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(396, 22);
-            this.textBox2.TabIndex = 3;
+            this.qtytxtbox.Location = new System.Drawing.Point(192, 65);
+            this.qtytxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.qtytxtbox.Name = "qtytxtbox";
+            this.qtytxtbox.Size = new System.Drawing.Size(396, 22);
+            this.qtytxtbox.TabIndex = 3;
             // 
             // label6
             // 
@@ -586,13 +586,14 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Quantity:";
             // 
-            // textBox1
+            // itemnametxtbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(584, 22);
-            this.textBox1.TabIndex = 1;
+            this.itemnametxtbox.Location = new System.Drawing.Point(192, 25);
+            this.itemnametxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.itemnametxtbox.Name = "itemnametxtbox";
+            this.itemnametxtbox.Size = new System.Drawing.Size(584, 22);
+            this.itemnametxtbox.TabIndex = 1;
+            this.itemnametxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -607,11 +608,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.discounted_totaltxtbox);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.discount_totaltxtbox);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.qty_totaltxtbox);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(17, 369);
@@ -624,13 +625,13 @@
             this.groupBox3.Text = "Summary";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBox8
+            // discounted_totaltxtbox
             // 
-            this.textBox8.Location = new System.Drawing.Point(237, 87);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(539, 26);
-            this.textBox8.TabIndex = 19;
+            this.discounted_totaltxtbox.Location = new System.Drawing.Point(237, 87);
+            this.discounted_totaltxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discounted_totaltxtbox.Name = "discounted_totaltxtbox";
+            this.discounted_totaltxtbox.Size = new System.Drawing.Size(539, 26);
+            this.discounted_totaltxtbox.TabIndex = 19;
             // 
             // label12
             // 
@@ -642,13 +643,13 @@
             this.label12.TabIndex = 18;
             this.label12.Text = "Total Discounted Amount:";
             // 
-            // textBox7
+            // discount_totaltxtbox
             // 
-            this.textBox7.Location = new System.Drawing.Point(237, 55);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(539, 26);
-            this.textBox7.TabIndex = 17;
+            this.discount_totaltxtbox.Location = new System.Drawing.Point(237, 55);
+            this.discount_totaltxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discount_totaltxtbox.Name = "discount_totaltxtbox";
+            this.discount_totaltxtbox.Size = new System.Drawing.Size(539, 26);
+            this.discount_totaltxtbox.TabIndex = 17;
             // 
             // label11
             // 
@@ -660,13 +661,13 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Total Discount Given:";
             // 
-            // textBox6
+            // qty_totaltxtbox
             // 
-            this.textBox6.Location = new System.Drawing.Point(237, 23);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(539, 26);
-            this.textBox6.TabIndex = 15;
+            this.qty_totaltxtbox.Location = new System.Drawing.Point(237, 23);
+            this.qty_totaltxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.qty_totaltxtbox.Name = "qty_totaltxtbox";
+            this.qty_totaltxtbox.Size = new System.Drawing.Size(539, 26);
+            this.qty_totaltxtbox.TabIndex = 15;
             // 
             // label10
             // 
@@ -674,15 +675,15 @@
             this.label10.Location = new System.Drawing.Point(16, 27);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(108, 20);
+            this.label10.Size = new System.Drawing.Size(118, 20);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Total Quality:";
+            this.label10.Text = "Total Quantity:";
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.richTextBox2);
+            this.groupBox4.Controls.Add(this.changetxtbox);
             this.groupBox4.Controls.Add(this.richTextBox1);
             this.groupBox4.Location = new System.Drawing.Point(17, 505);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -714,14 +715,14 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Cash Rendered:";
             // 
-            // richTextBox2
+            // changetxtbox
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(403, 70);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(361, 99);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "";
+            this.changetxtbox.Location = new System.Drawing.Point(403, 70);
+            this.changetxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.changetxtbox.Name = "changetxtbox";
+            this.changetxtbox.Size = new System.Drawing.Size(361, 99);
+            this.changetxtbox.TabIndex = 1;
+            this.changetxtbox.Text = "";
             // 
             // richTextBox1
             // 
@@ -1188,6 +1189,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1249,32 +1251,32 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox discountedtxtbox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox discounttxtbox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox pricetextbox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox qtytxtbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox itemnametxtbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox discounted_totaltxtbox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox discount_totaltxtbox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox qty_totaltxtbox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox changetxtbox;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
