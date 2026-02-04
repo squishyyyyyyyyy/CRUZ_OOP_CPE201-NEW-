@@ -99,8 +99,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.changetxtbox = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -117,6 +115,8 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.changetxtbox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -921,10 +921,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.changetxtbox);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.changetxtbox);
-            this.groupBox4.Controls.Add(this.richTextBox1);
             this.groupBox4.Location = new System.Drawing.Point(17, 505);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
@@ -954,25 +954,6 @@
             this.label13.Size = new System.Drawing.Size(265, 39);
             this.label13.TabIndex = 2;
             this.label13.Text = "Cash Rendered:";
-            // 
-            // changetxtbox
-            // 
-            this.changetxtbox.Location = new System.Drawing.Point(403, 70);
-            this.changetxtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.changetxtbox.Name = "changetxtbox";
-            this.changetxtbox.Size = new System.Drawing.Size(361, 99);
-            this.changetxtbox.TabIndex = 1;
-            this.changetxtbox.Text = "";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(20, 70);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(361, 99);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button5
             // 
@@ -1152,6 +1133,23 @@
             this.button20.Text = "1";
             this.button20.UseVisualStyleBackColor = true;
             // 
+            // changetxtbox
+            // 
+            this.changetxtbox.Location = new System.Drawing.Point(403, 71);
+            this.changetxtbox.Multiline = true;
+            this.changetxtbox.Name = "changetxtbox";
+            this.changetxtbox.Size = new System.Drawing.Size(361, 99);
+            this.changetxtbox.TabIndex = 4;
+            this.changetxtbox.TextChanged += new System.EventHandler(this.changetxtbox_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(20, 71);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(361, 99);
+            this.textBox1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1269,10 +1267,8 @@
         private System.Windows.Forms.TextBox qty_totaltxtbox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox changetxtbox;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -1309,5 +1305,7 @@
         private System.Windows.Forms.Label name3lbl;
         private System.Windows.Forms.Label name2lbl;
         private System.Windows.Forms.Label name1lbl;
+        private System.Windows.Forms.TextBox changetxtbox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

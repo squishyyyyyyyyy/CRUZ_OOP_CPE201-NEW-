@@ -58,6 +58,12 @@
     <Compile Include="Activity 2.Designer.cs">
       <DependentUpon>Activity 2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Activity 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity 3.Designer.cs">
+      <DependentUpon>Activity 3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Activity 1.resx">

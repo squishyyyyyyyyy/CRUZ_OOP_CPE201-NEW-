@@ -100,5 +100,10 @@ namespace CRUZ_OOP_CPE201
         {
 
         }
+
+        private void changetxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
