@@ -162,7 +162,10 @@ namespace CRUZ_OOP_CPE201
             discounted_amt = Convert.ToDouble(discountedtxtbox.Text);
             cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
 
-            qty
+            qty_total += qty;
+            discount_totaltxtbox.Text += discount_amt;
+            discounted_totaltxtbox.Text += discounted_amt;
+            change = cash_rendered - discounted_amt;
         }
 
         private void button4_Click(object sender, EventArgs e)
