@@ -1,6 +1,6 @@
 ﻿namespace CRUZ_OOP_CPE201
 {
-    partial class Form2
+    partial class Example2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Example2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(800, 807);
+            this.Name = "Example2";
+            this.Text = "Example2";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

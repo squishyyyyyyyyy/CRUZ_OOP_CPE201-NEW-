@@ -1135,6 +1135,7 @@
             // 
             // changetxtbox
             // 
+            this.changetxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changetxtbox.Location = new System.Drawing.Point(403, 71);
             this.changetxtbox.Multiline = true;
             this.changetxtbox.Name = "changetxtbox";
@@ -1144,6 +1145,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(20, 71);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";

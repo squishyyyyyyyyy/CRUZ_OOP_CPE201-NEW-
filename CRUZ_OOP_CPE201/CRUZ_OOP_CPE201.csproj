@@ -72,6 +72,9 @@
     <EmbeddedResource Include="Activity 2.resx">
       <DependentUpon>Activity 2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Activity 3.resx">
+      <DependentUpon>Activity 3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

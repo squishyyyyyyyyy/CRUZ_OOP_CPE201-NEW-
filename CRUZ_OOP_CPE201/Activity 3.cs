@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CRUZ_OOP_CPE201
 {
-    public partial class Form2 : Form
+    public partial class Example2 : Form
     {
-        public Form2()
+        public Example2()
         {
             InitializeComponent();
         }
