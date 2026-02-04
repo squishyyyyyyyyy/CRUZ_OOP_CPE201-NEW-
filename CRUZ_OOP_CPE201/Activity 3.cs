@@ -73,7 +73,8 @@ namespace CRUZ_OOP_CPE201
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
-
+            itemnametxtbox.Text = name16lbl.Text;
+            pricetextbox.Text = "899.75";
         }
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
@@ -162,7 +163,7 @@ namespace CRUZ_OOP_CPE201
             discounted_amt = Convert.ToDouble(discountedtxtbox.Text);
             cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
 
-            qty_total += qty;
+            qty_totaltxtbox.Text += qty;
             discount_totaltxtbox.Text += discount_amt;
             discounted_totaltxtbox.Text += discounted_amt;
             change = cash_rendered - discounted_amt;
@@ -187,6 +188,120 @@ namespace CRUZ_OOP_CPE201
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name1lbl.Text;
+            pricetextbox.Text = "198.75";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name2lbl.Text;
+            pricetextbox.Text = "149.75";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name3lbl.Text;
+            pricetextbox.Text = "799.75";   
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name4lbl.Text;
+            pricetextbox.Text = "179.75";
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name5lbl.Text;
+            pricetextbox.Text = "599.75";
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name6lbl.Text;
+            pricetextbox.Text = "189.75";
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name7lbl.Text;
+            pricetextbox.Text = "139.75";
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name8lbl.Text;
+            pricetextbox.Text = "229.75";
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name9lbl.Text;
+            pricetextbox.Text = "49.75";
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name10lbl.Text;
+            pricetextbox.Text = "39.75";
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name11lbl.Text;
+            pricetextbox.Text = "219.75";
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name12lbl.Text;
+            pricetextbox.Text = "89.75";
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name13lbl.Text;
+            pricetextbox.Text = "149.75";
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name14lbl.Text;
+            pricetextbox.Text = "299.75";
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name15lbl.Text;
+            pricetextbox.Text = "179.75";
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name17lbl.Text;
+            pricetextbox.Text = "89.75";
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name18lbl.Text;
+            pricetextbox.Text = "169.75";
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name19lbl.Text;
+            pricetextbox.Text = "219.75";
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            itemnametxtbox.Text = name20lbl.Text;
+            pricetextbox.Text = "179.75";
         }
     }
 }

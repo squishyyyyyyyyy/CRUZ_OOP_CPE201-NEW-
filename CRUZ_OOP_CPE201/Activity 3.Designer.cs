@@ -37,6 +37,10 @@
             this.qty_totaltxtbox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.noTaxRdbtn = new System.Windows.Forms.RadioButton();
+            this.EmployeeRdbtn = new System.Windows.Forms.RadioButton();
+            this.regularRbtn = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.exitBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.newBtn = new System.Windows.Forms.Button();
@@ -77,16 +81,16 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.name20lbl = new System.Windows.Forms.Label();
+            this.name19lbl = new System.Windows.Forms.Label();
+            this.name18lbl = new System.Windows.Forms.Label();
+            this.name17lbl = new System.Windows.Forms.Label();
+            this.name16lbl = new System.Windows.Forms.Label();
+            this.name15lbl = new System.Windows.Forms.Label();
+            this.name14lbl = new System.Windows.Forms.Label();
+            this.name13lbl = new System.Windows.Forms.Label();
+            this.name12lbl = new System.Windows.Forms.Label();
+            this.name11lbl = new System.Windows.Forms.Label();
             this.name10lbl = new System.Windows.Forms.Label();
             this.name9lbl = new System.Windows.Forms.Label();
             this.name8lbl = new System.Windows.Forms.Label();
@@ -117,10 +121,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.regularRbtn = new System.Windows.Forms.RadioButton();
-            this.EmployeeRdbtn = new System.Windows.Forms.RadioButton();
-            this.noTaxRdbtn = new System.Windows.Forms.RadioButton();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -246,6 +246,58 @@
             this.groupBox2.Size = new System.Drawing.Size(785, 242);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
+            // 
+            // noTaxRdbtn
+            // 
+            this.noTaxRdbtn.AutoSize = true;
+            this.noTaxRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noTaxRdbtn.Location = new System.Drawing.Point(449, 196);
+            this.noTaxRdbtn.Name = "noTaxRdbtn";
+            this.noTaxRdbtn.Size = new System.Drawing.Size(123, 24);
+            this.noTaxRdbtn.TabIndex = 17;
+            this.noTaxRdbtn.TabStop = true;
+            this.noTaxRdbtn.Text = "No Discount";
+            this.noTaxRdbtn.UseVisualStyleBackColor = true;
+            this.noTaxRdbtn.CheckedChanged += new System.EventHandler(this.noTaxRdbtn_CheckedChanged);
+            // 
+            // EmployeeRdbtn
+            // 
+            this.EmployeeRdbtn.AutoSize = true;
+            this.EmployeeRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeRdbtn.Location = new System.Drawing.Point(449, 154);
+            this.EmployeeRdbtn.Name = "EmployeeRdbtn";
+            this.EmployeeRdbtn.Size = new System.Drawing.Size(147, 24);
+            this.EmployeeRdbtn.TabIndex = 16;
+            this.EmployeeRdbtn.TabStop = true;
+            this.EmployeeRdbtn.Text = "Employee Disc.";
+            this.EmployeeRdbtn.UseVisualStyleBackColor = true;
+            this.EmployeeRdbtn.CheckedChanged += new System.EventHandler(this.EmployeeRdbtn_CheckedChanged);
+            // 
+            // regularRbtn
+            // 
+            this.regularRbtn.AutoSize = true;
+            this.regularRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regularRbtn.Location = new System.Drawing.Point(449, 111);
+            this.regularRbtn.Name = "regularRbtn";
+            this.regularRbtn.Size = new System.Drawing.Size(149, 24);
+            this.regularRbtn.TabIndex = 15;
+            this.regularRbtn.TabStop = true;
+            this.regularRbtn.Text = "With Disc. Card";
+            this.regularRbtn.UseVisualStyleBackColor = true;
+            this.regularRbtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(449, 65);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(135, 24);
+            this.radioButton1.TabIndex = 14;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Senior Citizen";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // exitBtn
             // 
@@ -666,16 +718,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.label30);
-            this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.label28);
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.name20lbl);
+            this.groupBox1.Controls.Add(this.name19lbl);
+            this.groupBox1.Controls.Add(this.name18lbl);
+            this.groupBox1.Controls.Add(this.name17lbl);
+            this.groupBox1.Controls.Add(this.name16lbl);
+            this.groupBox1.Controls.Add(this.name15lbl);
+            this.groupBox1.Controls.Add(this.name14lbl);
+            this.groupBox1.Controls.Add(this.name13lbl);
+            this.groupBox1.Controls.Add(this.name12lbl);
+            this.groupBox1.Controls.Add(this.name11lbl);
             this.groupBox1.Controls.Add(this.name10lbl);
             this.groupBox1.Controls.Add(this.name9lbl);
             this.groupBox1.Controls.Add(this.name8lbl);
@@ -715,105 +767,105 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Items Display";
             // 
-            // label34
+            // name20lbl
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(892, 887);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(151, 16);
-            this.label34.TabIndex = 55;
-            this.label34.Text = "10 pcs Chicken Nuggets";
+            this.name20lbl.AutoSize = true;
+            this.name20lbl.Location = new System.Drawing.Point(892, 887);
+            this.name20lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name20lbl.Name = "name20lbl";
+            this.name20lbl.Size = new System.Drawing.Size(151, 16);
+            this.name20lbl.TabIndex = 55;
+            this.name20lbl.Text = "10 pcs Chicken Nuggets";
             // 
-            // label33
+            // name19lbl
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(707, 887);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(96, 16);
-            this.label33.TabIndex = 54;
-            this.label33.Text = "3 pcs Tuna Pie";
+            this.name19lbl.AutoSize = true;
+            this.name19lbl.Location = new System.Drawing.Point(707, 887);
+            this.name19lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name19lbl.Name = "name19lbl";
+            this.name19lbl.Size = new System.Drawing.Size(96, 16);
+            this.name19lbl.TabIndex = 54;
+            this.name19lbl.Text = "3 pcs Tuna Pie";
             // 
-            // label32
+            // name18lbl
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(502, 887);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(81, 16);
-            this.label32.TabIndex = 53;
-            this.label32.Text = "Bucket Fries";
+            this.name18lbl.AutoSize = true;
+            this.name18lbl.Location = new System.Drawing.Point(502, 887);
+            this.name18lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name18lbl.Name = "name18lbl";
+            this.name18lbl.Size = new System.Drawing.Size(81, 16);
+            this.name18lbl.TabIndex = 53;
+            this.name18lbl.Text = "Bucket Fries";
             // 
-            // label31
+            // name17lbl
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(267, 887);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(119, 16);
-            this.label31.TabIndex = 52;
-            this.label31.Text = "Iced Vanilla Coffee";
+            this.name17lbl.AutoSize = true;
+            this.name17lbl.Location = new System.Drawing.Point(267, 887);
+            this.name17lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name17lbl.Name = "name17lbl";
+            this.name17lbl.Size = new System.Drawing.Size(119, 16);
+            this.name17lbl.TabIndex = 52;
+            this.name17lbl.Text = "Iced Vanilla Coffee";
             // 
-            // label30
+            // name16lbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 887);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(219, 16);
-            this.label30.TabIndex = 51;
-            this.label30.Text = "8 pcs Burger Steak w Spaghetti Pan";
+            this.name16lbl.AutoSize = true;
+            this.name16lbl.Location = new System.Drawing.Point(3, 887);
+            this.name16lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name16lbl.Name = "name16lbl";
+            this.name16lbl.Size = new System.Drawing.Size(219, 16);
+            this.name16lbl.TabIndex = 51;
+            this.name16lbl.Text = "8 pcs Burger Steak w Spaghetti Pan";
             // 
-            // label29
+            // name15lbl
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(878, 664);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(184, 16);
-            this.label29.TabIndex = 50;
-            this.label29.Text = "Spaghetti Kiddie Meal w Drink";
+            this.name15lbl.AutoSize = true;
+            this.name15lbl.Location = new System.Drawing.Point(878, 664);
+            this.name15lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name15lbl.Name = "name15lbl";
+            this.name15lbl.Size = new System.Drawing.Size(184, 16);
+            this.name15lbl.TabIndex = 50;
+            this.name15lbl.Text = "Spaghetti Kiddie Meal w Drink";
             // 
-            // label28
+            // name14lbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(684, 664);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(149, 16);
-            this.label28.TabIndex = 49;
-            this.label28.Text = "6 pcs Peach Mango Pie";
+            this.name14lbl.AutoSize = true;
+            this.name14lbl.Location = new System.Drawing.Point(684, 664);
+            this.name14lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name14lbl.Name = "name14lbl";
+            this.name14lbl.Size = new System.Drawing.Size(149, 16);
+            this.name14lbl.TabIndex = 49;
+            this.name14lbl.Text = "6 pcs Peach Mango Pie";
             // 
-            // label27
+            // name13lbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(511, 664);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(61, 16);
-            this.label27.TabIndex = 48;
-            this.label27.Text = "Palabok ";
+            this.name13lbl.AutoSize = true;
+            this.name13lbl.Location = new System.Drawing.Point(511, 664);
+            this.name13lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name13lbl.Name = "name13lbl";
+            this.name13lbl.Size = new System.Drawing.Size(61, 16);
+            this.name13lbl.TabIndex = 48;
+            this.name13lbl.Text = "Palabok ";
             // 
-            // label26
+            // name12lbl
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(283, 664);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(83, 16);
-            this.label26.TabIndex = 47;
-            this.label26.Text = "Jolly Hotdog";
+            this.name12lbl.AutoSize = true;
+            this.name12lbl.Location = new System.Drawing.Point(283, 664);
+            this.name12lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name12lbl.Name = "name12lbl";
+            this.name12lbl.Size = new System.Drawing.Size(83, 16);
+            this.name12lbl.TabIndex = 47;
+            this.name12lbl.Text = "Jolly Hotdog";
             // 
-            // label25
+            // name11lbl
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 664);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(195, 16);
-            this.label25.TabIndex = 46;
-            this.label25.Text = "Double Aloha Champ Jr. Burger";
+            this.name11lbl.AutoSize = true;
+            this.name11lbl.Location = new System.Drawing.Point(14, 664);
+            this.name11lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name11lbl.Name = "name11lbl";
+            this.name11lbl.Size = new System.Drawing.Size(195, 16);
+            this.name11lbl.TabIndex = 46;
+            this.name11lbl.Text = "Double Aloha Champ Jr. Burger";
             // 
             // name10lbl
             // 
@@ -925,6 +977,7 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 35;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // pictureBox17
             // 
@@ -936,6 +989,7 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 34;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pictureBox18
             // 
@@ -947,6 +1001,7 @@
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 33;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // pictureBox19
             // 
@@ -958,6 +1013,7 @@
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 32;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Click += new System.EventHandler(this.pictureBox19_Click);
             // 
             // pictureBox20
             // 
@@ -982,6 +1038,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 30;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox12
             // 
@@ -994,6 +1051,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 29;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox13
             // 
@@ -1006,6 +1064,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 28;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox14
             // 
@@ -1018,6 +1077,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 27;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // pictureBox15
             // 
@@ -1030,6 +1090,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 26;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // pictureBox6
             // 
@@ -1042,6 +1103,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -1054,6 +1116,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -1066,6 +1129,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 23;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -1078,6 +1142,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 22;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -1090,6 +1155,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 21;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox5
             // 
@@ -1102,6 +1168,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -1114,6 +1181,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -1127,6 +1195,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -1140,6 +1209,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -1153,58 +1223,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(449, 65);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(135, 24);
-            this.radioButton1.TabIndex = 14;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Senior Citizen";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
-            // 
-            // regularRbtn
-            // 
-            this.regularRbtn.AutoSize = true;
-            this.regularRbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regularRbtn.Location = new System.Drawing.Point(449, 111);
-            this.regularRbtn.Name = "regularRbtn";
-            this.regularRbtn.Size = new System.Drawing.Size(149, 24);
-            this.regularRbtn.TabIndex = 15;
-            this.regularRbtn.TabStop = true;
-            this.regularRbtn.Text = "With Disc. Card";
-            this.regularRbtn.UseVisualStyleBackColor = true;
-            this.regularRbtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // EmployeeRdbtn
-            // 
-            this.EmployeeRdbtn.AutoSize = true;
-            this.EmployeeRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeRdbtn.Location = new System.Drawing.Point(449, 154);
-            this.EmployeeRdbtn.Name = "EmployeeRdbtn";
-            this.EmployeeRdbtn.Size = new System.Drawing.Size(147, 24);
-            this.EmployeeRdbtn.TabIndex = 16;
-            this.EmployeeRdbtn.TabStop = true;
-            this.EmployeeRdbtn.Text = "Employee Disc.";
-            this.EmployeeRdbtn.UseVisualStyleBackColor = true;
-            this.EmployeeRdbtn.CheckedChanged += new System.EventHandler(this.EmployeeRdbtn_CheckedChanged);
-            // 
-            // noTaxRdbtn
-            // 
-            this.noTaxRdbtn.AutoSize = true;
-            this.noTaxRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noTaxRdbtn.Location = new System.Drawing.Point(449, 196);
-            this.noTaxRdbtn.Name = "noTaxRdbtn";
-            this.noTaxRdbtn.Size = new System.Drawing.Size(123, 24);
-            this.noTaxRdbtn.TabIndex = 17;
-            this.noTaxRdbtn.TabStop = true;
-            this.noTaxRdbtn.Text = "No Discount";
-            this.noTaxRdbtn.UseVisualStyleBackColor = true;
-            this.noTaxRdbtn.CheckedChanged += new System.EventHandler(this.noTaxRdbtn_CheckedChanged);
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Activity2
             // 
@@ -1321,16 +1340,16 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label name20lbl;
+        private System.Windows.Forms.Label name19lbl;
+        private System.Windows.Forms.Label name18lbl;
+        private System.Windows.Forms.Label name17lbl;
+        private System.Windows.Forms.Label name16lbl;
+        private System.Windows.Forms.Label name15lbl;
+        private System.Windows.Forms.Label name14lbl;
+        private System.Windows.Forms.Label name13lbl;
+        private System.Windows.Forms.Label name12lbl;
+        private System.Windows.Forms.Label name11lbl;
         private System.Windows.Forms.Label name10lbl;
         private System.Windows.Forms.Label name9lbl;
         private System.Windows.Forms.Label name8lbl;
