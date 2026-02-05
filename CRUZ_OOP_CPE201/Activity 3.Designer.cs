@@ -411,6 +411,7 @@
             this.quantitytxtbox.Name = "quantitytxtbox";
             this.quantitytxtbox.Size = new System.Drawing.Size(240, 22);
             this.quantitytxtbox.TabIndex = 3;
+            this.quantitytxtbox.TextChanged += new System.EventHandler(this.quantitytxtbox_TextChanged);
             // 
             // label6
             // 
@@ -684,6 +685,7 @@
             this.cashrenderedtxtbox.Name = "cashrenderedtxtbox";
             this.cashrenderedtxtbox.Size = new System.Drawing.Size(361, 99);
             this.cashrenderedtxtbox.TabIndex = 5;
+            this.cashrenderedtxtbox.TextChanged += new System.EventHandler(this.cashrenderedtxtbox_TextChanged);
             // 
             // changetxtbox
             // 

@@ -12,9 +12,14 @@ namespace CRUZ_OOP_CPE201
 {
     public partial class Activity2 : Form
     {
+        int qty_total = 0;
+        double discount_total = 0;
+        double discounted_total = 0;
         public Activity2()
         {
             InitializeComponent();
+
+              
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,18 +85,18 @@ namespace CRUZ_OOP_CPE201
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
             int qty;
-            double price, discount_amt, discounted_amt;
-            
+            double price, discount_amount, discounted_amount;
+
             qty = Convert.ToInt32(quantitytxtbox.Text);
             price = Convert.ToDouble(pricetextbox.Text);
 
-            discount_amt = (qty * price) * 0.30;
-            discounted_amt = (qty * price) - discount_amt;
+            discount_amount = (qty * price) * 0.30;
+            discounted_amount = (qty * price) - discount_amount;
 
-            discounttxtbox.Text = discount_amt.ToString("n");
-            discountedtxtbox.Text = discounted_amt.ToString("n");
+            discounttxtbox.Text = discount_amount.ToString("n");
+            discountedtxtbox.Text = discounted_amount.ToString("n");
 
-            regularRbtn.Checked = false;    
+            regularRbtn.Checked = false;
             EmployeeRdbtn.Checked = false;
             noTaxRdbtn.Checked = false;
 
@@ -157,16 +162,22 @@ namespace CRUZ_OOP_CPE201
         private void calculateBtn_Click(object sender, EventArgs e)
         {
             int qty;
-            double discount_amt, discounted_amt, cash_rendered, change;
+            double discount_amount, discounted_amount, cash_rendered, change;
+
             qty = Convert.ToInt32(quantitytxtbox.Text);
-            discount_amt = Convert.ToDouble(discounttxtbox.Text);
-            discounted_amt = Convert.ToDouble(discountedtxtbox.Text);
+            discount_amount = Convert.ToDouble(discounttxtbox.Text);
+            discounted_amount = Convert.ToDouble(discountedtxtbox.Text);
             cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
 
-            qty_totaltxtbox.Text += qty;
-            discount_totaltxtbox.Text += discount_amt;
-            discounted_totaltxtbox.Text += discounted_amt;
-            change = cash_rendered - discounted_amt;
+            qty_total += qty;
+            discount_total += discount_amount;
+            discounted_total += discounted_amount;
+            change = cash_rendered - discounted_amount;
+
+            qty_totaltxtbox.Text = qty_total.ToString();
+            discount_totaltxtbox.Text = discount_total.ToString("n");
+            discounted_totaltxtbox.Text = discounted_total.ToString("n");
+            changetxtbox.Text = change.ToString("n");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -302,6 +313,16 @@ namespace CRUZ_OOP_CPE201
         {
             itemnametxtbox.Text = name20lbl.Text;
             pricetextbox.Text = "179.75";
+        }
+
+        private void cashrenderedtxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quantitytxtbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
