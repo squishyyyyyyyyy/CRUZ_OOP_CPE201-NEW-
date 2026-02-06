@@ -1,6 +1,6 @@
 ﻿namespace CRUZ_OOP_CPE201
 {
-    partial class Activity2
+    partial class Activity3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Activity2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Activity3));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.discounted_totaltxtbox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -1227,7 +1227,7 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Activity2
+            // Activity3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1257,7 +1257,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Activity2";
+            this.Name = "Activity3";
             this.Text = "Activity2";
             this.Load += new System.EventHandler(this.Activity2_Load);
             this.groupBox3.ResumeLayout(false);

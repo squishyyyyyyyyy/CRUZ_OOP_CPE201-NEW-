@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace CRUZ_OOP_CPE201
 {
-    public partial class Activity2 : Form
+    public partial class Activity3 : Form
     {
         int qty_total = 0;
         double discount_total = 0;
         double discounted_total = 0;
-        public Activity2()
+        public Activity3()
         {
             InitializeComponent();
 
