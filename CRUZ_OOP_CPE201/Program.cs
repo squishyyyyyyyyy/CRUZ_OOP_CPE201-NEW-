@@ -16,7 +16,7 @@ namespace CRUZ_OOP_CPE201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Activity3());
+            Application.Run(new Lesson2Activity());
         }
     }
 }
