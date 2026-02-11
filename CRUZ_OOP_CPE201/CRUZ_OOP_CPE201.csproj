@@ -64,6 +64,12 @@
     <Compile Include="Activity 3.Designer.cs">
       <DependentUpon>Activity 3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson3Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Activity.Designer.cs">
+      <DependentUpon>Lesson3Activity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson2Activity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson2Activity.resx">
       <DependentUpon>Lesson2Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Activity.resx">
+      <DependentUpon>Lesson3Activity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
