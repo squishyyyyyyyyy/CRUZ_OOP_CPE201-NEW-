@@ -39,7 +39,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.clschcourbtn = new System.Windows.Forms.Button();
+            this.clstudinfobtn = new System.Windows.Forms.Button();
+            this.exitbtn = new System.Windows.Forms.Button();
+            this.computebtn = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.discounttxt = new System.Windows.Forms.TextBox();
+            this.grand_totaltxt = new System.Windows.Forms.TextBox();
+            this.amount_duetxt = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.thirdinstxt = new System.Windows.Forms.TextBox();
+            this.secondinstxt = new System.Windows.Forms.TextBox();
+            this.firstinstxt = new System.Windows.Forms.TextBox();
+            this.dwnpaytxt = new System.Windows.Forms.TextBox();
+            this.instchartxt = new System.Windows.Forms.TextBox();
+            this.modepaytxt = new System.Windows.Forms.TextBox();
+            this.total_tui_feetxt = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,18 +83,17 @@
             this.label9 = new System.Windows.Forms.Label();
             this.scholar = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.total_crunits = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            //this.total_credunits = new System.Windows.Forms.TextBox();
-            this.textBox144 = new System.Windows.Forms.TextBox();
-            this.textBox125 = new System.Windows.Forms.TextBox();
-            this.textBox126 = new System.Windows.Forms.TextBox();
-            this.textBox127 = new System.Windows.Forms.TextBox();
+            this.room7 = new System.Windows.Forms.TextBox();
+            this.day7 = new System.Windows.Forms.TextBox();
+            this.time7 = new System.Windows.Forms.TextBox();
             this.cred7 = new System.Windows.Forms.TextBox();
             this.lab7 = new System.Windows.Forms.TextBox();
             this.lec7 = new System.Windows.Forms.TextBox();
-            this.textBox131 = new System.Windows.Forms.TextBox();
-            this.textBox132 = new System.Windows.Forms.TextBox();
-            this.textBox133 = new System.Windows.Forms.TextBox();
+            this.desc7 = new System.Windows.Forms.TextBox();
+            this.sec7 = new System.Windows.Forms.TextBox();
+            this.cc7 = new System.Windows.Forms.TextBox();
             this.textBox134 = new System.Windows.Forms.TextBox();
             this.textBox135 = new System.Windows.Forms.TextBox();
             this.textBox136 = new System.Windows.Forms.TextBox();
@@ -87,15 +104,15 @@
             this.textBox141 = new System.Windows.Forms.TextBox();
             this.textBox142 = new System.Windows.Forms.TextBox();
             this.textBox143 = new System.Windows.Forms.TextBox();
-            this.textBox106 = new System.Windows.Forms.TextBox();
-            this.textBox107 = new System.Windows.Forms.TextBox();
-            this.textBox108 = new System.Windows.Forms.TextBox();
+            this.room6 = new System.Windows.Forms.TextBox();
+            this.day6 = new System.Windows.Forms.TextBox();
+            this.time6 = new System.Windows.Forms.TextBox();
             this.cred6 = new System.Windows.Forms.TextBox();
             this.lab6 = new System.Windows.Forms.TextBox();
             this.lec6 = new System.Windows.Forms.TextBox();
-            this.textBox112 = new System.Windows.Forms.TextBox();
-            this.textBox113 = new System.Windows.Forms.TextBox();
-            this.textBox114 = new System.Windows.Forms.TextBox();
+            this.desc6 = new System.Windows.Forms.TextBox();
+            this.sec6 = new System.Windows.Forms.TextBox();
+            this.cc6 = new System.Windows.Forms.TextBox();
             this.textBox115 = new System.Windows.Forms.TextBox();
             this.textBox116 = new System.Windows.Forms.TextBox();
             this.textBox117 = new System.Windows.Forms.TextBox();
@@ -106,15 +123,15 @@
             this.textBox122 = new System.Windows.Forms.TextBox();
             this.textBox123 = new System.Windows.Forms.TextBox();
             this.textBox124 = new System.Windows.Forms.TextBox();
-            this.textBox87 = new System.Windows.Forms.TextBox();
-            this.textBox88 = new System.Windows.Forms.TextBox();
-            this.textBox89 = new System.Windows.Forms.TextBox();
+            this.room5 = new System.Windows.Forms.TextBox();
+            this.day5 = new System.Windows.Forms.TextBox();
+            this.time5 = new System.Windows.Forms.TextBox();
             this.cred5 = new System.Windows.Forms.TextBox();
             this.lab5 = new System.Windows.Forms.TextBox();
             this.lec5 = new System.Windows.Forms.TextBox();
-            this.textBox93 = new System.Windows.Forms.TextBox();
-            this.textBox94 = new System.Windows.Forms.TextBox();
-            this.textBox95 = new System.Windows.Forms.TextBox();
+            this.desc5 = new System.Windows.Forms.TextBox();
+            this.sec5 = new System.Windows.Forms.TextBox();
+            this.cc5 = new System.Windows.Forms.TextBox();
             this.textBox96 = new System.Windows.Forms.TextBox();
             this.textBox97 = new System.Windows.Forms.TextBox();
             this.textBox98 = new System.Windows.Forms.TextBox();
@@ -125,15 +142,15 @@
             this.textBox103 = new System.Windows.Forms.TextBox();
             this.textBox104 = new System.Windows.Forms.TextBox();
             this.textBox105 = new System.Windows.Forms.TextBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.room4 = new System.Windows.Forms.TextBox();
+            this.day4 = new System.Windows.Forms.TextBox();
+            this.time4 = new System.Windows.Forms.TextBox();
             this.cred4 = new System.Windows.Forms.TextBox();
             this.lab4 = new System.Windows.Forms.TextBox();
             this.lec4 = new System.Windows.Forms.TextBox();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox75 = new System.Windows.Forms.TextBox();
-            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.desc4 = new System.Windows.Forms.TextBox();
+            this.sec4 = new System.Windows.Forms.TextBox();
+            this.cc4 = new System.Windows.Forms.TextBox();
             this.textBox77 = new System.Windows.Forms.TextBox();
             this.textBox78 = new System.Windows.Forms.TextBox();
             this.textBox79 = new System.Windows.Forms.TextBox();
@@ -144,15 +161,15 @@
             this.textBox84 = new System.Windows.Forms.TextBox();
             this.textBox85 = new System.Windows.Forms.TextBox();
             this.textBox86 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.room3 = new System.Windows.Forms.TextBox();
+            this.day3 = new System.Windows.Forms.TextBox();
+            this.time3 = new System.Windows.Forms.TextBox();
             this.cred3 = new System.Windows.Forms.TextBox();
             this.lab3 = new System.Windows.Forms.TextBox();
             this.lec3 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
+            this.desc3 = new System.Windows.Forms.TextBox();
+            this.sec3 = new System.Windows.Forms.TextBox();
+            this.cc3 = new System.Windows.Forms.TextBox();
             this.textBox58 = new System.Windows.Forms.TextBox();
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.textBox60 = new System.Windows.Forms.TextBox();
@@ -163,15 +180,15 @@
             this.textBox65 = new System.Windows.Forms.TextBox();
             this.textBox66 = new System.Windows.Forms.TextBox();
             this.textBox67 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.room2 = new System.Windows.Forms.TextBox();
+            this.day2 = new System.Windows.Forms.TextBox();
+            this.time2 = new System.Windows.Forms.TextBox();
             this.cred2 = new System.Windows.Forms.TextBox();
             this.lab2 = new System.Windows.Forms.TextBox();
             this.lec2 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.desc2 = new System.Windows.Forms.TextBox();
+            this.sec2 = new System.Windows.Forms.TextBox();
+            this.cc2 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.textBox41 = new System.Windows.Forms.TextBox();
@@ -182,15 +199,15 @@
             this.textBox46 = new System.Windows.Forms.TextBox();
             this.textBox47 = new System.Windows.Forms.TextBox();
             this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.room1 = new System.Windows.Forms.TextBox();
+            this.day1 = new System.Windows.Forms.TextBox();
+            this.time1 = new System.Windows.Forms.TextBox();
             this.cred1 = new System.Windows.Forms.TextBox();
             this.lab1 = new System.Windows.Forms.TextBox();
             this.lec1 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.desc1 = new System.Windows.Forms.TextBox();
+            this.sec1 = new System.Windows.Forms.TextBox();
+            this.cc1 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -211,33 +228,16 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox144 = new System.Windows.Forms.TextBox();
             this.mode = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.yrlvl = new System.Windows.Forms.ComboBox();
-            this.total_tui_feetxt = new System.Windows.Forms.TextBox();
-            this.modepaytxt = new System.Windows.Forms.TextBox();
-            this.instchartxt = new System.Windows.Forms.TextBox();
-            this.dwnpaytxt = new System.Windows.Forms.TextBox();
-            this.firstinstxt = new System.Windows.Forms.TextBox();
-            this.secondinstxt = new System.Windows.Forms.TextBox();
-            this.thirdinstxt = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.amount_duetxt = new System.Windows.Forms.TextBox();
-            this.grand_totaltxt = new System.Windows.Forms.TextBox();
-            this.discounttxt = new System.Windows.Forms.TextBox();
-            this.computebtn = new System.Windows.Forms.Button();
-            this.exitbtn = new System.Windows.Forms.Button();
-            this.clstudinfobtn = new System.Windows.Forms.Button();
-            this.clschcourbtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -360,6 +360,112 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
+            // clschcourbtn
+            // 
+            this.clschcourbtn.Location = new System.Drawing.Point(209, 948);
+            this.clschcourbtn.Name = "clschcourbtn";
+            this.clschcourbtn.Size = new System.Drawing.Size(215, 54);
+            this.clschcourbtn.TabIndex = 37;
+            this.clschcourbtn.Text = "CLEAR SCHEDULE OF\r\nCOURSES";
+            this.clschcourbtn.UseVisualStyleBackColor = true;
+            this.clschcourbtn.Click += new System.EventHandler(this.clschcourbtn_Click);
+            // 
+            // clstudinfobtn
+            // 
+            this.clstudinfobtn.Location = new System.Drawing.Point(209, 895);
+            this.clstudinfobtn.Name = "clstudinfobtn";
+            this.clstudinfobtn.Size = new System.Drawing.Size(215, 54);
+            this.clstudinfobtn.TabIndex = 36;
+            this.clstudinfobtn.Text = "CLEAR STUDENT\r\nINFORMATION";
+            this.clstudinfobtn.UseVisualStyleBackColor = true;
+            this.clstudinfobtn.Click += new System.EventHandler(this.clstudinfobtn_Click);
+            // 
+            // exitbtn
+            // 
+            this.exitbtn.Location = new System.Drawing.Point(46, 948);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(157, 54);
+            this.exitbtn.TabIndex = 35;
+            this.exitbtn.Text = "EXIT";
+            this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
+            // 
+            // computebtn
+            // 
+            this.computebtn.Location = new System.Drawing.Point(46, 895);
+            this.computebtn.Name = "computebtn";
+            this.computebtn.Size = new System.Drawing.Size(157, 54);
+            this.computebtn.TabIndex = 17;
+            this.computebtn.Text = "COMPUTE FEES";
+            this.computebtn.UseVisualStyleBackColor = true;
+            this.computebtn.Click += new System.EventHandler(this.computebtn_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.discounttxt);
+            this.groupBox6.Controls.Add(this.grand_totaltxt);
+            this.groupBox6.Controls.Add(this.amount_duetxt);
+            this.groupBox6.Controls.Add(this.label21);
+            this.groupBox6.Controls.Add(this.label20);
+            this.groupBox6.Controls.Add(this.label19);
+            this.groupBox6.Location = new System.Drawing.Point(468, 889);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(659, 124);
+            this.groupBox6.TabIndex = 34;
+            this.groupBox6.TabStop = false;
+            // 
+            // discounttxt
+            // 
+            this.discounttxt.Location = new System.Drawing.Point(347, 85);
+            this.discounttxt.Name = "discounttxt";
+            this.discounttxt.Size = new System.Drawing.Size(281, 22);
+            this.discounttxt.TabIndex = 16;
+            // 
+            // grand_totaltxt
+            // 
+            this.grand_totaltxt.Location = new System.Drawing.Point(347, 52);
+            this.grand_totaltxt.Name = "grand_totaltxt";
+            this.grand_totaltxt.Size = new System.Drawing.Size(281, 22);
+            this.grand_totaltxt.TabIndex = 14;
+            // 
+            // amount_duetxt
+            // 
+            this.amount_duetxt.Location = new System.Drawing.Point(347, 20);
+            this.amount_duetxt.Name = "amount_duetxt";
+            this.amount_duetxt.Size = new System.Drawing.Size(281, 22);
+            this.amount_duetxt.TabIndex = 14;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(199, 85);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(81, 20);
+            this.label21.TabIndex = 14;
+            this.label21.Text = "Discount:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(123, 52);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(157, 22);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "GRAND TOTAL:";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(133, 20);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(147, 22);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "AMOUNT DUE:";
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.thirdinstxt);
@@ -381,6 +487,55 @@
             this.groupBox5.Size = new System.Drawing.Size(659, 246);
             this.groupBox5.TabIndex = 33;
             this.groupBox5.TabStop = false;
+            // 
+            // thirdinstxt
+            // 
+            this.thirdinstxt.Location = new System.Drawing.Point(331, 207);
+            this.thirdinstxt.Name = "thirdinstxt";
+            this.thirdinstxt.Size = new System.Drawing.Size(281, 22);
+            this.thirdinstxt.TabIndex = 13;
+            // 
+            // secondinstxt
+            // 
+            this.secondinstxt.Location = new System.Drawing.Point(331, 178);
+            this.secondinstxt.Name = "secondinstxt";
+            this.secondinstxt.Size = new System.Drawing.Size(281, 22);
+            this.secondinstxt.TabIndex = 12;
+            // 
+            // firstinstxt
+            // 
+            this.firstinstxt.Location = new System.Drawing.Point(331, 151);
+            this.firstinstxt.Name = "firstinstxt";
+            this.firstinstxt.Size = new System.Drawing.Size(281, 22);
+            this.firstinstxt.TabIndex = 11;
+            // 
+            // dwnpaytxt
+            // 
+            this.dwnpaytxt.Location = new System.Drawing.Point(331, 122);
+            this.dwnpaytxt.Name = "dwnpaytxt";
+            this.dwnpaytxt.Size = new System.Drawing.Size(281, 22);
+            this.dwnpaytxt.TabIndex = 10;
+            // 
+            // instchartxt
+            // 
+            this.instchartxt.Location = new System.Drawing.Point(331, 91);
+            this.instchartxt.Name = "instchartxt";
+            this.instchartxt.Size = new System.Drawing.Size(281, 22);
+            this.instchartxt.TabIndex = 9;
+            // 
+            // modepaytxt
+            // 
+            this.modepaytxt.Location = new System.Drawing.Point(331, 59);
+            this.modepaytxt.Name = "modepaytxt";
+            this.modepaytxt.Size = new System.Drawing.Size(281, 22);
+            this.modepaytxt.TabIndex = 8;
+            // 
+            // total_tui_feetxt
+            // 
+            this.total_tui_feetxt.Location = new System.Drawing.Point(331, 21);
+            this.total_tui_feetxt.Name = "total_tui_feetxt";
+            this.total_tui_feetxt.Size = new System.Drawing.Size(281, 22);
+            this.total_tui_feetxt.TabIndex = 7;
             // 
             // label18
             // 
@@ -614,18 +769,17 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.total_crunits);
             this.groupBox2.Controls.Add(this.label8);
-            //this.groupBox2.Controls.Add(this.total_credunits);
-            this.groupBox2.Controls.Add(this.textBox144);
-            this.groupBox2.Controls.Add(this.textBox125);
-            this.groupBox2.Controls.Add(this.textBox126);
-            this.groupBox2.Controls.Add(this.textBox127);
+            this.groupBox2.Controls.Add(this.room7);
+            this.groupBox2.Controls.Add(this.day7);
+            this.groupBox2.Controls.Add(this.time7);
             this.groupBox2.Controls.Add(this.cred7);
             this.groupBox2.Controls.Add(this.lab7);
             this.groupBox2.Controls.Add(this.lec7);
-            this.groupBox2.Controls.Add(this.textBox131);
-            this.groupBox2.Controls.Add(this.textBox132);
-            this.groupBox2.Controls.Add(this.textBox133);
+            this.groupBox2.Controls.Add(this.desc7);
+            this.groupBox2.Controls.Add(this.sec7);
+            this.groupBox2.Controls.Add(this.cc7);
             this.groupBox2.Controls.Add(this.textBox134);
             this.groupBox2.Controls.Add(this.textBox135);
             this.groupBox2.Controls.Add(this.textBox136);
@@ -636,15 +790,15 @@
             this.groupBox2.Controls.Add(this.textBox141);
             this.groupBox2.Controls.Add(this.textBox142);
             this.groupBox2.Controls.Add(this.textBox143);
-            this.groupBox2.Controls.Add(this.textBox106);
-            this.groupBox2.Controls.Add(this.textBox107);
-            this.groupBox2.Controls.Add(this.textBox108);
+            this.groupBox2.Controls.Add(this.room6);
+            this.groupBox2.Controls.Add(this.day6);
+            this.groupBox2.Controls.Add(this.time6);
             this.groupBox2.Controls.Add(this.cred6);
             this.groupBox2.Controls.Add(this.lab6);
             this.groupBox2.Controls.Add(this.lec6);
-            this.groupBox2.Controls.Add(this.textBox112);
-            this.groupBox2.Controls.Add(this.textBox113);
-            this.groupBox2.Controls.Add(this.textBox114);
+            this.groupBox2.Controls.Add(this.desc6);
+            this.groupBox2.Controls.Add(this.sec6);
+            this.groupBox2.Controls.Add(this.cc6);
             this.groupBox2.Controls.Add(this.textBox115);
             this.groupBox2.Controls.Add(this.textBox116);
             this.groupBox2.Controls.Add(this.textBox117);
@@ -655,15 +809,15 @@
             this.groupBox2.Controls.Add(this.textBox122);
             this.groupBox2.Controls.Add(this.textBox123);
             this.groupBox2.Controls.Add(this.textBox124);
-            this.groupBox2.Controls.Add(this.textBox87);
-            this.groupBox2.Controls.Add(this.textBox88);
-            this.groupBox2.Controls.Add(this.textBox89);
+            this.groupBox2.Controls.Add(this.room5);
+            this.groupBox2.Controls.Add(this.day5);
+            this.groupBox2.Controls.Add(this.time5);
             this.groupBox2.Controls.Add(this.cred5);
             this.groupBox2.Controls.Add(this.lab5);
             this.groupBox2.Controls.Add(this.lec5);
-            this.groupBox2.Controls.Add(this.textBox93);
-            this.groupBox2.Controls.Add(this.textBox94);
-            this.groupBox2.Controls.Add(this.textBox95);
+            this.groupBox2.Controls.Add(this.desc5);
+            this.groupBox2.Controls.Add(this.sec5);
+            this.groupBox2.Controls.Add(this.cc5);
             this.groupBox2.Controls.Add(this.textBox96);
             this.groupBox2.Controls.Add(this.textBox97);
             this.groupBox2.Controls.Add(this.textBox98);
@@ -674,15 +828,15 @@
             this.groupBox2.Controls.Add(this.textBox103);
             this.groupBox2.Controls.Add(this.textBox104);
             this.groupBox2.Controls.Add(this.textBox105);
-            this.groupBox2.Controls.Add(this.textBox68);
-            this.groupBox2.Controls.Add(this.textBox69);
-            this.groupBox2.Controls.Add(this.textBox70);
+            this.groupBox2.Controls.Add(this.room4);
+            this.groupBox2.Controls.Add(this.day4);
+            this.groupBox2.Controls.Add(this.time4);
             this.groupBox2.Controls.Add(this.cred4);
             this.groupBox2.Controls.Add(this.lab4);
             this.groupBox2.Controls.Add(this.lec4);
-            this.groupBox2.Controls.Add(this.textBox74);
-            this.groupBox2.Controls.Add(this.textBox75);
-            this.groupBox2.Controls.Add(this.textBox76);
+            this.groupBox2.Controls.Add(this.desc4);
+            this.groupBox2.Controls.Add(this.sec4);
+            this.groupBox2.Controls.Add(this.cc4);
             this.groupBox2.Controls.Add(this.textBox77);
             this.groupBox2.Controls.Add(this.textBox78);
             this.groupBox2.Controls.Add(this.textBox79);
@@ -693,15 +847,15 @@
             this.groupBox2.Controls.Add(this.textBox84);
             this.groupBox2.Controls.Add(this.textBox85);
             this.groupBox2.Controls.Add(this.textBox86);
-            this.groupBox2.Controls.Add(this.textBox49);
-            this.groupBox2.Controls.Add(this.textBox50);
-            this.groupBox2.Controls.Add(this.textBox51);
+            this.groupBox2.Controls.Add(this.room3);
+            this.groupBox2.Controls.Add(this.day3);
+            this.groupBox2.Controls.Add(this.time3);
             this.groupBox2.Controls.Add(this.cred3);
             this.groupBox2.Controls.Add(this.lab3);
             this.groupBox2.Controls.Add(this.lec3);
-            this.groupBox2.Controls.Add(this.textBox55);
-            this.groupBox2.Controls.Add(this.textBox56);
-            this.groupBox2.Controls.Add(this.textBox57);
+            this.groupBox2.Controls.Add(this.desc3);
+            this.groupBox2.Controls.Add(this.sec3);
+            this.groupBox2.Controls.Add(this.cc3);
             this.groupBox2.Controls.Add(this.textBox58);
             this.groupBox2.Controls.Add(this.textBox59);
             this.groupBox2.Controls.Add(this.textBox60);
@@ -712,15 +866,15 @@
             this.groupBox2.Controls.Add(this.textBox65);
             this.groupBox2.Controls.Add(this.textBox66);
             this.groupBox2.Controls.Add(this.textBox67);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.textBox22);
-            this.groupBox2.Controls.Add(this.textBox23);
+            this.groupBox2.Controls.Add(this.room2);
+            this.groupBox2.Controls.Add(this.day2);
+            this.groupBox2.Controls.Add(this.time2);
             this.groupBox2.Controls.Add(this.cred2);
             this.groupBox2.Controls.Add(this.lab2);
             this.groupBox2.Controls.Add(this.lec2);
-            this.groupBox2.Controls.Add(this.textBox27);
-            this.groupBox2.Controls.Add(this.textBox28);
-            this.groupBox2.Controls.Add(this.textBox29);
+            this.groupBox2.Controls.Add(this.desc2);
+            this.groupBox2.Controls.Add(this.sec2);
+            this.groupBox2.Controls.Add(this.cc2);
             this.groupBox2.Controls.Add(this.textBox30);
             this.groupBox2.Controls.Add(this.textBox40);
             this.groupBox2.Controls.Add(this.textBox41);
@@ -731,15 +885,15 @@
             this.groupBox2.Controls.Add(this.textBox46);
             this.groupBox2.Controls.Add(this.textBox47);
             this.groupBox2.Controls.Add(this.textBox48);
-            this.groupBox2.Controls.Add(this.textBox39);
-            this.groupBox2.Controls.Add(this.textBox38);
-            this.groupBox2.Controls.Add(this.textBox37);
+            this.groupBox2.Controls.Add(this.room1);
+            this.groupBox2.Controls.Add(this.day1);
+            this.groupBox2.Controls.Add(this.time1);
             this.groupBox2.Controls.Add(this.cred1);
             this.groupBox2.Controls.Add(this.lab1);
             this.groupBox2.Controls.Add(this.lec1);
-            this.groupBox2.Controls.Add(this.textBox33);
-            this.groupBox2.Controls.Add(this.textBox32);
-            this.groupBox2.Controls.Add(this.textBox31);
+            this.groupBox2.Controls.Add(this.desc1);
+            this.groupBox2.Controls.Add(this.sec1);
+            this.groupBox2.Controls.Add(this.cc1);
             this.groupBox2.Controls.Add(this.textBox11);
             this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.textBox13);
@@ -760,12 +914,21 @@
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBox144);
             this.groupBox2.Location = new System.Drawing.Point(16, 114);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1111, 517);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Schedule of Course(s)";
+            // 
+            // total_crunits
+            // 
+            this.total_crunits.Location = new System.Drawing.Point(648, 476);
+            this.total_crunits.Multiline = true;
+            this.total_crunits.Name = "total_crunits";
+            this.total_crunits.Size = new System.Drawing.Size(74, 24);
+            this.total_crunits.TabIndex = 156;
             // 
             // label8
             // 
@@ -776,45 +939,29 @@
             this.label8.TabIndex = 155;
             this.label8.Text = "Total Cred. Units:";
             // 
-            // total_credunits
+            // room7
             // 
-            //this.total_credunits.Location = new System.Drawing.Point(648, 476);
-            //this.total_credunits.Multiline = true;
-            //this.total_credunits.Name = "total_credunits";
-            //this.total_credunits.Size = new System.Drawing.Size(74, 24);
-            //this.total_credunits.TabIndex = 154;
+            this.room7.Location = new System.Drawing.Point(945, 418);
+            this.room7.Multiline = true;
+            this.room7.Name = "room7";
+            this.room7.Size = new System.Drawing.Size(143, 46);
+            this.room7.TabIndex = 152;
             // 
-            // textBox144
+            // day7
             // 
-            this.textBox144.Location = new System.Drawing.Point(644, 471);
-            this.textBox144.Multiline = true;
-            this.textBox144.Name = "textBox144";
-            this.textBox144.Size = new System.Drawing.Size(82, 35);
-            this.textBox144.TabIndex = 153;
+            this.day7.Location = new System.Drawing.Point(867, 418);
+            this.day7.Multiline = true;
+            this.day7.Name = "day7";
+            this.day7.Size = new System.Drawing.Size(72, 46);
+            this.day7.TabIndex = 151;
             // 
-            // textBox125
+            // time7
             // 
-            this.textBox125.Location = new System.Drawing.Point(945, 418);
-            this.textBox125.Multiline = true;
-            this.textBox125.Name = "textBox125";
-            this.textBox125.Size = new System.Drawing.Size(143, 46);
-            this.textBox125.TabIndex = 152;
-            // 
-            // textBox126
-            // 
-            this.textBox126.Location = new System.Drawing.Point(867, 418);
-            this.textBox126.Multiline = true;
-            this.textBox126.Name = "textBox126";
-            this.textBox126.Size = new System.Drawing.Size(72, 46);
-            this.textBox126.TabIndex = 151;
-            // 
-            // textBox127
-            // 
-            this.textBox127.Location = new System.Drawing.Point(732, 418);
-            this.textBox127.Multiline = true;
-            this.textBox127.Name = "textBox127";
-            this.textBox127.Size = new System.Drawing.Size(122, 46);
-            this.textBox127.TabIndex = 150;
+            this.time7.Location = new System.Drawing.Point(732, 418);
+            this.time7.Multiline = true;
+            this.time7.Name = "time7";
+            this.time7.Size = new System.Drawing.Size(122, 46);
+            this.time7.TabIndex = 150;
             // 
             // cred7
             // 
@@ -823,6 +970,7 @@
             this.cred7.Name = "cred7";
             this.cred7.Size = new System.Drawing.Size(74, 46);
             this.cred7.TabIndex = 149;
+            this.cred7.TextChanged += new System.EventHandler(this.cred7_TextChanged);
             // 
             // lab7
             // 
@@ -831,6 +979,7 @@
             this.lab7.Name = "lab7";
             this.lab7.Size = new System.Drawing.Size(72, 46);
             this.lab7.TabIndex = 148;
+            this.lab7.TextChanged += new System.EventHandler(this.lab7_TextChanged);
             // 
             // lec7
             // 
@@ -839,30 +988,31 @@
             this.lec7.Name = "lec7";
             this.lec7.Size = new System.Drawing.Size(72, 46);
             this.lec7.TabIndex = 147;
+            this.lec7.TextChanged += new System.EventHandler(this.lec7_TextChanged);
             // 
-            // textBox131
+            // desc7
             // 
-            this.textBox131.Location = new System.Drawing.Point(229, 418);
-            this.textBox131.Multiline = true;
-            this.textBox131.Name = "textBox131";
-            this.textBox131.Size = new System.Drawing.Size(245, 46);
-            this.textBox131.TabIndex = 146;
+            this.desc7.Location = new System.Drawing.Point(229, 418);
+            this.desc7.Multiline = true;
+            this.desc7.Name = "desc7";
+            this.desc7.Size = new System.Drawing.Size(245, 46);
+            this.desc7.TabIndex = 146;
             // 
-            // textBox132
+            // sec7
             // 
-            this.textBox132.Location = new System.Drawing.Point(136, 418);
-            this.textBox132.Multiline = true;
-            this.textBox132.Name = "textBox132";
-            this.textBox132.Size = new System.Drawing.Size(81, 46);
-            this.textBox132.TabIndex = 145;
+            this.sec7.Location = new System.Drawing.Point(136, 418);
+            this.sec7.Multiline = true;
+            this.sec7.Name = "sec7";
+            this.sec7.Size = new System.Drawing.Size(81, 46);
+            this.sec7.TabIndex = 145;
             // 
-            // textBox133
+            // cc7
             // 
-            this.textBox133.Location = new System.Drawing.Point(54, 419);
-            this.textBox133.Multiline = true;
-            this.textBox133.Name = "textBox133";
-            this.textBox133.Size = new System.Drawing.Size(72, 46);
-            this.textBox133.TabIndex = 144;
+            this.cc7.Location = new System.Drawing.Point(54, 419);
+            this.cc7.Multiline = true;
+            this.cc7.Name = "cc7";
+            this.cc7.Size = new System.Drawing.Size(72, 46);
+            this.cc7.TabIndex = 144;
             // 
             // textBox134
             // 
@@ -946,29 +1096,29 @@
             this.textBox143.Text = "7";
             this.textBox143.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox106
+            // room6
             // 
-            this.textBox106.Location = new System.Drawing.Point(945, 360);
-            this.textBox106.Multiline = true;
-            this.textBox106.Name = "textBox106";
-            this.textBox106.Size = new System.Drawing.Size(143, 46);
-            this.textBox106.TabIndex = 133;
+            this.room6.Location = new System.Drawing.Point(945, 360);
+            this.room6.Multiline = true;
+            this.room6.Name = "room6";
+            this.room6.Size = new System.Drawing.Size(143, 46);
+            this.room6.TabIndex = 133;
             // 
-            // textBox107
+            // day6
             // 
-            this.textBox107.Location = new System.Drawing.Point(867, 360);
-            this.textBox107.Multiline = true;
-            this.textBox107.Name = "textBox107";
-            this.textBox107.Size = new System.Drawing.Size(72, 46);
-            this.textBox107.TabIndex = 132;
+            this.day6.Location = new System.Drawing.Point(867, 360);
+            this.day6.Multiline = true;
+            this.day6.Name = "day6";
+            this.day6.Size = new System.Drawing.Size(72, 46);
+            this.day6.TabIndex = 132;
             // 
-            // textBox108
+            // time6
             // 
-            this.textBox108.Location = new System.Drawing.Point(732, 360);
-            this.textBox108.Multiline = true;
-            this.textBox108.Name = "textBox108";
-            this.textBox108.Size = new System.Drawing.Size(122, 46);
-            this.textBox108.TabIndex = 131;
+            this.time6.Location = new System.Drawing.Point(732, 360);
+            this.time6.Multiline = true;
+            this.time6.Name = "time6";
+            this.time6.Size = new System.Drawing.Size(122, 46);
+            this.time6.TabIndex = 131;
             // 
             // cred6
             // 
@@ -977,6 +1127,7 @@
             this.cred6.Name = "cred6";
             this.cred6.Size = new System.Drawing.Size(74, 46);
             this.cred6.TabIndex = 130;
+            this.cred6.TextChanged += new System.EventHandler(this.cred6_TextChanged);
             // 
             // lab6
             // 
@@ -985,6 +1136,7 @@
             this.lab6.Name = "lab6";
             this.lab6.Size = new System.Drawing.Size(72, 46);
             this.lab6.TabIndex = 129;
+            this.lab6.TextChanged += new System.EventHandler(this.lab6_TextChanged);
             // 
             // lec6
             // 
@@ -993,30 +1145,31 @@
             this.lec6.Name = "lec6";
             this.lec6.Size = new System.Drawing.Size(72, 46);
             this.lec6.TabIndex = 128;
+            this.lec6.TextChanged += new System.EventHandler(this.lec6_TextChanged);
             // 
-            // textBox112
+            // desc6
             // 
-            this.textBox112.Location = new System.Drawing.Point(229, 360);
-            this.textBox112.Multiline = true;
-            this.textBox112.Name = "textBox112";
-            this.textBox112.Size = new System.Drawing.Size(245, 46);
-            this.textBox112.TabIndex = 127;
+            this.desc6.Location = new System.Drawing.Point(229, 360);
+            this.desc6.Multiline = true;
+            this.desc6.Name = "desc6";
+            this.desc6.Size = new System.Drawing.Size(245, 46);
+            this.desc6.TabIndex = 127;
             // 
-            // textBox113
+            // sec6
             // 
-            this.textBox113.Location = new System.Drawing.Point(136, 360);
-            this.textBox113.Multiline = true;
-            this.textBox113.Name = "textBox113";
-            this.textBox113.Size = new System.Drawing.Size(81, 46);
-            this.textBox113.TabIndex = 126;
+            this.sec6.Location = new System.Drawing.Point(136, 360);
+            this.sec6.Multiline = true;
+            this.sec6.Name = "sec6";
+            this.sec6.Size = new System.Drawing.Size(81, 46);
+            this.sec6.TabIndex = 126;
             // 
-            // textBox114
+            // cc6
             // 
-            this.textBox114.Location = new System.Drawing.Point(54, 361);
-            this.textBox114.Multiline = true;
-            this.textBox114.Name = "textBox114";
-            this.textBox114.Size = new System.Drawing.Size(72, 46);
-            this.textBox114.TabIndex = 125;
+            this.cc6.Location = new System.Drawing.Point(54, 361);
+            this.cc6.Multiline = true;
+            this.cc6.Name = "cc6";
+            this.cc6.Size = new System.Drawing.Size(72, 46);
+            this.cc6.TabIndex = 125;
             // 
             // textBox115
             // 
@@ -1100,29 +1253,29 @@
             this.textBox124.Text = "6";
             this.textBox124.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox87
+            // room5
             // 
-            this.textBox87.Location = new System.Drawing.Point(945, 302);
-            this.textBox87.Multiline = true;
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(143, 46);
-            this.textBox87.TabIndex = 114;
+            this.room5.Location = new System.Drawing.Point(945, 302);
+            this.room5.Multiline = true;
+            this.room5.Name = "room5";
+            this.room5.Size = new System.Drawing.Size(143, 46);
+            this.room5.TabIndex = 114;
             // 
-            // textBox88
+            // day5
             // 
-            this.textBox88.Location = new System.Drawing.Point(867, 302);
-            this.textBox88.Multiline = true;
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(72, 46);
-            this.textBox88.TabIndex = 113;
+            this.day5.Location = new System.Drawing.Point(867, 302);
+            this.day5.Multiline = true;
+            this.day5.Name = "day5";
+            this.day5.Size = new System.Drawing.Size(72, 46);
+            this.day5.TabIndex = 113;
             // 
-            // textBox89
+            // time5
             // 
-            this.textBox89.Location = new System.Drawing.Point(732, 302);
-            this.textBox89.Multiline = true;
-            this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(122, 46);
-            this.textBox89.TabIndex = 112;
+            this.time5.Location = new System.Drawing.Point(732, 302);
+            this.time5.Multiline = true;
+            this.time5.Name = "time5";
+            this.time5.Size = new System.Drawing.Size(122, 46);
+            this.time5.TabIndex = 112;
             // 
             // cred5
             // 
@@ -1131,6 +1284,7 @@
             this.cred5.Name = "cred5";
             this.cred5.Size = new System.Drawing.Size(74, 46);
             this.cred5.TabIndex = 111;
+            this.cred5.TextChanged += new System.EventHandler(this.cred5_TextChanged);
             // 
             // lab5
             // 
@@ -1139,6 +1293,7 @@
             this.lab5.Name = "lab5";
             this.lab5.Size = new System.Drawing.Size(72, 46);
             this.lab5.TabIndex = 110;
+            this.lab5.TextChanged += new System.EventHandler(this.lab5_TextChanged);
             // 
             // lec5
             // 
@@ -1147,30 +1302,31 @@
             this.lec5.Name = "lec5";
             this.lec5.Size = new System.Drawing.Size(72, 46);
             this.lec5.TabIndex = 109;
+            this.lec5.TextChanged += new System.EventHandler(this.lec5_TextChanged);
             // 
-            // textBox93
+            // desc5
             // 
-            this.textBox93.Location = new System.Drawing.Point(229, 302);
-            this.textBox93.Multiline = true;
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(245, 46);
-            this.textBox93.TabIndex = 108;
+            this.desc5.Location = new System.Drawing.Point(229, 302);
+            this.desc5.Multiline = true;
+            this.desc5.Name = "desc5";
+            this.desc5.Size = new System.Drawing.Size(245, 46);
+            this.desc5.TabIndex = 108;
             // 
-            // textBox94
+            // sec5
             // 
-            this.textBox94.Location = new System.Drawing.Point(136, 302);
-            this.textBox94.Multiline = true;
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(81, 46);
-            this.textBox94.TabIndex = 107;
+            this.sec5.Location = new System.Drawing.Point(136, 302);
+            this.sec5.Multiline = true;
+            this.sec5.Name = "sec5";
+            this.sec5.Size = new System.Drawing.Size(81, 46);
+            this.sec5.TabIndex = 107;
             // 
-            // textBox95
+            // cc5
             // 
-            this.textBox95.Location = new System.Drawing.Point(54, 303);
-            this.textBox95.Multiline = true;
-            this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(72, 46);
-            this.textBox95.TabIndex = 106;
+            this.cc5.Location = new System.Drawing.Point(54, 303);
+            this.cc5.Multiline = true;
+            this.cc5.Name = "cc5";
+            this.cc5.Size = new System.Drawing.Size(72, 46);
+            this.cc5.TabIndex = 106;
             // 
             // textBox96
             // 
@@ -1254,29 +1410,29 @@
             this.textBox105.Text = "5";
             this.textBox105.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox68
+            // room4
             // 
-            this.textBox68.Location = new System.Drawing.Point(945, 244);
-            this.textBox68.Multiline = true;
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(143, 46);
-            this.textBox68.TabIndex = 95;
+            this.room4.Location = new System.Drawing.Point(945, 244);
+            this.room4.Multiline = true;
+            this.room4.Name = "room4";
+            this.room4.Size = new System.Drawing.Size(143, 46);
+            this.room4.TabIndex = 95;
             // 
-            // textBox69
+            // day4
             // 
-            this.textBox69.Location = new System.Drawing.Point(867, 244);
-            this.textBox69.Multiline = true;
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(72, 46);
-            this.textBox69.TabIndex = 94;
+            this.day4.Location = new System.Drawing.Point(867, 244);
+            this.day4.Multiline = true;
+            this.day4.Name = "day4";
+            this.day4.Size = new System.Drawing.Size(72, 46);
+            this.day4.TabIndex = 94;
             // 
-            // textBox70
+            // time4
             // 
-            this.textBox70.Location = new System.Drawing.Point(732, 244);
-            this.textBox70.Multiline = true;
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(122, 46);
-            this.textBox70.TabIndex = 93;
+            this.time4.Location = new System.Drawing.Point(732, 244);
+            this.time4.Multiline = true;
+            this.time4.Name = "time4";
+            this.time4.Size = new System.Drawing.Size(122, 46);
+            this.time4.TabIndex = 93;
             // 
             // cred4
             // 
@@ -1285,6 +1441,7 @@
             this.cred4.Name = "cred4";
             this.cred4.Size = new System.Drawing.Size(74, 46);
             this.cred4.TabIndex = 92;
+            this.cred4.TextChanged += new System.EventHandler(this.cred4_TextChanged);
             // 
             // lab4
             // 
@@ -1293,6 +1450,7 @@
             this.lab4.Name = "lab4";
             this.lab4.Size = new System.Drawing.Size(72, 46);
             this.lab4.TabIndex = 91;
+            this.lab4.TextChanged += new System.EventHandler(this.lab4_TextChanged);
             // 
             // lec4
             // 
@@ -1301,30 +1459,31 @@
             this.lec4.Name = "lec4";
             this.lec4.Size = new System.Drawing.Size(72, 46);
             this.lec4.TabIndex = 90;
+            this.lec4.TextChanged += new System.EventHandler(this.lec4_TextChanged);
             // 
-            // textBox74
+            // desc4
             // 
-            this.textBox74.Location = new System.Drawing.Point(229, 244);
-            this.textBox74.Multiline = true;
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(245, 46);
-            this.textBox74.TabIndex = 89;
+            this.desc4.Location = new System.Drawing.Point(229, 244);
+            this.desc4.Multiline = true;
+            this.desc4.Name = "desc4";
+            this.desc4.Size = new System.Drawing.Size(245, 46);
+            this.desc4.TabIndex = 89;
             // 
-            // textBox75
+            // sec4
             // 
-            this.textBox75.Location = new System.Drawing.Point(136, 244);
-            this.textBox75.Multiline = true;
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(81, 46);
-            this.textBox75.TabIndex = 88;
+            this.sec4.Location = new System.Drawing.Point(136, 244);
+            this.sec4.Multiline = true;
+            this.sec4.Name = "sec4";
+            this.sec4.Size = new System.Drawing.Size(81, 46);
+            this.sec4.TabIndex = 88;
             // 
-            // textBox76
+            // cc4
             // 
-            this.textBox76.Location = new System.Drawing.Point(54, 245);
-            this.textBox76.Multiline = true;
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(72, 46);
-            this.textBox76.TabIndex = 87;
+            this.cc4.Location = new System.Drawing.Point(54, 245);
+            this.cc4.Multiline = true;
+            this.cc4.Name = "cc4";
+            this.cc4.Size = new System.Drawing.Size(72, 46);
+            this.cc4.TabIndex = 87;
             // 
             // textBox77
             // 
@@ -1408,29 +1567,30 @@
             this.textBox86.Text = "4";
             this.textBox86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox49
+            // room3
             // 
-            this.textBox49.Location = new System.Drawing.Point(945, 186);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(143, 46);
-            this.textBox49.TabIndex = 76;
+            this.room3.Location = new System.Drawing.Point(945, 186);
+            this.room3.Multiline = true;
+            this.room3.Name = "room3";
+            this.room3.Size = new System.Drawing.Size(143, 46);
+            this.room3.TabIndex = 76;
             // 
-            // textBox50
+            // day3
             // 
-            this.textBox50.Location = new System.Drawing.Point(867, 186);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(72, 46);
-            this.textBox50.TabIndex = 75;
+            this.day3.Location = new System.Drawing.Point(867, 186);
+            this.day3.Multiline = true;
+            this.day3.Name = "day3";
+            this.day3.Size = new System.Drawing.Size(72, 46);
+            this.day3.TabIndex = 75;
             // 
-            // textBox51
+            // time3
             // 
-            this.textBox51.Location = new System.Drawing.Point(732, 186);
-            this.textBox51.Multiline = true;
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(122, 46);
-            this.textBox51.TabIndex = 74;
+            this.time3.Location = new System.Drawing.Point(732, 186);
+            this.time3.Multiline = true;
+            this.time3.Name = "time3";
+            this.time3.Size = new System.Drawing.Size(122, 46);
+            this.time3.TabIndex = 74;
+            this.time3.TextChanged += new System.EventHandler(this.textBox51_TextChanged);
             // 
             // cred3
             // 
@@ -1439,6 +1599,7 @@
             this.cred3.Name = "cred3";
             this.cred3.Size = new System.Drawing.Size(74, 46);
             this.cred3.TabIndex = 73;
+            this.cred3.TextChanged += new System.EventHandler(this.cred3_TextChanged);
             // 
             // lab3
             // 
@@ -1447,6 +1608,7 @@
             this.lab3.Name = "lab3";
             this.lab3.Size = new System.Drawing.Size(72, 46);
             this.lab3.TabIndex = 72;
+            this.lab3.TextChanged += new System.EventHandler(this.lab3_TextChanged);
             // 
             // lec3
             // 
@@ -1455,30 +1617,31 @@
             this.lec3.Name = "lec3";
             this.lec3.Size = new System.Drawing.Size(72, 46);
             this.lec3.TabIndex = 71;
+            this.lec3.TextChanged += new System.EventHandler(this.lec3_TextChanged);
             // 
-            // textBox55
+            // desc3
             // 
-            this.textBox55.Location = new System.Drawing.Point(229, 186);
-            this.textBox55.Multiline = true;
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(245, 46);
-            this.textBox55.TabIndex = 70;
+            this.desc3.Location = new System.Drawing.Point(229, 186);
+            this.desc3.Multiline = true;
+            this.desc3.Name = "desc3";
+            this.desc3.Size = new System.Drawing.Size(245, 46);
+            this.desc3.TabIndex = 70;
             // 
-            // textBox56
+            // sec3
             // 
-            this.textBox56.Location = new System.Drawing.Point(136, 186);
-            this.textBox56.Multiline = true;
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(81, 46);
-            this.textBox56.TabIndex = 69;
+            this.sec3.Location = new System.Drawing.Point(136, 186);
+            this.sec3.Multiline = true;
+            this.sec3.Name = "sec3";
+            this.sec3.Size = new System.Drawing.Size(81, 46);
+            this.sec3.TabIndex = 69;
             // 
-            // textBox57
+            // cc3
             // 
-            this.textBox57.Location = new System.Drawing.Point(54, 187);
-            this.textBox57.Multiline = true;
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(72, 46);
-            this.textBox57.TabIndex = 68;
+            this.cc3.Location = new System.Drawing.Point(54, 187);
+            this.cc3.Multiline = true;
+            this.cc3.Name = "cc3";
+            this.cc3.Size = new System.Drawing.Size(72, 46);
+            this.cc3.TabIndex = 68;
             // 
             // textBox58
             // 
@@ -1562,29 +1725,29 @@
             this.textBox67.Text = "3";
             this.textBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // room2
             // 
-            this.textBox21.Location = new System.Drawing.Point(945, 128);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(143, 46);
-            this.textBox21.TabIndex = 57;
+            this.room2.Location = new System.Drawing.Point(945, 128);
+            this.room2.Multiline = true;
+            this.room2.Name = "room2";
+            this.room2.Size = new System.Drawing.Size(143, 46);
+            this.room2.TabIndex = 57;
             // 
-            // textBox22
+            // day2
             // 
-            this.textBox22.Location = new System.Drawing.Point(867, 128);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(72, 46);
-            this.textBox22.TabIndex = 56;
+            this.day2.Location = new System.Drawing.Point(867, 128);
+            this.day2.Multiline = true;
+            this.day2.Name = "day2";
+            this.day2.Size = new System.Drawing.Size(72, 46);
+            this.day2.TabIndex = 56;
             // 
-            // textBox23
+            // time2
             // 
-            this.textBox23.Location = new System.Drawing.Point(732, 128);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(122, 46);
-            this.textBox23.TabIndex = 55;
+            this.time2.Location = new System.Drawing.Point(732, 128);
+            this.time2.Multiline = true;
+            this.time2.Name = "time2";
+            this.time2.Size = new System.Drawing.Size(122, 46);
+            this.time2.TabIndex = 55;
             // 
             // cred2
             // 
@@ -1593,6 +1756,7 @@
             this.cred2.Name = "cred2";
             this.cred2.Size = new System.Drawing.Size(74, 46);
             this.cred2.TabIndex = 54;
+            this.cred2.TextChanged += new System.EventHandler(this.cred2_TextChanged);
             // 
             // lab2
             // 
@@ -1601,6 +1765,7 @@
             this.lab2.Name = "lab2";
             this.lab2.Size = new System.Drawing.Size(72, 46);
             this.lab2.TabIndex = 53;
+            this.lab2.TextChanged += new System.EventHandler(this.lab2_TextChanged);
             // 
             // lec2
             // 
@@ -1609,30 +1774,31 @@
             this.lec2.Name = "lec2";
             this.lec2.Size = new System.Drawing.Size(72, 46);
             this.lec2.TabIndex = 52;
+            this.lec2.TextChanged += new System.EventHandler(this.lec2_TextChanged);
             // 
-            // textBox27
+            // desc2
             // 
-            this.textBox27.Location = new System.Drawing.Point(229, 128);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(245, 46);
-            this.textBox27.TabIndex = 51;
+            this.desc2.Location = new System.Drawing.Point(229, 128);
+            this.desc2.Multiline = true;
+            this.desc2.Name = "desc2";
+            this.desc2.Size = new System.Drawing.Size(245, 46);
+            this.desc2.TabIndex = 51;
             // 
-            // textBox28
+            // sec2
             // 
-            this.textBox28.Location = new System.Drawing.Point(136, 128);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(81, 46);
-            this.textBox28.TabIndex = 50;
+            this.sec2.Location = new System.Drawing.Point(136, 128);
+            this.sec2.Multiline = true;
+            this.sec2.Name = "sec2";
+            this.sec2.Size = new System.Drawing.Size(81, 46);
+            this.sec2.TabIndex = 50;
             // 
-            // textBox29
+            // cc2
             // 
-            this.textBox29.Location = new System.Drawing.Point(54, 129);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(72, 46);
-            this.textBox29.TabIndex = 49;
+            this.cc2.Location = new System.Drawing.Point(54, 129);
+            this.cc2.Multiline = true;
+            this.cc2.Name = "cc2";
+            this.cc2.Size = new System.Drawing.Size(72, 46);
+            this.cc2.TabIndex = 49;
             // 
             // textBox30
             // 
@@ -1716,29 +1882,29 @@
             this.textBox48.Text = "2";
             this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox39
+            // room1
             // 
-            this.textBox39.Location = new System.Drawing.Point(945, 70);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(143, 46);
-            this.textBox39.TabIndex = 38;
+            this.room1.Location = new System.Drawing.Point(945, 70);
+            this.room1.Multiline = true;
+            this.room1.Name = "room1";
+            this.room1.Size = new System.Drawing.Size(143, 46);
+            this.room1.TabIndex = 38;
             // 
-            // textBox38
+            // day1
             // 
-            this.textBox38.Location = new System.Drawing.Point(867, 70);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(72, 46);
-            this.textBox38.TabIndex = 37;
+            this.day1.Location = new System.Drawing.Point(867, 70);
+            this.day1.Multiline = true;
+            this.day1.Name = "day1";
+            this.day1.Size = new System.Drawing.Size(72, 46);
+            this.day1.TabIndex = 37;
             // 
-            // textBox37
+            // time1
             // 
-            this.textBox37.Location = new System.Drawing.Point(732, 70);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(122, 46);
-            this.textBox37.TabIndex = 36;
+            this.time1.Location = new System.Drawing.Point(732, 70);
+            this.time1.Multiline = true;
+            this.time1.Name = "time1";
+            this.time1.Size = new System.Drawing.Size(122, 46);
+            this.time1.TabIndex = 36;
             // 
             // cred1
             // 
@@ -1747,6 +1913,7 @@
             this.cred1.Name = "cred1";
             this.cred1.Size = new System.Drawing.Size(74, 46);
             this.cred1.TabIndex = 35;
+            this.cred1.TextChanged += new System.EventHandler(this.cred1_TextChanged);
             // 
             // lab1
             // 
@@ -1755,6 +1922,7 @@
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(72, 46);
             this.lab1.TabIndex = 34;
+            this.lab1.TextChanged += new System.EventHandler(this.lab1_TextChanged);
             // 
             // lec1
             // 
@@ -1763,30 +1931,31 @@
             this.lec1.Name = "lec1";
             this.lec1.Size = new System.Drawing.Size(72, 46);
             this.lec1.TabIndex = 33;
+            this.lec1.TextChanged += new System.EventHandler(this.lec1_TextChanged);
             // 
-            // textBox33
+            // desc1
             // 
-            this.textBox33.Location = new System.Drawing.Point(229, 70);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(245, 46);
-            this.textBox33.TabIndex = 32;
+            this.desc1.Location = new System.Drawing.Point(229, 70);
+            this.desc1.Multiline = true;
+            this.desc1.Name = "desc1";
+            this.desc1.Size = new System.Drawing.Size(245, 46);
+            this.desc1.TabIndex = 32;
             // 
-            // textBox32
+            // sec1
             // 
-            this.textBox32.Location = new System.Drawing.Point(136, 70);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(81, 46);
-            this.textBox32.TabIndex = 31;
+            this.sec1.Location = new System.Drawing.Point(136, 70);
+            this.sec1.Multiline = true;
+            this.sec1.Name = "sec1";
+            this.sec1.Size = new System.Drawing.Size(81, 46);
+            this.sec1.TabIndex = 31;
             // 
-            // textBox31
+            // cc1
             // 
-            this.textBox31.Location = new System.Drawing.Point(54, 71);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(72, 46);
-            this.textBox31.TabIndex = 30;
+            this.cc1.Location = new System.Drawing.Point(54, 71);
+            this.cc1.Multiline = true;
+            this.cc1.Name = "cc1";
+            this.cc1.Size = new System.Drawing.Size(72, 46);
+            this.cc1.TabIndex = 30;
             // 
             // textBox11
             // 
@@ -1961,6 +2130,14 @@
             this.textBox1.Text = "#";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBox144
+            // 
+            this.textBox144.Location = new System.Drawing.Point(644, 471);
+            this.textBox144.Multiline = true;
+            this.textBox144.Name = "textBox144";
+            this.textBox144.Size = new System.Drawing.Size(82, 35);
+            this.textBox144.TabIndex = 153;
+            // 
             // mode
             // 
             this.mode.FormattingEnabled = true;
@@ -1987,172 +2164,19 @@
             this.yrlvl.Size = new System.Drawing.Size(252, 24);
             this.yrlvl.TabIndex = 25;
             // 
-            // total_tui_feetxt
-            // 
-            this.total_tui_feetxt.Location = new System.Drawing.Point(331, 21);
-            this.total_tui_feetxt.Name = "total_tui_feetxt";
-            this.total_tui_feetxt.Size = new System.Drawing.Size(281, 22);
-            this.total_tui_feetxt.TabIndex = 7;
-            // 
-            // modepaytxt
-            // 
-            this.modepaytxt.Location = new System.Drawing.Point(331, 59);
-            this.modepaytxt.Name = "modepaytxt";
-            this.modepaytxt.Size = new System.Drawing.Size(281, 22);
-            this.modepaytxt.TabIndex = 8;
-            // 
-            // instchartxt
-            // 
-            this.instchartxt.Location = new System.Drawing.Point(331, 91);
-            this.instchartxt.Name = "instchartxt";
-            this.instchartxt.Size = new System.Drawing.Size(281, 22);
-            this.instchartxt.TabIndex = 9;
-            // 
-            // dwnpaytxt
-            // 
-            this.dwnpaytxt.Location = new System.Drawing.Point(331, 122);
-            this.dwnpaytxt.Name = "dwnpaytxt";
-            this.dwnpaytxt.Size = new System.Drawing.Size(281, 22);
-            this.dwnpaytxt.TabIndex = 10;
-            // 
-            // firstinstxt
-            // 
-            this.firstinstxt.Location = new System.Drawing.Point(331, 151);
-            this.firstinstxt.Name = "firstinstxt";
-            this.firstinstxt.Size = new System.Drawing.Size(281, 22);
-            this.firstinstxt.TabIndex = 11;
-            // 
-            // secondinstxt
-            // 
-            this.secondinstxt.Location = new System.Drawing.Point(331, 178);
-            this.secondinstxt.Name = "secondinstxt";
-            this.secondinstxt.Size = new System.Drawing.Size(281, 22);
-            this.secondinstxt.TabIndex = 12;
-            // 
-            // thirdinstxt
-            // 
-            this.thirdinstxt.Location = new System.Drawing.Point(331, 207);
-            this.thirdinstxt.Name = "thirdinstxt";
-            this.thirdinstxt.Size = new System.Drawing.Size(281, 22);
-            this.thirdinstxt.TabIndex = 13;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.discounttxt);
-            this.groupBox6.Controls.Add(this.grand_totaltxt);
-            this.groupBox6.Controls.Add(this.amount_duetxt);
-            this.groupBox6.Controls.Add(this.label21);
-            this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Controls.Add(this.label19);
-            this.groupBox6.Location = new System.Drawing.Point(468, 889);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(659, 124);
-            this.groupBox6.TabIndex = 34;
-            this.groupBox6.TabStop = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(133, 20);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(147, 22);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "AMOUNT DUE:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(123, 52);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(157, 22);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "GRAND TOTAL:";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(199, 85);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(81, 20);
-            this.label21.TabIndex = 14;
-            this.label21.Text = "Discount:";
-            // 
-            // amount_duetxt
-            // 
-            this.amount_duetxt.Location = new System.Drawing.Point(347, 20);
-            this.amount_duetxt.Name = "amount_duetxt";
-            this.amount_duetxt.Size = new System.Drawing.Size(281, 22);
-            this.amount_duetxt.TabIndex = 14;
-            // 
-            // grand_totaltxt
-            // 
-            this.grand_totaltxt.Location = new System.Drawing.Point(347, 52);
-            this.grand_totaltxt.Name = "grand_totaltxt";
-            this.grand_totaltxt.Size = new System.Drawing.Size(281, 22);
-            this.grand_totaltxt.TabIndex = 14;
-            // 
-            // discounttxt
-            // 
-            this.discounttxt.Location = new System.Drawing.Point(347, 85);
-            this.discounttxt.Name = "discounttxt";
-            this.discounttxt.Size = new System.Drawing.Size(281, 22);
-            this.discounttxt.TabIndex = 16;
-            // 
-            // computebtn
-            // 
-            this.computebtn.Location = new System.Drawing.Point(46, 895);
-            this.computebtn.Name = "computebtn";
-            this.computebtn.Size = new System.Drawing.Size(157, 54);
-            this.computebtn.TabIndex = 17;
-            this.computebtn.Text = "COMPUTE FEES";
-            this.computebtn.UseVisualStyleBackColor = true;
-            this.computebtn.Click += new System.EventHandler(this.computebtn_Click);
-            // 
-            // exitbtn
-            // 
-            this.exitbtn.Location = new System.Drawing.Point(46, 948);
-            this.exitbtn.Name = "exitbtn";
-            this.exitbtn.Size = new System.Drawing.Size(157, 54);
-            this.exitbtn.TabIndex = 35;
-            this.exitbtn.Text = "EXIT";
-            this.exitbtn.UseVisualStyleBackColor = true;
-            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
-            // 
-            // clstudinfobtn
-            // 
-            this.clstudinfobtn.Location = new System.Drawing.Point(209, 895);
-            this.clstudinfobtn.Name = "clstudinfobtn";
-            this.clstudinfobtn.Size = new System.Drawing.Size(215, 54);
-            this.clstudinfobtn.TabIndex = 36;
-            this.clstudinfobtn.Text = "CLEAR STUDENT\r\nINFORMATION";
-            this.clstudinfobtn.UseVisualStyleBackColor = true;
-            this.clstudinfobtn.Click += new System.EventHandler(this.clstudinfobtn_Click);
-            // 
-            // clschcourbtn
-            // 
-            this.clschcourbtn.Location = new System.Drawing.Point(209, 948);
-            this.clschcourbtn.Name = "clschcourbtn";
-            this.clschcourbtn.Size = new System.Drawing.Size(215, 54);
-            this.clschcourbtn.TabIndex = 37;
-            this.clschcourbtn.Text = "CLEAR SCHEDULE OF\r\nCOURSES";
-            this.clschcourbtn.UseVisualStyleBackColor = true;
-            this.clschcourbtn.Click += new System.EventHandler(this.clschcourbtn_Click);
-            // 
             // Lesson3Activity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1894, 1055);
+            this.ClientSize = new System.Drawing.Size(1175, 1055);
             this.Controls.Add(this.groupBox1);
             this.Name = "Lesson3Activity";
             this.Text = "LESSON ACTIVITY";
             this.Load += new System.EventHandler(this.Lesson3Activity_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -2161,8 +2185,6 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2193,15 +2215,15 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox room1;
+        private System.Windows.Forms.TextBox day1;
+        private System.Windows.Forms.TextBox time1;
         private System.Windows.Forms.TextBox cred1;
         private System.Windows.Forms.TextBox lab1;
         private System.Windows.Forms.TextBox lec1;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox desc1;
+        private System.Windows.Forms.TextBox sec1;
+        private System.Windows.Forms.TextBox cc1;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
@@ -2212,18 +2234,17 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label8;
-        //private System.Windows.Forms.TextBox total_credunits;
+        private System.Windows.Forms.Label label8;   
         private System.Windows.Forms.TextBox textBox144;
-        private System.Windows.Forms.TextBox textBox125;
-        private System.Windows.Forms.TextBox textBox126;
-        private System.Windows.Forms.TextBox textBox127;
+        private System.Windows.Forms.TextBox room7;
+        private System.Windows.Forms.TextBox day7;
+        private System.Windows.Forms.TextBox time7;
         private System.Windows.Forms.TextBox cred7;
         private System.Windows.Forms.TextBox lab7;
         private System.Windows.Forms.TextBox lec7;
-        private System.Windows.Forms.TextBox textBox131;
-        private System.Windows.Forms.TextBox textBox132;
-        private System.Windows.Forms.TextBox textBox133;
+        private System.Windows.Forms.TextBox desc7;
+        private System.Windows.Forms.TextBox sec7;
+        private System.Windows.Forms.TextBox cc7;
         private System.Windows.Forms.TextBox textBox134;
         private System.Windows.Forms.TextBox textBox135;
         private System.Windows.Forms.TextBox textBox136;
@@ -2234,15 +2255,15 @@
         private System.Windows.Forms.TextBox textBox141;
         private System.Windows.Forms.TextBox textBox142;
         private System.Windows.Forms.TextBox textBox143;
-        private System.Windows.Forms.TextBox textBox106;
-        private System.Windows.Forms.TextBox textBox107;
-        private System.Windows.Forms.TextBox textBox108;
+        private System.Windows.Forms.TextBox room6;
+        private System.Windows.Forms.TextBox day6;
+        private System.Windows.Forms.TextBox time6;
         private System.Windows.Forms.TextBox cred6;
         private System.Windows.Forms.TextBox lab6;
         private System.Windows.Forms.TextBox lec6;
-        private System.Windows.Forms.TextBox textBox112;
-        private System.Windows.Forms.TextBox textBox113;
-        private System.Windows.Forms.TextBox textBox114;
+        private System.Windows.Forms.TextBox desc6;
+        private System.Windows.Forms.TextBox sec6;
+        private System.Windows.Forms.TextBox cc6;
         private System.Windows.Forms.TextBox textBox115;
         private System.Windows.Forms.TextBox textBox116;
         private System.Windows.Forms.TextBox textBox117;
@@ -2253,15 +2274,15 @@
         private System.Windows.Forms.TextBox textBox122;
         private System.Windows.Forms.TextBox textBox123;
         private System.Windows.Forms.TextBox textBox124;
-        private System.Windows.Forms.TextBox textBox87;
-        private System.Windows.Forms.TextBox textBox88;
-        private System.Windows.Forms.TextBox textBox89;
+        private System.Windows.Forms.TextBox room5;
+        private System.Windows.Forms.TextBox day5;
+        private System.Windows.Forms.TextBox time5;
         private System.Windows.Forms.TextBox cred5;
         private System.Windows.Forms.TextBox lab5;
         private System.Windows.Forms.TextBox lec5;
-        private System.Windows.Forms.TextBox textBox93;
-        private System.Windows.Forms.TextBox textBox94;
-        private System.Windows.Forms.TextBox textBox95;
+        private System.Windows.Forms.TextBox desc5;
+        private System.Windows.Forms.TextBox sec5;
+        private System.Windows.Forms.TextBox cc5;
         private System.Windows.Forms.TextBox textBox96;
         private System.Windows.Forms.TextBox textBox97;
         private System.Windows.Forms.TextBox textBox98;
@@ -2272,15 +2293,15 @@
         private System.Windows.Forms.TextBox textBox103;
         private System.Windows.Forms.TextBox textBox104;
         private System.Windows.Forms.TextBox textBox105;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.TextBox textBox70;
+        private System.Windows.Forms.TextBox room4;
+        private System.Windows.Forms.TextBox day4;
+        private System.Windows.Forms.TextBox time4;
         private System.Windows.Forms.TextBox cred4;
         private System.Windows.Forms.TextBox lab4;
         private System.Windows.Forms.TextBox lec4;
-        private System.Windows.Forms.TextBox textBox74;
-        private System.Windows.Forms.TextBox textBox75;
-        private System.Windows.Forms.TextBox textBox76;
+        private System.Windows.Forms.TextBox desc4;
+        private System.Windows.Forms.TextBox sec4;
+        private System.Windows.Forms.TextBox cc4;
         private System.Windows.Forms.TextBox textBox77;
         private System.Windows.Forms.TextBox textBox78;
         private System.Windows.Forms.TextBox textBox79;
@@ -2291,15 +2312,15 @@
         private System.Windows.Forms.TextBox textBox84;
         private System.Windows.Forms.TextBox textBox85;
         private System.Windows.Forms.TextBox textBox86;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox room3;
+        private System.Windows.Forms.TextBox day3;
+        private System.Windows.Forms.TextBox time3;
         private System.Windows.Forms.TextBox cred3;
         private System.Windows.Forms.TextBox lab3;
         private System.Windows.Forms.TextBox lec3;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
+        private System.Windows.Forms.TextBox desc3;
+        private System.Windows.Forms.TextBox sec3;
+        private System.Windows.Forms.TextBox cc3;
         private System.Windows.Forms.TextBox textBox58;
         private System.Windows.Forms.TextBox textBox59;
         private System.Windows.Forms.TextBox textBox60;
@@ -2310,15 +2331,15 @@
         private System.Windows.Forms.TextBox textBox65;
         private System.Windows.Forms.TextBox textBox66;
         private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox room2;
+        private System.Windows.Forms.TextBox day2;
+        private System.Windows.Forms.TextBox time2;
         private System.Windows.Forms.TextBox cred2;
         private System.Windows.Forms.TextBox lab2;
         private System.Windows.Forms.TextBox lec2;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox desc2;
+        private System.Windows.Forms.TextBox sec2;
+        private System.Windows.Forms.TextBox cc2;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.TextBox textBox40;
         private System.Windows.Forms.TextBox textBox41;
@@ -2372,5 +2393,6 @@
         private System.Windows.Forms.Button clschcourbtn;
         private System.Windows.Forms.Button clstudinfobtn;
         private System.Windows.Forms.Button exitbtn;
+        private System.Windows.Forms.TextBox total_crunits;
     }
 }
