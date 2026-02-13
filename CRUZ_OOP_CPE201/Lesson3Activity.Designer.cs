@@ -331,6 +331,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.date_enroll);
             this.groupBox1.Controls.Add(this.studnotxtbox);
             this.groupBox1.Controls.Add(this.studnametxtbox);
             this.groupBox1.Controls.Add(this.clschcourbtn);
@@ -351,7 +352,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.date_enroll);
             this.groupBox1.Controls.Add(this.progChoice);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -532,6 +532,7 @@
             // 
             // total_tui_feetxt
             // 
+            this.total_tui_feetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_tui_feetxt.Location = new System.Drawing.Point(331, 21);
             this.total_tui_feetxt.Name = "total_tui_feetxt";
             this.total_tui_feetxt.Size = new System.Drawing.Size(281, 22);
@@ -636,6 +637,7 @@
             // 
             // exambooktxt
             // 
+            this.exambooktxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exambooktxt.Location = new System.Drawing.Point(229, 103);
             this.exambooktxt.Name = "exambooktxt";
             this.exambooktxt.Size = new System.Drawing.Size(211, 22);
@@ -653,6 +655,7 @@
             // 
             // ciscolabtxt
             // 
+            this.ciscolabtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ciscolabtxt.Location = new System.Drawing.Point(229, 75);
             this.ciscolabtxt.Name = "ciscolabtxt";
             this.ciscolabtxt.Size = new System.Drawing.Size(211, 22);
@@ -660,6 +663,7 @@
             // 
             // comlabfeetxt
             // 
+            this.comlabfeetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comlabfeetxt.Location = new System.Drawing.Point(229, 19);
             this.comlabfeetxt.Name = "comlabfeetxt";
             this.comlabfeetxt.Size = new System.Drawing.Size(211, 22);
@@ -667,6 +671,7 @@
             // 
             // sapfeetxt
             // 
+            this.sapfeetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sapfeetxt.Location = new System.Drawing.Point(229, 47);
             this.sapfeetxt.Name = "sapfeetxt";
             this.sapfeetxt.Size = new System.Drawing.Size(211, 22);
@@ -726,6 +731,7 @@
             // 
             // misctxt
             // 
+            this.misctxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.misctxt.Location = new System.Drawing.Point(203, 44);
             this.misctxt.Name = "misctxt";
             this.misctxt.Size = new System.Drawing.Size(226, 22);
@@ -733,6 +739,7 @@
             // 
             // total_tuitiontxt
             // 
+            this.total_tuitiontxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_tuitiontxt.Location = new System.Drawing.Point(203, 16);
             this.total_tuitiontxt.Name = "total_tuitiontxt";
             this.total_tuitiontxt.Size = new System.Drawing.Size(226, 22);
@@ -924,11 +931,14 @@
             // 
             // total_crunits
             // 
+            this.total_crunits.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_crunits.Location = new System.Drawing.Point(648, 476);
             this.total_crunits.Multiline = true;
             this.total_crunits.Name = "total_crunits";
             this.total_crunits.Size = new System.Drawing.Size(74, 24);
             this.total_crunits.TabIndex = 156;
+            this.total_crunits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.total_crunits.TextChanged += new System.EventHandler(this.total_crunits_TextChanged);
             // 
             // label8
             // 
@@ -970,6 +980,7 @@
             this.cred7.Name = "cred7";
             this.cred7.Size = new System.Drawing.Size(74, 46);
             this.cred7.TabIndex = 149;
+            this.cred7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred7.TextChanged += new System.EventHandler(this.cred7_TextChanged);
             // 
             // lab7
@@ -979,6 +990,7 @@
             this.lab7.Name = "lab7";
             this.lab7.Size = new System.Drawing.Size(72, 46);
             this.lab7.TabIndex = 148;
+            this.lab7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab7.TextChanged += new System.EventHandler(this.lab7_TextChanged);
             // 
             // lec7
@@ -988,6 +1000,7 @@
             this.lec7.Name = "lec7";
             this.lec7.Size = new System.Drawing.Size(72, 46);
             this.lec7.TabIndex = 147;
+            this.lec7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec7.TextChanged += new System.EventHandler(this.lec7_TextChanged);
             // 
             // desc7
@@ -1127,6 +1140,7 @@
             this.cred6.Name = "cred6";
             this.cred6.Size = new System.Drawing.Size(74, 46);
             this.cred6.TabIndex = 130;
+            this.cred6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred6.TextChanged += new System.EventHandler(this.cred6_TextChanged);
             // 
             // lab6
@@ -1136,6 +1150,7 @@
             this.lab6.Name = "lab6";
             this.lab6.Size = new System.Drawing.Size(72, 46);
             this.lab6.TabIndex = 129;
+            this.lab6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab6.TextChanged += new System.EventHandler(this.lab6_TextChanged);
             // 
             // lec6
@@ -1145,6 +1160,7 @@
             this.lec6.Name = "lec6";
             this.lec6.Size = new System.Drawing.Size(72, 46);
             this.lec6.TabIndex = 128;
+            this.lec6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec6.TextChanged += new System.EventHandler(this.lec6_TextChanged);
             // 
             // desc6
@@ -1284,6 +1300,7 @@
             this.cred5.Name = "cred5";
             this.cred5.Size = new System.Drawing.Size(74, 46);
             this.cred5.TabIndex = 111;
+            this.cred5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred5.TextChanged += new System.EventHandler(this.cred5_TextChanged);
             // 
             // lab5
@@ -1293,6 +1310,7 @@
             this.lab5.Name = "lab5";
             this.lab5.Size = new System.Drawing.Size(72, 46);
             this.lab5.TabIndex = 110;
+            this.lab5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab5.TextChanged += new System.EventHandler(this.lab5_TextChanged);
             // 
             // lec5
@@ -1302,6 +1320,7 @@
             this.lec5.Name = "lec5";
             this.lec5.Size = new System.Drawing.Size(72, 46);
             this.lec5.TabIndex = 109;
+            this.lec5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec5.TextChanged += new System.EventHandler(this.lec5_TextChanged);
             // 
             // desc5
@@ -1441,6 +1460,7 @@
             this.cred4.Name = "cred4";
             this.cred4.Size = new System.Drawing.Size(74, 46);
             this.cred4.TabIndex = 92;
+            this.cred4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred4.TextChanged += new System.EventHandler(this.cred4_TextChanged);
             // 
             // lab4
@@ -1450,6 +1470,7 @@
             this.lab4.Name = "lab4";
             this.lab4.Size = new System.Drawing.Size(72, 46);
             this.lab4.TabIndex = 91;
+            this.lab4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab4.TextChanged += new System.EventHandler(this.lab4_TextChanged);
             // 
             // lec4
@@ -1459,6 +1480,7 @@
             this.lec4.Name = "lec4";
             this.lec4.Size = new System.Drawing.Size(72, 46);
             this.lec4.TabIndex = 90;
+            this.lec4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec4.TextChanged += new System.EventHandler(this.lec4_TextChanged);
             // 
             // desc4
@@ -1599,6 +1621,7 @@
             this.cred3.Name = "cred3";
             this.cred3.Size = new System.Drawing.Size(74, 46);
             this.cred3.TabIndex = 73;
+            this.cred3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred3.TextChanged += new System.EventHandler(this.cred3_TextChanged);
             // 
             // lab3
@@ -1608,6 +1631,7 @@
             this.lab3.Name = "lab3";
             this.lab3.Size = new System.Drawing.Size(72, 46);
             this.lab3.TabIndex = 72;
+            this.lab3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab3.TextChanged += new System.EventHandler(this.lab3_TextChanged);
             // 
             // lec3
@@ -1617,6 +1641,7 @@
             this.lec3.Name = "lec3";
             this.lec3.Size = new System.Drawing.Size(72, 46);
             this.lec3.TabIndex = 71;
+            this.lec3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec3.TextChanged += new System.EventHandler(this.lec3_TextChanged);
             // 
             // desc3
@@ -1756,6 +1781,7 @@
             this.cred2.Name = "cred2";
             this.cred2.Size = new System.Drawing.Size(74, 46);
             this.cred2.TabIndex = 54;
+            this.cred2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred2.TextChanged += new System.EventHandler(this.cred2_TextChanged);
             // 
             // lab2
@@ -1765,6 +1791,7 @@
             this.lab2.Name = "lab2";
             this.lab2.Size = new System.Drawing.Size(72, 46);
             this.lab2.TabIndex = 53;
+            this.lab2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab2.TextChanged += new System.EventHandler(this.lab2_TextChanged);
             // 
             // lec2
@@ -1774,6 +1801,7 @@
             this.lec2.Name = "lec2";
             this.lec2.Size = new System.Drawing.Size(72, 46);
             this.lec2.TabIndex = 52;
+            this.lec2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec2.TextChanged += new System.EventHandler(this.lec2_TextChanged);
             // 
             // desc2
@@ -1913,6 +1941,7 @@
             this.cred1.Name = "cred1";
             this.cred1.Size = new System.Drawing.Size(74, 46);
             this.cred1.TabIndex = 35;
+            this.cred1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cred1.TextChanged += new System.EventHandler(this.cred1_TextChanged);
             // 
             // lab1
@@ -1922,6 +1951,7 @@
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(72, 46);
             this.lab1.TabIndex = 34;
+            this.lab1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lab1.TextChanged += new System.EventHandler(this.lab1_TextChanged);
             // 
             // lec1
@@ -1931,6 +1961,7 @@
             this.lec1.Name = "lec1";
             this.lec1.Size = new System.Drawing.Size(72, 46);
             this.lec1.TabIndex = 33;
+            this.lec1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lec1.TextChanged += new System.EventHandler(this.lec1_TextChanged);
             // 
             // desc1

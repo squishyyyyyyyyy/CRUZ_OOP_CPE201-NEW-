@@ -36,11 +36,11 @@ namespace CRUZ_OOP_CPE201
 
         private void Lesson3Activity_Load(object sender, EventArgs e)
         {
-            progChoice.Items.Add("BS in Aeronautical Engineering");
-            progChoice.Items.Add("BS in Civil Engineering");
+            // no.2 a
+            progChoice.Items.Add("BS in Information Technology");
+            progChoice.Items.Add("BS in Computer Science");
             progChoice.Items.Add("BS in Computer Engineering");
-            progChoice.Items.Add("BS in Electrical Engineering");
-            progChoice.Items.Add("BS in Electronics Engineering");
+            progChoice.Items.Add("BS in Electrical Engineering");  
             progChoice.Items.Add("BS in Industrial Engineering");
             progChoice.Items.Add("BS in Mechanical Engineering");
 
@@ -49,6 +49,7 @@ namespace CRUZ_OOP_CPE201
             yrlvl.Items.Add("3rd Year");
             yrlvl.Items.Add("4th Year");
 
+            // m
             mode.Items.Add("Installment");
             modepaytxt.Text = "Installment";
             instchartxt.Text = "8000";
@@ -58,15 +59,42 @@ namespace CRUZ_OOP_CPE201
             ciscolabtxt.Text = ciscolabfee.ToString();
             exambooktxt.Text = exambookfee.ToString();
 
+            //CRED
+            cred1.Enabled = false;
+            cred2.Enabled = false;
+            cred3.Enabled = false;
+            cred4.Enabled = false;
+            cred5.Enabled = false;
+            cred6.Enabled = false;
+            cred7.Enabled = false;
+            total_crunits.Enabled = false;
         }
 
         private void computebtn_Click(object sender, EventArgs e)
         {
-            double total_lecunits = Convert.ToInt32(lec1.Text) + Convert.ToInt32(lec2.Text) + Convert.ToInt32(lec3.Text) + Convert.ToInt32(lec4.Text) + Convert.ToInt32(lec5.Text) + Convert.ToInt32(lec6.Text) + Convert.ToInt32(lec7.Text);
+            // i total tuition
+            double lec_ut1 = Convert.ToInt32(lec1.Text);
+            double lec_ut2 = Convert.ToInt32(lec2.Text);
+            double lec_ut3 = Convert.ToInt32(lec3.Text);
+            double lec_ut4 = Convert.ToInt32(lec4.Text);
+            double lec_ut5 = Convert.ToInt32(lec5.Text);
+            double lec_ut6 = Convert.ToInt32(lec6.Text);
+            double lec_ut7 = Convert.ToInt32(lec7.Text);
+            
+            double total_lecunits = lec_ut1 + lec_ut2 + lec_ut3 + lec_ut4 + lec_ut5 + lec_ut6 + lec_ut7;
             double total_tuition = Convert.ToInt32(total_crunits.Text) * 1500;
             total_tuitiontxt.Text = total_tuition.ToString();
 
-            double total_labunits = Convert.ToInt32(lab1.Text) + Convert.ToInt32(lab2.Text) + Convert.ToInt32(lab3.Text) + Convert.ToInt32(lab4.Text) + Convert.ToInt32(lab5.Text) + Convert.ToInt32(lab6.Text) + Convert.ToInt32(lab7.Text);
+            // j total miscellaneous
+            double lab_ut1 = Convert.ToInt32(lab1.Text);
+            double lab_ut2 = Convert.ToInt32(lab2.Text);
+            double lab_ut3 = Convert.ToInt32(lab3.Text);
+            double lab_ut4 = Convert.ToInt32(lab4.Text);
+            double lab_ut5 = Convert.ToInt32(lab5.Text);
+            double lab_ut6 = Convert.ToInt32(lab6.Text);
+            double lab_ut7 = Convert.ToInt32(lab7.Text);
+
+            double total_labunits = lab_ut1 + lab_ut2 + lab_ut3 + lab_ut4 + lab_ut5 + lab_ut6 + lab_ut7;
             comlabfee = 2500 * (total_labunits);
             comlabfeetxt.Text = comlabfee.ToString();
             double total_misc = comlabfee + sapfee + ciscolabfee + exambookfee;
@@ -74,15 +102,15 @@ namespace CRUZ_OOP_CPE201
             misctxt.Text = total_misc.ToString();
             total_othschtxt.Text = total_misc.ToString();
 
-            comlabfee = (Convert.ToDouble(lab1.Text) + Convert.ToDouble(lab2.Text) + Convert.ToDouble(lab3.Text) + Convert.ToDouble(lab4.Text) + Convert.ToDouble(lab5.Text) + Convert.ToDouble(lab6.Text) + Convert.ToDouble(lab7.Text)) * 2500;
+            comlabfee = (total_labunits) * 2500;
 
             double total_tuitandfees = total_tuition + total_misc;
             total_tui_feetxt.Text = total_tuitandfees.ToString();
 
             double instmnt_fee = (total_tuitandfees - 8000) / 3;
-            firstinstxt.Text = instmnt_fee.ToString("C");
-            secondinstxt.Text = instmnt_fee.ToString("C");
-            thirdinstxt.Text = instmnt_fee.ToString("C");
+            firstinstxt.Text = instmnt_fee.ToString("N");
+            secondinstxt.Text = instmnt_fee.ToString("N");
+            thirdinstxt.Text = instmnt_fee.ToString("N");
         }
 
         private void exitbtn_Click(object sender, EventArgs e)
@@ -92,11 +120,13 @@ namespace CRUZ_OOP_CPE201
 
         private void clstudinfobtn_Click(object sender, EventArgs e)
         {
+            // no. 2 c
             studnametxtbox.Clear();
             studnotxtbox.Clear();
             progChoice.SelectedIndex = -1;
             yrlvl.SelectedIndex = -1;
             scholar.SelectedIndex = -1;
+            mode.SelectedIndex = -1;
         }
 
         private void clschcourbtn_Click(object sender, EventArgs e)
@@ -125,6 +155,7 @@ namespace CRUZ_OOP_CPE201
             desc6.Clear();
             desc7.Clear();
 
+            // no. 2 d
             lec1.Clear();
             lec2.Clear();
             lec3.Clear();
@@ -148,6 +179,7 @@ namespace CRUZ_OOP_CPE201
             cred5.Clear();
             cred6.Clear();
             cred7.Clear();
+            //
 
             time1.Clear();
             time2.Clear();
@@ -179,16 +211,21 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec1.Text != "" && lab1.Text != "")
             {
-                cred1.Text = (Convert.ToInt32(lec1.Text) + Convert.ToInt32(lab1.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec1.Text);
+                double tmp_labunit = Convert.ToInt32(lab1.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred1.Text = tmp_credunit.ToString();
             }
-                
         }
 
         private void lab1_TextChanged(object sender, EventArgs e)
         {
             if (lec1.Text != "" && lab1.Text != "")
             {
-                cred1.Text = (Convert.ToInt32(lec1.Text) + Convert.ToInt32(lab1.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec1.Text);
+                double tmp_labunit = Convert.ToInt32(lab1.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred1.Text = tmp_credunit.ToString();
             }
         }
 
@@ -196,7 +233,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec2.Text != "" && lab2.Text != "")
             {
-                cred2.Text = (Convert.ToInt32(lec2.Text) + Convert.ToInt32(lab2.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec2.Text);
+                double tmp_labunit = Convert.ToInt32(lab2.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred2.Text = tmp_credunit.ToString();
             }
         }
 
@@ -204,7 +244,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec2.Text != "" && lab2.Text != "")
             {
-                cred2.Text = (Convert.ToInt32(lec2.Text) + Convert.ToInt32(lab2.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec2.Text);
+                double tmp_labunit = Convert.ToInt32(lab2.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred2.Text = tmp_credunit.ToString();
             }
         }
 
@@ -212,7 +255,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec3.Text != "" && lab3.Text != "")
             {
-                cred3.Text = (Convert.ToInt32(lec3.Text) + Convert.ToInt32(lab3.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec3.Text);
+                double tmp_labunit = Convert.ToInt32(lab3.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred3.Text = tmp_credunit.ToString();
             }
         }
 
@@ -220,7 +266,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec3.Text != "" && lab3.Text != "")
             {
-                cred3.Text = (Convert.ToInt32(lec3.Text) + Convert.ToInt32(lab3.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec3.Text);
+                double tmp_labunit = Convert.ToInt32(lab3.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred3.Text = tmp_credunit.ToString();
             }
         }
 
@@ -228,7 +277,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec4.Text != "" && lab4.Text != "")
             {
-                cred4.Text = (Convert.ToInt32(lec4.Text) + Convert.ToInt32(lab4.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec4.Text);
+                double tmp_labunit = Convert.ToInt32(lab4.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred4.Text = tmp_credunit.ToString();
             }
         }
 
@@ -236,7 +288,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec4.Text != "" && lab4.Text != "")
             {
-                cred4.Text = (Convert.ToInt32(lec4.Text) + Convert.ToInt32(lab4.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec4.Text);
+                double tmp_labunit = Convert.ToInt32(lab4.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred4.Text = tmp_credunit.ToString();
             }
         }
 
@@ -244,7 +299,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec5.Text != "" && lab5.Text != "")
             {
-                cred5.Text = (Convert.ToInt32(lec5.Text) + Convert.ToInt32(lab5.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec5.Text);
+                double tmp_labunit = Convert.ToInt32(lab5.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred5.Text = tmp_credunit.ToString();
             }
         }
 
@@ -252,7 +310,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec5.Text != "" && lab5.Text != "")
             {
-                cred5.Text = (Convert.ToInt32(lec5.Text) + Convert.ToInt32(lab5.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec5.Text);
+                double tmp_labunit = Convert.ToInt32(lab5.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred5.Text = tmp_credunit.ToString();
             }
         }
 
@@ -260,7 +321,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec6.Text != "" && lab6.Text != "")
             {
-                cred6.Text = (Convert.ToInt32(lec6.Text) + Convert.ToInt32(lab6.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec6.Text);
+                double tmp_labunit = Convert.ToInt32(lab6.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred6.Text = tmp_credunit.ToString();
             }
         }
 
@@ -268,7 +332,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec6.Text != "" && lab6.Text != "")
             {
-                cred6.Text = (Convert.ToInt32(lec6.Text) + Convert.ToInt32(lab6.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec6.Text);
+                double tmp_labunit = Convert.ToInt32(lab6.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred6.Text = tmp_credunit.ToString();
             }
         }
 
@@ -276,7 +343,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec7.Text != "" && lab7.Text != "")
             {
-                cred7.Text = (Convert.ToInt32(lec7.Text) + Convert.ToInt32(lab7.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec7.Text);
+                double tmp_labunit = Convert.ToInt32(lab7.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred7.Text = tmp_credunit.ToString();
             }
         }
 
@@ -284,7 +354,10 @@ namespace CRUZ_OOP_CPE201
         {
             if (lec7.Text != "" && lab7.Text != "")
             {
-                cred7.Text = (Convert.ToInt32(lec7.Text) + Convert.ToInt32(lab7.Text)).ToString();
+                double tmp_lecunit = Convert.ToInt32(lec7.Text);
+                double tmp_labunit = Convert.ToInt32(lab7.Text);
+                double tmp_credunit = tmp_labunit + tmp_lecunit;
+                cred7.Text = tmp_credunit.ToString();
             }
         }
 
@@ -292,7 +365,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -300,7 +381,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -308,7 +397,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -316,7 +413,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -324,7 +429,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -332,7 +445,15 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
@@ -340,11 +461,24 @@ namespace CRUZ_OOP_CPE201
         {
             if (cred1.Text != "" && cred2.Text != "" && cred3.Text != "" && cred4.Text != "" && cred5.Text != "" && cred6.Text != "" && cred7.Text != "")
             {
-                total_crunits.Text = (Convert.ToInt32(cred1.Text) + Convert.ToInt32(cred2.Text) + Convert.ToInt32(cred3.Text) + Convert.ToInt32(cred4.Text) + Convert.ToInt32(cred5.Text) + Convert.ToInt32(cred6.Text) + Convert.ToInt32(cred7.Text)).ToString();
+                double tmp_cred1 = Convert.ToInt32(cred1.Text);
+                double tmp_cred2 = Convert.ToInt32(cred2.Text);
+                double tmp_cred3 = Convert.ToInt32(cred3.Text);
+                double tmp_cred4 = Convert.ToInt32(cred4.Text);
+                double tmp_cred5 = Convert.ToInt32(cred5.Text);
+                double tmp_cred6 = Convert.ToInt32(cred6.Text);
+                double tmp_cred7 = Convert.ToInt32(cred7.Text);
+                double tmp_credtotal = tmp_cred1 + tmp_cred2 + tmp_cred3 + tmp_cred4 + tmp_cred5 + tmp_cred6 + tmp_cred7;
+                total_crunits.Text = tmp_credtotal.ToString();
             }
         }
 
         private void textBox51_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void total_crunits_TextChanged(object sender, EventArgs e)
         {
 
         }
