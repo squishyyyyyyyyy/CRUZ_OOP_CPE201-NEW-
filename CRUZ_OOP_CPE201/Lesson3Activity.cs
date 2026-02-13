@@ -13,17 +13,6 @@ namespace CRUZ_OOP_CPE201
 {
     public partial class Lesson3Activity : Form
     {
-        int lecture_fee = 1500;
-        int lab_fee = 2500;
-        int cisco_fee = 4500;
-        int exambook_fee = 450;
-        int sap_fee = 2000;
-        decimal instmnt_charge = 0.5m;
-        double total_credunits = 0;
-        double total_tuitionfee = 0;
-        double total_miscfee = 0;
-        double comlab_fee = 0;
-        double total_tui_fee = 0;
 
         public Lesson3Activity()
         {
@@ -73,7 +62,27 @@ namespace CRUZ_OOP_CPE201
 
         private void computebtn_Click(object sender, EventArgs e)
         {
-            
+            double total_lecunits = Convert.ToInt32(lec1.Text) + Convert.ToInt32(lec2.Text) + Convert.ToInt32(lec3.Text) + Convert.ToInt32(lec4.Text) + Convert.ToInt32(lec5.Text) + Convert.ToInt32(lec6.Text) + Convert.ToInt32(lec7.Text);
+            double total_tuition = Convert.ToInt32(total_crunits.Text) * 1500;
+            total_tuitiontxt.Text = total_tuition.ToString();
+
+            double total_labunits = Convert.ToInt32(lab1.Text) + Convert.ToInt32(lab2.Text) + Convert.ToInt32(lab3.Text) + Convert.ToInt32(lab4.Text) + Convert.ToInt32(lab5.Text) + Convert.ToInt32(lab6.Text) + Convert.ToInt32(lab7.Text);
+            comlabfee = 2500 * (total_labunits);
+            comlabfeetxt.Text = comlabfee.ToString();
+            double total_misc = comlabfee + sapfee + ciscolabfee + exambookfee;
+
+            misctxt.Text = total_misc.ToString();
+            total_othschtxt.Text = total_misc.ToString();
+
+            comlabfee = (Convert.ToDouble(lab1.Text) + Convert.ToDouble(lab2.Text) + Convert.ToDouble(lab3.Text) + Convert.ToDouble(lab4.Text) + Convert.ToDouble(lab5.Text) + Convert.ToDouble(lab6.Text) + Convert.ToDouble(lab7.Text)) * 2500;
+
+            double total_tuitandfees = total_tuition + total_misc;
+            total_tui_feetxt.Text = total_tuitandfees.ToString();
+
+            double instmnt_fee = (total_tuitandfees - 8000) / 3;
+            firstinstxt.Text = instmnt_fee.ToString("C");
+            secondinstxt.Text = instmnt_fee.ToString("C");
+            thirdinstxt.Text = instmnt_fee.ToString("C");
         }
 
         private void exitbtn_Click(object sender, EventArgs e)
@@ -83,11 +92,86 @@ namespace CRUZ_OOP_CPE201
 
         private void clstudinfobtn_Click(object sender, EventArgs e)
         {
-
+            studnametxtbox.Clear();
+            studnotxtbox.Clear();
+            progChoice.SelectedIndex = -1;
+            yrlvl.SelectedIndex = -1;
+            scholar.SelectedIndex = -1;
         }
 
         private void clschcourbtn_Click(object sender, EventArgs e)
         {
+            cc1.Clear();
+            cc2.Clear();
+            cc3.Clear();
+            cc4.Clear();
+            cc5.Clear();
+            cc6.Clear();
+            cc7.Clear();
+
+            sec1.Clear();
+            sec2.Clear();
+            sec3.Clear();
+            sec4.Clear();
+            sec5.Clear();
+            sec6.Clear();
+            sec7.Clear();
+
+            desc1.Clear();
+            desc2.Clear();
+            desc3.Clear();
+            desc4.Clear();
+            desc5.Clear();
+            desc6.Clear();
+            desc7.Clear();
+
+            lec1.Clear();
+            lec2.Clear();
+            lec3.Clear();
+            lec4.Clear();
+            lec5.Clear();
+            lec6.Clear();
+            lec7.Clear();
+
+            lab1.Clear();
+            lab2.Clear();
+            lab3.Clear();
+            lab4.Clear();
+            lab5.Clear();
+            lab6.Clear();
+            lab7.Clear();
+
+            cred1.Clear();
+            cred2.Clear();
+            cred3.Clear();
+            cred4.Clear();
+            cred5.Clear();
+            cred6.Clear();
+            cred7.Clear();
+
+            time1.Clear();
+            time2.Clear();
+            time3.Clear();
+            time4.Clear();
+            time5.Clear();
+            time6.Clear();
+            time7.Clear();
+
+            day1.Clear();
+            day2.Clear();
+            day3.Clear();
+            day4.Clear();
+            day5.Clear();
+            day6.Clear();
+            day7.Clear();
+
+            room1.Clear();
+            room2.Clear();
+            room3.Clear();
+            room4.Clear();
+            room5.Clear();
+            room6.Clear();
+            room7.Clear();
 
         }
 

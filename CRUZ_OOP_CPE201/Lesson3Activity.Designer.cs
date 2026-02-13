@@ -331,6 +331,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.studnotxtbox);
+            this.groupBox1.Controls.Add(this.studnametxtbox);
             this.groupBox1.Controls.Add(this.clschcourbtn);
             this.groupBox1.Controls.Add(this.clstudinfobtn);
             this.groupBox1.Controls.Add(this.exitbtn);
@@ -346,12 +348,10 @@
             this.groupBox1.Controls.Add(this.yrlvl);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.studnametxtbox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.date_enroll);
-            this.groupBox1.Controls.Add(this.studnotxtbox);
             this.groupBox1.Controls.Add(this.progChoice);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
