@@ -362,9 +362,9 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(36, 196);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(113, 24);
+            this.checkBox5.Size = new System.Drawing.Size(133, 24);
             this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.Text = "Special Pizza";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -372,9 +372,9 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(36, 155);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(113, 24);
+            this.checkBox4.Size = new System.Drawing.Size(122, 24);
             this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.Text = "Side Dishes";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -382,9 +382,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(36, 114);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(113, 24);
+            this.checkBox3.Size = new System.Drawing.Size(96, 24);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.Text = "1.5 Coke";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -392,9 +392,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(36, 74);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(113, 24);
+            this.checkBox2.Size = new System.Drawing.Size(124, 24);
             this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.Text = "Large Mojos\r\n";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -402,9 +402,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(36, 37);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 24);
+            this.checkBox1.Size = new System.Drawing.Size(193, 24);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "10 pcs. Fried Chicken";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -427,9 +427,9 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(36, 196);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(113, 24);
+            this.checkBox6.Size = new System.Drawing.Size(151, 24);
             this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.Text = "1 Medium Pizza";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox7
@@ -437,9 +437,9 @@
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(36, 155);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(113, 24);
+            this.checkBox7.Size = new System.Drawing.Size(133, 24);
             this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "checkBox7";
+            this.checkBox7.Text = "Mojos Bucket";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox8
@@ -447,9 +447,9 @@
             this.checkBox8.AutoSize = true;
             this.checkBox8.Location = new System.Drawing.Point(36, 114);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(113, 24);
+            this.checkBox8.Size = new System.Drawing.Size(163, 24);
             this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "checkBox8";
+            this.checkBox8.Text = "Carbonara Platter";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
@@ -457,9 +457,9 @@
             this.checkBox9.AutoSize = true;
             this.checkBox9.Location = new System.Drawing.Point(36, 74);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(113, 24);
+            this.checkBox9.Size = new System.Drawing.Size(184, 24);
             this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "checkBox9";
+            this.checkBox9.Text = "6 pcs. Fried Chicken";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox10
@@ -467,9 +467,9 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(36, 37);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(122, 24);
+            this.checkBox10.Size = new System.Drawing.Size(193, 24);
             this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "checkBox10";
+            this.checkBox10.Text = "Choco S\'mores Pizza";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // displayListbox
@@ -619,6 +619,7 @@
             this.pizza20.Location = new System.Drawing.Point(754, 593);
             this.pizza20.Name = "pizza20";
             this.pizza20.Size = new System.Drawing.Size(178, 153);
+            this.pizza20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza20.TabIndex = 34;
             this.pizza20.TabStop = false;
             // 
@@ -628,6 +629,7 @@
             this.pizza19.Location = new System.Drawing.Point(570, 593);
             this.pizza19.Name = "pizza19";
             this.pizza19.Size = new System.Drawing.Size(178, 153);
+            this.pizza19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza19.TabIndex = 33;
             this.pizza19.TabStop = false;
             // 
@@ -637,6 +639,7 @@
             this.pizza18.Location = new System.Drawing.Point(386, 593);
             this.pizza18.Name = "pizza18";
             this.pizza18.Size = new System.Drawing.Size(178, 153);
+            this.pizza18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza18.TabIndex = 32;
             this.pizza18.TabStop = false;
             // 
@@ -646,6 +649,7 @@
             this.pizza17.Location = new System.Drawing.Point(202, 593);
             this.pizza17.Name = "pizza17";
             this.pizza17.Size = new System.Drawing.Size(178, 153);
+            this.pizza17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza17.TabIndex = 31;
             this.pizza17.TabStop = false;
             // 
@@ -655,6 +659,7 @@
             this.pizza16.Location = new System.Drawing.Point(18, 593);
             this.pizza16.Name = "pizza16";
             this.pizza16.Size = new System.Drawing.Size(178, 153);
+            this.pizza16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza16.TabIndex = 30;
             this.pizza16.TabStop = false;
             // 
@@ -714,6 +719,7 @@
             this.pizza15.Location = new System.Drawing.Point(754, 404);
             this.pizza15.Name = "pizza15";
             this.pizza15.Size = new System.Drawing.Size(178, 153);
+            this.pizza15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza15.TabIndex = 24;
             this.pizza15.TabStop = false;
             // 
@@ -723,6 +729,7 @@
             this.pizza14.Location = new System.Drawing.Point(570, 404);
             this.pizza14.Name = "pizza14";
             this.pizza14.Size = new System.Drawing.Size(178, 153);
+            this.pizza14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza14.TabIndex = 23;
             this.pizza14.TabStop = false;
             // 
@@ -732,6 +739,7 @@
             this.pizza13.Location = new System.Drawing.Point(386, 404);
             this.pizza13.Name = "pizza13";
             this.pizza13.Size = new System.Drawing.Size(178, 153);
+            this.pizza13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza13.TabIndex = 22;
             this.pizza13.TabStop = false;
             // 
@@ -741,6 +749,7 @@
             this.pizza12.Location = new System.Drawing.Point(202, 404);
             this.pizza12.Name = "pizza12";
             this.pizza12.Size = new System.Drawing.Size(178, 153);
+            this.pizza12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza12.TabIndex = 21;
             this.pizza12.TabStop = false;
             // 
@@ -750,6 +759,7 @@
             this.pizza11.Location = new System.Drawing.Point(18, 404);
             this.pizza11.Name = "pizza11";
             this.pizza11.Size = new System.Drawing.Size(178, 153);
+            this.pizza11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza11.TabIndex = 20;
             this.pizza11.TabStop = false;
             // 
@@ -809,6 +819,7 @@
             this.pizza10.Location = new System.Drawing.Point(754, 215);
             this.pizza10.Name = "pizza10";
             this.pizza10.Size = new System.Drawing.Size(178, 153);
+            this.pizza10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza10.TabIndex = 14;
             this.pizza10.TabStop = false;
             // 
@@ -818,6 +829,7 @@
             this.pizza9.Location = new System.Drawing.Point(570, 215);
             this.pizza9.Name = "pizza9";
             this.pizza9.Size = new System.Drawing.Size(178, 153);
+            this.pizza9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza9.TabIndex = 13;
             this.pizza9.TabStop = false;
             // 
@@ -827,6 +839,7 @@
             this.pizza8.Location = new System.Drawing.Point(386, 215);
             this.pizza8.Name = "pizza8";
             this.pizza8.Size = new System.Drawing.Size(178, 153);
+            this.pizza8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza8.TabIndex = 12;
             this.pizza8.TabStop = false;
             // 
@@ -836,6 +849,7 @@
             this.pizza7.Location = new System.Drawing.Point(202, 215);
             this.pizza7.Name = "pizza7";
             this.pizza7.Size = new System.Drawing.Size(178, 153);
+            this.pizza7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza7.TabIndex = 11;
             this.pizza7.TabStop = false;
             // 
@@ -845,6 +859,7 @@
             this.pizza6.Location = new System.Drawing.Point(18, 215);
             this.pizza6.Name = "pizza6";
             this.pizza6.Size = new System.Drawing.Size(178, 153);
+            this.pizza6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza6.TabIndex = 10;
             this.pizza6.TabStop = false;
             // 
@@ -904,6 +919,7 @@
             this.pizza5.Location = new System.Drawing.Point(754, 26);
             this.pizza5.Name = "pizza5";
             this.pizza5.Size = new System.Drawing.Size(178, 153);
+            this.pizza5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza5.TabIndex = 4;
             this.pizza5.TabStop = false;
             // 
@@ -913,6 +929,7 @@
             this.pizza4.Location = new System.Drawing.Point(570, 26);
             this.pizza4.Name = "pizza4";
             this.pizza4.Size = new System.Drawing.Size(178, 153);
+            this.pizza4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza4.TabIndex = 3;
             this.pizza4.TabStop = false;
             // 
@@ -922,6 +939,7 @@
             this.pizza3.Location = new System.Drawing.Point(386, 26);
             this.pizza3.Name = "pizza3";
             this.pizza3.Size = new System.Drawing.Size(178, 153);
+            this.pizza3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza3.TabIndex = 2;
             this.pizza3.TabStop = false;
             // 
@@ -931,6 +949,7 @@
             this.pizza2.Location = new System.Drawing.Point(202, 26);
             this.pizza2.Name = "pizza2";
             this.pizza2.Size = new System.Drawing.Size(178, 153);
+            this.pizza2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza2.TabIndex = 1;
             this.pizza2.TabStop = false;
             // 
@@ -940,6 +959,7 @@
             this.pizza1.Location = new System.Drawing.Point(18, 26);
             this.pizza1.Name = "pizza1";
             this.pizza1.Size = new System.Drawing.Size(178, 153);
+            this.pizza1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pizza1.TabIndex = 0;
             this.pizza1.TabStop = false;
             // 
@@ -1009,6 +1029,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Lesson3Example3";
             this.Text = "Lesson3Example3";
+            this.Load += new System.EventHandler(this.Lesson3Example3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
