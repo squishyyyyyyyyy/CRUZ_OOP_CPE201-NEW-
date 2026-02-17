@@ -106,6 +106,13 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.payslip_viewlistbox = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.calculateBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.newBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.printpayslipBtn = new System.Windows.Forms.Button();
+            this.prevpayslipdetBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -902,11 +909,87 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
             this.dateTimePicker1.TabIndex = 23;
             // 
+            // calculateBtn
+            // 
+            this.calculateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateBtn.Location = new System.Drawing.Point(12, 897);
+            this.calculateBtn.Name = "calculateBtn";
+            this.calculateBtn.Size = new System.Drawing.Size(170, 44);
+            this.calculateBtn.TabIndex = 33;
+            this.calculateBtn.Text = "CALCULATE";
+            this.calculateBtn.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(789, 462);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(197, 44);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // newBtn
+            // 
+            this.newBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newBtn.Location = new System.Drawing.Point(188, 897);
+            this.newBtn.Name = "newBtn";
+            this.newBtn.Size = new System.Drawing.Size(170, 44);
+            this.newBtn.TabIndex = 35;
+            this.newBtn.Text = "NEW";
+            this.newBtn.UseVisualStyleBackColor = true;
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelBtn.Location = new System.Drawing.Point(364, 897);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(170, 44);
+            this.cancelBtn.TabIndex = 36;
+            this.cancelBtn.Text = "CANCEL";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            // 
+            // printpayslipBtn
+            // 
+            this.printpayslipBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printpayslipBtn.Location = new System.Drawing.Point(540, 897);
+            this.printpayslipBtn.Name = "printpayslipBtn";
+            this.printpayslipBtn.Size = new System.Drawing.Size(221, 44);
+            this.printpayslipBtn.TabIndex = 37;
+            this.printpayslipBtn.Text = "PRINT PAYSLIP";
+            this.printpayslipBtn.UseVisualStyleBackColor = true;
+            // 
+            // prevpayslipdetBtn
+            // 
+            this.prevpayslipdetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prevpayslipdetBtn.Location = new System.Drawing.Point(767, 897);
+            this.prevpayslipdetBtn.Name = "prevpayslipdetBtn";
+            this.prevpayslipdetBtn.Size = new System.Drawing.Size(302, 44);
+            this.prevpayslipdetBtn.TabIndex = 38;
+            this.prevpayslipdetBtn.Text = "PREVIEW PAYSLIP DETAILS";
+            this.prevpayslipdetBtn.UseVisualStyleBackColor = true;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.Location = new System.Drawing.Point(1075, 897);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(170, 44);
+            this.exitBtn.TabIndex = 39;
+            this.exitBtn.Text = "EXIT";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            // 
             // Lesson3Example5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1775, 968);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.prevpayslipdetBtn);
+            this.Controls.Add(this.printpayslipBtn);
+            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.newBtn);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.calculateBtn);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -1021,5 +1104,12 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.ListBox payslip_viewlistbox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button calculateBtn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button newBtn;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button printpayslipBtn;
+        private System.Windows.Forms.Button prevpayslipdetBtn;
+        private System.Windows.Forms.Button exitBtn;
     }
 }
