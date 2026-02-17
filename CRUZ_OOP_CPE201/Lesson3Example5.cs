@@ -16,5 +16,12 @@ namespace CRUZ_OOP_CPE201
         {
             InitializeComponent();
         }
+
+        private void Lesson3Example5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
