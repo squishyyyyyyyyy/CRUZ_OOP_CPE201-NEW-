@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lesson3Example3));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bundleB = new System.Windows.Forms.RadioButton();
             this.bundleA = new System.Windows.Forms.RadioButton();
@@ -49,19 +50,19 @@
             this.pricetxtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.A_Specialpizzacheckbox = new System.Windows.Forms.CheckBox();
+            this.A_Sidedishescheckbox = new System.Windows.Forms.CheckBox();
+            this.A_Cokecheckbox = new System.Windows.Forms.CheckBox();
+            this.A_Mojocheckbox = new System.Windows.Forms.CheckBox();
+            this.A_FriedChickencheckbox = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.B_pizzacheckbox = new System.Windows.Forms.CheckBox();
+            this.B_Mojobcktcheckbox = new System.Windows.Forms.CheckBox();
+            this.B_Carbonaracheckbox = new System.Windows.Forms.CheckBox();
+            this.B_FriedChickencheckbox = new System.Windows.Forms.CheckBox();
+            this.B_Dessertpizza = new System.Windows.Forms.CheckBox();
             this.displayListbox = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.displayPicture = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -114,7 +115,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.displayPicture)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pizza20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizza19)).BeginInit();
@@ -161,6 +162,7 @@
             this.bundleB.TabStop = true;
             this.bundleB.Text = "Food Bundle B";
             this.bundleB.UseVisualStyleBackColor = true;
+            this.bundleB.CheckedChanged += new System.EventHandler(this.bundleB_CheckedChanged);
             // 
             // bundleA
             // 
@@ -314,6 +316,7 @@
             this.quantitytxtbox.Name = "quantitytxtbox";
             this.quantitytxtbox.Size = new System.Drawing.Size(181, 22);
             this.quantitytxtbox.TabIndex = 3;
+            this.quantitytxtbox.TextChanged += new System.EventHandler(this.quantitytxtbox_TextChanged);
             // 
             // label3
             // 
@@ -344,11 +347,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBox5);
-            this.groupBox3.Controls.Add(this.checkBox4);
-            this.groupBox3.Controls.Add(this.checkBox3);
-            this.groupBox3.Controls.Add(this.checkBox2);
-            this.groupBox3.Controls.Add(this.checkBox1);
+            this.groupBox3.Controls.Add(this.A_Specialpizzacheckbox);
+            this.groupBox3.Controls.Add(this.A_Sidedishescheckbox);
+            this.groupBox3.Controls.Add(this.A_Cokecheckbox);
+            this.groupBox3.Controls.Add(this.A_Mojocheckbox);
+            this.groupBox3.Controls.Add(this.A_FriedChickencheckbox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(381, 114);
             this.groupBox3.Name = "groupBox3";
@@ -357,63 +360,63 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Food Bundle A";
             // 
-            // checkBox5
+            // A_Specialpizzacheckbox
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(36, 196);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(133, 24);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Special Pizza";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.A_Specialpizzacheckbox.AutoSize = true;
+            this.A_Specialpizzacheckbox.Location = new System.Drawing.Point(36, 196);
+            this.A_Specialpizzacheckbox.Name = "A_Specialpizzacheckbox";
+            this.A_Specialpizzacheckbox.Size = new System.Drawing.Size(133, 24);
+            this.A_Specialpizzacheckbox.TabIndex = 4;
+            this.A_Specialpizzacheckbox.Text = "Special Pizza";
+            this.A_Specialpizzacheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // A_Sidedishescheckbox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(36, 155);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(122, 24);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Side Dishes";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.A_Sidedishescheckbox.AutoSize = true;
+            this.A_Sidedishescheckbox.Location = new System.Drawing.Point(36, 155);
+            this.A_Sidedishescheckbox.Name = "A_Sidedishescheckbox";
+            this.A_Sidedishescheckbox.Size = new System.Drawing.Size(122, 24);
+            this.A_Sidedishescheckbox.TabIndex = 3;
+            this.A_Sidedishescheckbox.Text = "Side Dishes";
+            this.A_Sidedishescheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // A_Cokecheckbox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(36, 114);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(96, 24);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "1.5 Coke";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.A_Cokecheckbox.AutoSize = true;
+            this.A_Cokecheckbox.Location = new System.Drawing.Point(36, 114);
+            this.A_Cokecheckbox.Name = "A_Cokecheckbox";
+            this.A_Cokecheckbox.Size = new System.Drawing.Size(96, 24);
+            this.A_Cokecheckbox.TabIndex = 2;
+            this.A_Cokecheckbox.Text = "1.5 Coke";
+            this.A_Cokecheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // A_Mojocheckbox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(36, 74);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(124, 24);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Large Mojos\r\n";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.A_Mojocheckbox.AutoSize = true;
+            this.A_Mojocheckbox.Location = new System.Drawing.Point(36, 74);
+            this.A_Mojocheckbox.Name = "A_Mojocheckbox";
+            this.A_Mojocheckbox.Size = new System.Drawing.Size(124, 24);
+            this.A_Mojocheckbox.TabIndex = 1;
+            this.A_Mojocheckbox.Text = "Large Mojos\r\n";
+            this.A_Mojocheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // A_FriedChickencheckbox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(36, 37);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(193, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "10 pcs. Fried Chicken";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.A_FriedChickencheckbox.AutoSize = true;
+            this.A_FriedChickencheckbox.Location = new System.Drawing.Point(36, 37);
+            this.A_FriedChickencheckbox.Name = "A_FriedChickencheckbox";
+            this.A_FriedChickencheckbox.Size = new System.Drawing.Size(193, 24);
+            this.A_FriedChickencheckbox.TabIndex = 0;
+            this.A_FriedChickencheckbox.Text = "10 pcs. Fried Chicken";
+            this.A_FriedChickencheckbox.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.checkBox6);
-            this.groupBox4.Controls.Add(this.checkBox7);
-            this.groupBox4.Controls.Add(this.checkBox8);
-            this.groupBox4.Controls.Add(this.checkBox9);
-            this.groupBox4.Controls.Add(this.checkBox10);
+            this.groupBox4.Controls.Add(this.B_pizzacheckbox);
+            this.groupBox4.Controls.Add(this.B_Mojobcktcheckbox);
+            this.groupBox4.Controls.Add(this.B_Carbonaracheckbox);
+            this.groupBox4.Controls.Add(this.B_FriedChickencheckbox);
+            this.groupBox4.Controls.Add(this.B_Dessertpizza);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(381, 365);
             this.groupBox4.Name = "groupBox4";
@@ -422,55 +425,55 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Food Bundle B";
             // 
-            // checkBox6
+            // B_pizzacheckbox
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(36, 196);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(151, 24);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "1 Medium Pizza";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.B_pizzacheckbox.AutoSize = true;
+            this.B_pizzacheckbox.Location = new System.Drawing.Point(36, 196);
+            this.B_pizzacheckbox.Name = "B_pizzacheckbox";
+            this.B_pizzacheckbox.Size = new System.Drawing.Size(151, 24);
+            this.B_pizzacheckbox.TabIndex = 4;
+            this.B_pizzacheckbox.Text = "1 Medium Pizza";
+            this.B_pizzacheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // B_Mojobcktcheckbox
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(36, 155);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(133, 24);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "Mojos Bucket";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.B_Mojobcktcheckbox.AutoSize = true;
+            this.B_Mojobcktcheckbox.Location = new System.Drawing.Point(36, 155);
+            this.B_Mojobcktcheckbox.Name = "B_Mojobcktcheckbox";
+            this.B_Mojobcktcheckbox.Size = new System.Drawing.Size(133, 24);
+            this.B_Mojobcktcheckbox.TabIndex = 3;
+            this.B_Mojobcktcheckbox.Text = "Mojos Bucket";
+            this.B_Mojobcktcheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // B_Carbonaracheckbox
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(36, 114);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(163, 24);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "Carbonara Platter";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.B_Carbonaracheckbox.AutoSize = true;
+            this.B_Carbonaracheckbox.Location = new System.Drawing.Point(36, 114);
+            this.B_Carbonaracheckbox.Name = "B_Carbonaracheckbox";
+            this.B_Carbonaracheckbox.Size = new System.Drawing.Size(163, 24);
+            this.B_Carbonaracheckbox.TabIndex = 2;
+            this.B_Carbonaracheckbox.Text = "Carbonara Platter";
+            this.B_Carbonaracheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // B_FriedChickencheckbox
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(36, 74);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(184, 24);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "6 pcs. Fried Chicken";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.B_FriedChickencheckbox.AutoSize = true;
+            this.B_FriedChickencheckbox.Location = new System.Drawing.Point(36, 74);
+            this.B_FriedChickencheckbox.Name = "B_FriedChickencheckbox";
+            this.B_FriedChickencheckbox.Size = new System.Drawing.Size(184, 24);
+            this.B_FriedChickencheckbox.TabIndex = 1;
+            this.B_FriedChickencheckbox.Text = "6 pcs. Fried Chicken";
+            this.B_FriedChickencheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // B_Dessertpizza
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(36, 37);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(193, 24);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "Choco S\'mores Pizza";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.B_Dessertpizza.AutoSize = true;
+            this.B_Dessertpizza.Location = new System.Drawing.Point(36, 37);
+            this.B_Dessertpizza.Name = "B_Dessertpizza";
+            this.B_Dessertpizza.Size = new System.Drawing.Size(193, 24);
+            this.B_Dessertpizza.TabIndex = 0;
+            this.B_Dessertpizza.Text = "Choco S\'mores Pizza";
+            this.B_Dessertpizza.UseVisualStyleBackColor = true;
             // 
             // displayListbox
             // 
@@ -482,15 +485,15 @@
             this.displayListbox.Size = new System.Drawing.Size(500, 304);
             this.displayListbox.TabIndex = 6;
             // 
-            // pictureBox1
+            // displayPicture
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(530, 637);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.displayPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.displayPicture.Location = new System.Drawing.Point(530, 637);
+            this.displayPicture.Name = "displayPicture";
+            this.displayPicture.Size = new System.Drawing.Size(213, 196);
+            this.displayPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.displayPicture.TabIndex = 7;
+            this.displayPicture.TabStop = false;
             // 
             // label10
             // 
@@ -568,50 +571,55 @@
             this.pizzano20.AutoSize = true;
             this.pizzano20.Location = new System.Drawing.Point(765, 752);
             this.pizzano20.Name = "pizzano20";
-            this.pizzano20.Size = new System.Drawing.Size(82, 24);
+            this.pizzano20.Size = new System.Drawing.Size(96, 24);
             this.pizzano20.TabIndex = 39;
-            this.pizzano20.Text = "Pizza5";
+            this.pizzano20.Text = "Pizza 20";
             this.pizzano20.UseVisualStyleBackColor = true;
+            this.pizzano20.CheckedChanged += new System.EventHandler(this.pizzano20_CheckedChanged);
             // 
             // pizzano19
             // 
             this.pizzano19.AutoSize = true;
             this.pizzano19.Location = new System.Drawing.Point(579, 752);
             this.pizzano19.Name = "pizzano19";
-            this.pizzano19.Size = new System.Drawing.Size(82, 24);
+            this.pizzano19.Size = new System.Drawing.Size(96, 24);
             this.pizzano19.TabIndex = 38;
-            this.pizzano19.Text = "Pizza4";
+            this.pizzano19.Text = "Pizza 19";
             this.pizzano19.UseVisualStyleBackColor = true;
+            this.pizzano19.CheckedChanged += new System.EventHandler(this.pizzano19_CheckedChanged);
             // 
             // pizzano18
             // 
             this.pizzano18.AutoSize = true;
             this.pizzano18.Location = new System.Drawing.Point(395, 752);
             this.pizzano18.Name = "pizzano18";
-            this.pizzano18.Size = new System.Drawing.Size(82, 24);
+            this.pizzano18.Size = new System.Drawing.Size(96, 24);
             this.pizzano18.TabIndex = 37;
-            this.pizzano18.Text = "Pizza3";
+            this.pizzano18.Text = "Pizza 18";
             this.pizzano18.UseVisualStyleBackColor = true;
+            this.pizzano18.CheckedChanged += new System.EventHandler(this.pizzano18_CheckedChanged);
             // 
             // pizzano17
             // 
             this.pizzano17.AutoSize = true;
             this.pizzano17.Location = new System.Drawing.Point(217, 752);
             this.pizzano17.Name = "pizzano17";
-            this.pizzano17.Size = new System.Drawing.Size(82, 24);
+            this.pizzano17.Size = new System.Drawing.Size(96, 24);
             this.pizzano17.TabIndex = 36;
-            this.pizzano17.Text = "Pizza2";
+            this.pizzano17.Text = "Pizza 17";
             this.pizzano17.UseVisualStyleBackColor = true;
+            this.pizzano17.CheckedChanged += new System.EventHandler(this.pizzano17_CheckedChanged);
             // 
             // pizzano16
             // 
             this.pizzano16.AutoSize = true;
             this.pizzano16.Location = new System.Drawing.Point(18, 752);
             this.pizzano16.Name = "pizzano16";
-            this.pizzano16.Size = new System.Drawing.Size(82, 24);
+            this.pizzano16.Size = new System.Drawing.Size(96, 24);
             this.pizzano16.TabIndex = 35;
-            this.pizzano16.Text = "Pizza1";
+            this.pizzano16.Text = "Pizza 16";
             this.pizzano16.UseVisualStyleBackColor = true;
+            this.pizzano16.CheckedChanged += new System.EventHandler(this.pizzano16_CheckedChanged);
             // 
             // pizza20
             // 
@@ -668,50 +676,55 @@
             this.pizzano15.AutoSize = true;
             this.pizzano15.Location = new System.Drawing.Point(765, 563);
             this.pizzano15.Name = "pizzano15";
-            this.pizzano15.Size = new System.Drawing.Size(82, 24);
+            this.pizzano15.Size = new System.Drawing.Size(96, 24);
             this.pizzano15.TabIndex = 29;
-            this.pizzano15.Text = "Pizza5";
+            this.pizzano15.Text = "Pizza 15";
             this.pizzano15.UseVisualStyleBackColor = true;
+            this.pizzano15.CheckedChanged += new System.EventHandler(this.pizzano15_CheckedChanged);
             // 
             // pizzano14
             // 
             this.pizzano14.AutoSize = true;
             this.pizzano14.Location = new System.Drawing.Point(579, 563);
             this.pizzano14.Name = "pizzano14";
-            this.pizzano14.Size = new System.Drawing.Size(82, 24);
+            this.pizzano14.Size = new System.Drawing.Size(96, 24);
             this.pizzano14.TabIndex = 28;
-            this.pizzano14.Text = "Pizza4";
+            this.pizzano14.Text = "Pizza 14";
             this.pizzano14.UseVisualStyleBackColor = true;
+            this.pizzano14.CheckedChanged += new System.EventHandler(this.pizzano14_CheckedChanged);
             // 
             // pizzano13
             // 
             this.pizzano13.AutoSize = true;
             this.pizzano13.Location = new System.Drawing.Point(395, 563);
             this.pizzano13.Name = "pizzano13";
-            this.pizzano13.Size = new System.Drawing.Size(82, 24);
+            this.pizzano13.Size = new System.Drawing.Size(96, 24);
             this.pizzano13.TabIndex = 27;
-            this.pizzano13.Text = "Pizza3";
+            this.pizzano13.Text = "Pizza 13";
             this.pizzano13.UseVisualStyleBackColor = true;
+            this.pizzano13.CheckedChanged += new System.EventHandler(this.pizzano13_CheckedChanged);
             // 
             // pizzano12
             // 
             this.pizzano12.AutoSize = true;
             this.pizzano12.Location = new System.Drawing.Point(217, 563);
             this.pizzano12.Name = "pizzano12";
-            this.pizzano12.Size = new System.Drawing.Size(82, 24);
+            this.pizzano12.Size = new System.Drawing.Size(96, 24);
             this.pizzano12.TabIndex = 26;
-            this.pizzano12.Text = "Pizza2";
+            this.pizzano12.Text = "Pizza 12";
             this.pizzano12.UseVisualStyleBackColor = true;
+            this.pizzano12.CheckedChanged += new System.EventHandler(this.pizzano12_CheckedChanged);
             // 
             // pizzano11
             // 
             this.pizzano11.AutoSize = true;
             this.pizzano11.Location = new System.Drawing.Point(18, 563);
             this.pizzano11.Name = "pizzano11";
-            this.pizzano11.Size = new System.Drawing.Size(82, 24);
+            this.pizzano11.Size = new System.Drawing.Size(96, 24);
             this.pizzano11.TabIndex = 25;
-            this.pizzano11.Text = "Pizza1";
+            this.pizzano11.Text = "Pizza 11";
             this.pizzano11.UseVisualStyleBackColor = true;
+            this.pizzano11.CheckedChanged += new System.EventHandler(this.pizzano11_CheckedChanged);
             // 
             // pizza15
             // 
@@ -768,50 +781,55 @@
             this.pizzano10.AutoSize = true;
             this.pizzano10.Location = new System.Drawing.Point(765, 374);
             this.pizzano10.Name = "pizzano10";
-            this.pizzano10.Size = new System.Drawing.Size(82, 24);
+            this.pizzano10.Size = new System.Drawing.Size(96, 24);
             this.pizzano10.TabIndex = 19;
-            this.pizzano10.Text = "Pizza5";
+            this.pizzano10.Text = "Pizza 10";
             this.pizzano10.UseVisualStyleBackColor = true;
+            this.pizzano10.CheckedChanged += new System.EventHandler(this.pizzano10_CheckedChanged);
             // 
             // pizzano9
             // 
             this.pizzano9.AutoSize = true;
             this.pizzano9.Location = new System.Drawing.Point(579, 374);
             this.pizzano9.Name = "pizzano9";
-            this.pizzano9.Size = new System.Drawing.Size(82, 24);
+            this.pizzano9.Size = new System.Drawing.Size(87, 24);
             this.pizzano9.TabIndex = 18;
-            this.pizzano9.Text = "Pizza4";
+            this.pizzano9.Text = "Pizza 9";
             this.pizzano9.UseVisualStyleBackColor = true;
+            this.pizzano9.CheckedChanged += new System.EventHandler(this.pizzano9_CheckedChanged);
             // 
             // pizzano8
             // 
             this.pizzano8.AutoSize = true;
             this.pizzano8.Location = new System.Drawing.Point(395, 374);
             this.pizzano8.Name = "pizzano8";
-            this.pizzano8.Size = new System.Drawing.Size(82, 24);
+            this.pizzano8.Size = new System.Drawing.Size(87, 24);
             this.pizzano8.TabIndex = 17;
-            this.pizzano8.Text = "Pizza3";
+            this.pizzano8.Text = "Pizza 8";
             this.pizzano8.UseVisualStyleBackColor = true;
+            this.pizzano8.CheckedChanged += new System.EventHandler(this.pizzano8_CheckedChanged);
             // 
             // pizzano7
             // 
             this.pizzano7.AutoSize = true;
             this.pizzano7.Location = new System.Drawing.Point(217, 374);
             this.pizzano7.Name = "pizzano7";
-            this.pizzano7.Size = new System.Drawing.Size(82, 24);
+            this.pizzano7.Size = new System.Drawing.Size(87, 24);
             this.pizzano7.TabIndex = 16;
-            this.pizzano7.Text = "Pizza2";
+            this.pizzano7.Text = "Pizza 7";
             this.pizzano7.UseVisualStyleBackColor = true;
+            this.pizzano7.CheckedChanged += new System.EventHandler(this.pizzano7_CheckedChanged);
             // 
             // pizzano6
             // 
             this.pizzano6.AutoSize = true;
             this.pizzano6.Location = new System.Drawing.Point(18, 374);
             this.pizzano6.Name = "pizzano6";
-            this.pizzano6.Size = new System.Drawing.Size(82, 24);
+            this.pizzano6.Size = new System.Drawing.Size(87, 24);
             this.pizzano6.TabIndex = 15;
-            this.pizzano6.Text = "Pizza1";
+            this.pizzano6.Text = "Pizza 6";
             this.pizzano6.UseVisualStyleBackColor = true;
+            this.pizzano6.CheckedChanged += new System.EventHandler(this.pizzano6_CheckedChanged);
             // 
             // pizza10
             // 
@@ -868,54 +886,60 @@
             this.pizzano5.AutoSize = true;
             this.pizzano5.Location = new System.Drawing.Point(765, 185);
             this.pizzano5.Name = "pizzano5";
-            this.pizzano5.Size = new System.Drawing.Size(82, 24);
+            this.pizzano5.Size = new System.Drawing.Size(87, 24);
             this.pizzano5.TabIndex = 9;
-            this.pizzano5.Text = "Pizza5";
+            this.pizzano5.Text = "Pizza 5";
             this.pizzano5.UseVisualStyleBackColor = true;
+            this.pizzano5.CheckedChanged += new System.EventHandler(this.pizzano5_CheckedChanged);
             // 
             // pizzano4
             // 
             this.pizzano4.AutoSize = true;
             this.pizzano4.Location = new System.Drawing.Point(579, 185);
             this.pizzano4.Name = "pizzano4";
-            this.pizzano4.Size = new System.Drawing.Size(82, 24);
+            this.pizzano4.Size = new System.Drawing.Size(87, 24);
             this.pizzano4.TabIndex = 8;
-            this.pizzano4.Text = "Pizza4";
+            this.pizzano4.Text = "Pizza 4";
             this.pizzano4.UseVisualStyleBackColor = true;
+            this.pizzano4.CheckedChanged += new System.EventHandler(this.pizzano4_CheckedChanged);
             // 
             // pizzano3
             // 
             this.pizzano3.AutoSize = true;
             this.pizzano3.Location = new System.Drawing.Point(395, 185);
             this.pizzano3.Name = "pizzano3";
-            this.pizzano3.Size = new System.Drawing.Size(82, 24);
+            this.pizzano3.Size = new System.Drawing.Size(87, 24);
             this.pizzano3.TabIndex = 7;
-            this.pizzano3.Text = "Pizza3";
+            this.pizzano3.Text = "Pizza 3";
             this.pizzano3.UseVisualStyleBackColor = true;
+            this.pizzano3.CheckedChanged += new System.EventHandler(this.pizzano3_CheckedChanged);
             // 
             // pizzano2
             // 
             this.pizzano2.AutoSize = true;
             this.pizzano2.Location = new System.Drawing.Point(217, 185);
             this.pizzano2.Name = "pizzano2";
-            this.pizzano2.Size = new System.Drawing.Size(82, 24);
+            this.pizzano2.Size = new System.Drawing.Size(87, 24);
             this.pizzano2.TabIndex = 6;
-            this.pizzano2.Text = "Pizza2";
+            this.pizzano2.Text = "Pizza 2";
             this.pizzano2.UseVisualStyleBackColor = true;
+            this.pizzano2.CheckedChanged += new System.EventHandler(this.pizzano2_CheckedChanged);
             // 
             // pizzano1
             // 
             this.pizzano1.AutoSize = true;
             this.pizzano1.Location = new System.Drawing.Point(18, 185);
             this.pizzano1.Name = "pizzano1";
-            this.pizzano1.Size = new System.Drawing.Size(82, 24);
+            this.pizzano1.Size = new System.Drawing.Size(87, 24);
             this.pizzano1.TabIndex = 5;
-            this.pizzano1.Text = "Pizza1";
+            this.pizzano1.Text = "Pizza 1";
             this.pizzano1.UseVisualStyleBackColor = true;
+            this.pizzano1.CheckedChanged += new System.EventHandler(this.pizzano1_CheckedChanged);
             // 
             // pizza5
             // 
             this.pizza5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pizza5.Image = ((System.Drawing.Image)(resources.GetObject("pizza5.Image")));
             this.pizza5.Location = new System.Drawing.Point(754, 26);
             this.pizza5.Name = "pizza5";
             this.pizza5.Size = new System.Drawing.Size(178, 153);
@@ -926,6 +950,7 @@
             // pizza4
             // 
             this.pizza4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pizza4.Image = ((System.Drawing.Image)(resources.GetObject("pizza4.Image")));
             this.pizza4.Location = new System.Drawing.Point(570, 26);
             this.pizza4.Name = "pizza4";
             this.pizza4.Size = new System.Drawing.Size(178, 153);
@@ -936,6 +961,7 @@
             // pizza3
             // 
             this.pizza3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pizza3.Image = ((System.Drawing.Image)(resources.GetObject("pizza3.Image")));
             this.pizza3.Location = new System.Drawing.Point(386, 26);
             this.pizza3.Name = "pizza3";
             this.pizza3.Size = new System.Drawing.Size(178, 153);
@@ -946,6 +972,7 @@
             // pizza2
             // 
             this.pizza2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pizza2.Image = ((System.Drawing.Image)(resources.GetObject("pizza2.Image")));
             this.pizza2.Location = new System.Drawing.Point(202, 26);
             this.pizza2.Name = "pizza2";
             this.pizza2.Size = new System.Drawing.Size(178, 153);
@@ -955,7 +982,9 @@
             // 
             // pizza1
             // 
+            this.pizza1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pizza1.BackgroundImage")));
             this.pizza1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pizza1.Image = ((System.Drawing.Image)(resources.GetObject("pizza1.Image")));
             this.pizza1.Location = new System.Drawing.Point(18, 26);
             this.pizza1.Name = "pizza1";
             this.pizza1.Size = new System.Drawing.Size(178, 153);
@@ -971,6 +1000,7 @@
             this.calculateBtn.TabIndex = 21;
             this.calculateBtn.Text = "CALCULATE BILLS";
             this.calculateBtn.UseVisualStyleBackColor = true;
+            this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
             // 
             // prnttranscBtn
             // 
@@ -980,6 +1010,7 @@
             this.prnttranscBtn.TabIndex = 22;
             this.prnttranscBtn.Text = "PRINT\r\nTRANSACTION\r\n";
             this.prnttranscBtn.UseVisualStyleBackColor = true;
+            this.prnttranscBtn.Click += new System.EventHandler(this.prnttranscBtn_Click);
             // 
             // remordBtn
             // 
@@ -989,6 +1020,7 @@
             this.remordBtn.TabIndex = 23;
             this.remordBtn.Text = "REMOVE ORDER";
             this.remordBtn.UseVisualStyleBackColor = true;
+            this.remordBtn.Click += new System.EventHandler(this.remordBtn_Click);
             // 
             // newBtn
             // 
@@ -998,6 +1030,7 @@
             this.newBtn.TabIndex = 24;
             this.newBtn.Text = "NEW";
             this.newBtn.UseVisualStyleBackColor = true;
+            this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
             // exitBtn
             // 
@@ -1007,6 +1040,7 @@
             this.exitBtn.TabIndex = 25;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Lesson3Example3
             // 
@@ -1021,7 +1055,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.displayPicture);
             this.Controls.Add(this.displayListbox);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1038,7 +1072,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.displayPicture)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pizza20)).EndInit();
@@ -1089,19 +1123,19 @@
         private System.Windows.Forms.TextBox changetxtbox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox A_Specialpizzacheckbox;
+        private System.Windows.Forms.CheckBox A_Sidedishescheckbox;
+        private System.Windows.Forms.CheckBox A_Cokecheckbox;
+        private System.Windows.Forms.CheckBox A_Mojocheckbox;
+        private System.Windows.Forms.CheckBox A_FriedChickencheckbox;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox B_pizzacheckbox;
+        private System.Windows.Forms.CheckBox B_Mojobcktcheckbox;
+        private System.Windows.Forms.CheckBox B_Carbonaracheckbox;
+        private System.Windows.Forms.CheckBox B_FriedChickencheckbox;
+        private System.Windows.Forms.CheckBox B_Dessertpizza;
         private System.Windows.Forms.ListBox displayListbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox displayPicture;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox5;

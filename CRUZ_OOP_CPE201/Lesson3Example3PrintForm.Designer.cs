@@ -60,6 +60,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Lesson3Example3PrintForm";
             this.Text = "Transaction Receipt";
+            this.Load += new System.EventHandler(this.Lesson3Example3PrintForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,6 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox printDisplayListbox;
+        public System.Windows.Forms.ListBox printDisplayListbox;
     }
 }

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace CRUZ_OOP_CPE201
 {
-    public partial class Lesson3Example3PrintForm : Form
+    public partial class Lesson3Example5PrintForm : Form
     {
-        public Lesson3Example3PrintForm()
+        public Lesson3Example5PrintForm()
         {
             InitializeComponent();
-
-            printDisplayListbox.Items.AddRange(printDisplayListbox.Items);
-        }
-
-        private void Lesson3Example3PrintForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
