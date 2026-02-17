@@ -22,6 +22,219 @@ namespace CRUZ_OOP_CPE201
             other_netincome = 0.00,
             other_numhrs = 0.00,
             other_rate = 0.00;
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            emplynotxtbox.Clear();
+            firstnametxtbox.Clear();
+            middlenametxtbox.Clear();
+            surnametxtbox.Clear();
+            civilstattxtbox.Clear();
+            desigtxtbox.Clear();
+            nodepentstxtbox.Clear();
+            emplyststxtbox.Clear();
+            departmenttxtbox.Clear();
+            incmbscpaytxtbox.Clear();
+            no_hoursbscpaytxtbox.Clear();
+            rthrbscpaytxtbox.Clear();
+            total_honopaytxtbox.Clear();
+            no_hourshonotxtbox.Clear();
+            rthrhonotxtbox.Clear();
+            total_othpaytxtbox.Clear();
+            no_hoursothtxtbox.Clear();
+            rthrothtxtbox.Clear();
+            netinctxtbox.Clear();
+            grossinctxtbox.Clear();
+            sss_contritxtbox.Clear();
+            pagibig_contritxtbox.Clear();
+            philhlt_contritxtbox.Clear();
+            tax_contritxtbox.Clear();
+            sss_loantxtbox.Clear();
+            pagibig_loantxtbox.Clear();
+
+        }
+
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+            openFileDialog1.Title = "Select Employee Picture";
+            openFileDialog1.ShowDialog();
+            picpath = openFileDialog1.FileName;
+            picpathtxtbox.Text = picpath;
+            pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void no_hoursbscpaytxtbox_TextChanged(object sender, EventArgs e)
+        {
+            basic_numhrs = Double.Parse(no_hoursbscpaytxtbox.Text);
+            basic_rate = Convert.ToDouble(rthrbscpaytxtbox.Text);
+            basic_netincome = basic_numhrs * basic_rate;
+            incmbscpaytxtbox.Text = basic_netincome.ToString("N");
+        }
+
+        private void no_hourshonotxtbox_TextChanged(object sender, EventArgs e)
+        {
+            hono_numhrs = Convert.ToDouble(no_hourshonotxtbox.Text);
+            hono_rate = Convert.ToDouble(rthrhonotxtbox.Text);
+            hono_netincome = hono_numhrs * hono_rate;
+            total_honopaytxtbox.Text = hono_netincome.ToString("N");
+        }
+
+        private void no_hoursothtxtbox_TextChanged(object sender, EventArgs e)
+        {
+            other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
+            other_rate = Convert.ToDouble(rthrothtxtbox.Text);
+            other_netincome = other_numhrs * other_rate;
+            total_othpaytxtbox.Text = other_netincome.ToString("N");
+            grossincome = basic_netincome + hono_netincome + other_netincome;
+            grossinctxtbox.Text = grossincome.ToString("N");
+        }
+
+        private void newBtn_Click(object sender, EventArgs e)
+        {
+            emplynotxtbox.Clear();
+            firstnametxtbox.Clear();
+            middlenametxtbox.Clear();
+            surnametxtbox.Clear();
+            civilstattxtbox.Clear();
+            desigtxtbox.Clear();
+            nodepentstxtbox.Clear();
+            emplyststxtbox.Clear();
+            departmenttxtbox.Clear();
+            incmbscpaytxtbox.Clear();
+            no_hoursbscpaytxtbox.Clear();
+            rthrbscpaytxtbox.Clear();
+            total_honopaytxtbox.Clear();
+            no_hourshonotxtbox.Clear();
+            rthrhonotxtbox.Clear();
+            total_othpaytxtbox.Clear();
+            no_hoursothtxtbox.Clear();
+            rthrothtxtbox.Clear();
+            netinctxtbox.Clear();
+            grossinctxtbox.Clear();
+            sss_contritxtbox.Clear();
+            pagibig_contritxtbox.Clear();
+            philhlt_contritxtbox.Clear();
+            tax_contritxtbox.Clear();
+            sss_loantxtbox.Clear();
+            pagibig_loantxtbox.Clear();
+
+        }
+
+        private void printpayslipBtn_Click(object sender, EventArgs e)
+        {
+            Lesson3Example5PrintForm print1 = new Lesson3Example5PrintForm();
+
+            print1.priDisplayListbox.Items.AddRange(this.payslip_viewlistbox.Items);
+
+            print1.Show();
+        }
+
+        private void prevpayslipdetBtn_Click(object sender, EventArgs e)
+        {
+            payslip_viewlistbox.Items.Add("Employee Number: " + ""
+                + emplynotxtbox.Text);
+            payslip_viewlistbox.Items.Add("First Name: " + ""
+                + firstnametxtbox.Text);
+            payslip_viewlistbox.Items.Add("Middle Name: " + ""
+                + middlenametxtbox.Text);
+            payslip_viewlistbox.Items.Add("Surname: " + ""
+                + surnametxtbox.Text);
+            payslip_viewlistbox.Items.Add("Designation: " + ""
+                + desigtxtbox.Text);
+            payslip_viewlistbox.Items.Add("Employee Status: " + ""
+                + emplyststxtbox.Text);
+            payslip_viewlistbox.Items.Add("Department: " + ""
+                + departmenttxtbox.Text);
+            payslip_viewlistbox.Items.Add("Pay Date: " + ""
+                + paydatepicker.Text);
+            payslip_viewlistbox.Items.Add("------------------------------------------------------------------------");
+           
+            payslip_viewlistbox.Items.Add("BP Num. of Hrs.: " + "P"
+                + rthrbscpaytxtbox.Text);
+            payslip_viewlistbox.Items.Add("BP Rate / Hr.: " + "P"
+                + no_hoursbscpaytxtbox.Text);
+            payslip_viewlistbox.Items.Add("BP Net Income: " + "P"
+                + incmbscpaytxtbox.Text);
+            payslip_viewlistbox.Items.Add("");
+
+            payslip_viewlistbox.Items.Add("HI Num. of Hrs.: " + "P"
+                + rthrhonotxtbox.Text);
+            payslip_viewlistbox.Items.Add("HI Rate / Hr.: " + "P"
+                + no_hourshonotxtbox.Text);
+            payslip_viewlistbox.Items.Add("Honorarium Income: " + "P"
+                + total_honopaytxtbox.Text);
+            payslip_viewlistbox.Items.Add("");
+
+            payslip_viewlistbox.Items.Add("OTI Num. of Hrs.: " + "P"
+                + rthrothtxtbox.Text);
+            payslip_viewlistbox.Items.Add("OTI Rate / Hr.: " + "P"
+                + no_hoursothtxtbox.Text);
+            payslip_viewlistbox.Items.Add("Other Income: " + "P"
+                + total_othpaytxtbox.Text);
+            payslip_viewlistbox.Items.Add("------------------------------------------------------------------------");
+
+            payslip_viewlistbox.Items.Add("SSS Contribution: " + "P"
+                + sss_contritxtbox.Text);
+            payslip_viewlistbox.Items.Add("PhilHealth Contribution: " + "P"
+                + philhlt_contritxtbox.Text);
+            payslip_viewlistbox.Items.Add("Pag-IBIG Contribution: " + "P"
+                + pagibig_contritxtbox.Text);
+            payslip_viewlistbox.Items.Add("Tax Contribution: " + "P"
+                + tax_contritxtbox.Text);
+            
+            payslip_viewlistbox.Items.Add("SSS Loan: " + "P"
+                + sss_loantxtbox.Text);
+            payslip_viewlistbox.Items.Add("Pag-IBIG Loan: " + "P"
+                + pagibig_loantxtbox.Text);
+            payslip_viewlistbox.Items.Add("Faculty Savings Deposit: " + "P"
+                + faculty_savingsdeptxtbox.Text);
+            payslip_viewlistbox.Items.Add("Faculty Savings Loan: " + "P"
+                + faculty_svgsloantxtbox.Text);
+            payslip_viewlistbox.Items.Add("Salary Loan: " + "P"
+                + salary_loantxtbox.Text);
+            payslip_viewlistbox.Items.Add("Other Loan: " + "P"
+                + other_loantxtbox.Text);
+            payslip_viewlistbox.Items.Add("------------------------------------------------------------------------");
+
+            payslip_viewlistbox.Items.Add("Total Deduction: " + "P"
+                + total_deductxtbox.Text);
+            payslip_viewlistbox.Items.Add("Gross Income: " + "P"
+                + grossinctxtbox.Text);
+            payslip_viewlistbox.Items.Add("Net Income: " + "P"
+                + netinctxtbox.Text);
+
+        }
+
+        private void calculateBtn_Click(object sender, EventArgs e)
+        {
+            sss_contrib = Convert.ToDouble(sss_contritxtbox.Text);
+            pagibig_contrib = Convert.ToDouble(pagibig_contritxtbox.Text);
+            philhealth_contrib = Convert.ToDouble(philhlt_contritxtbox.Text);
+            tax_contrib = Convert.ToDouble(tax_contritxtbox.Text);
+            sss_loan = Convert.ToDouble(sss_loantxtbox.Text);
+            pagibig_loan = Convert.ToDouble(pagibig_loantxtbox.Text);
+            salary_loan = Convert.ToDouble(salary_loantxtbox.Text);
+            faculty_sav_loan = Convert.ToDouble(faculty_svgsloantxtbox.Text);
+            salary_savings = Convert.ToDouble(faculty_savingsdeptxtbox.Text);
+            other_deduction = Convert.ToDouble(other_loantxtbox.Text);
+
+            total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;
+            total_loan = sss_loan + pagibig_loan + salary_loan + faculty_sav_loan + salary_savings + other_deduction;
+            total_deduction = total_contrib + total_loan;
+
+            total_deductxtbox.Text = total_deduction.ToString("N");
+            netincome = grossincome - total_deduction;
+            netinctxtbox.Text = netincome.ToString("N");
+
+        }
+
         private Double netincome = 0.00,
             grossincome = 0.00,
             sss_contrib = 0.00,

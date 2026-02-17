@@ -54,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox priDisplayListbox;
+        public System.Windows.Forms.ListBox priDisplayListbox;
     }
 }
