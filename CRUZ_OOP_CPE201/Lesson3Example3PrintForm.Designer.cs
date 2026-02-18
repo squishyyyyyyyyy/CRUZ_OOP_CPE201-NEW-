@@ -36,7 +36,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 42);
+            this.label1.Location = new System.Drawing.Point(80, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(600, 29);
             this.label1.TabIndex = 0;
@@ -44,11 +44,12 @@
             // 
             // printDisplayListbox
             // 
+            this.printDisplayListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printDisplayListbox.FormattingEnabled = true;
-            this.printDisplayListbox.ItemHeight = 16;
+            this.printDisplayListbox.ItemHeight = 25;
             this.printDisplayListbox.Location = new System.Drawing.Point(12, 114);
             this.printDisplayListbox.Name = "printDisplayListbox";
-            this.printDisplayListbox.Size = new System.Drawing.Size(776, 548);
+            this.printDisplayListbox.Size = new System.Drawing.Size(776, 529);
             this.printDisplayListbox.TabIndex = 1;
             // 
             // Lesson3Example3PrintForm

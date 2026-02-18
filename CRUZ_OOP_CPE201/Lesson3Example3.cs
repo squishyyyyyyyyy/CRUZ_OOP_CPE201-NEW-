@@ -19,6 +19,7 @@ namespace CRUZ_OOP_CPE201
             InitializeComponent();
         }
 
+        bool can_change = true;
         private void bundleA_CheckedChanged(object sender, EventArgs e)
         {
             double price;
@@ -32,7 +33,13 @@ namespace CRUZ_OOP_CPE201
             A_Mojocheckbox.Enabled = true;
             A_Sidedishescheckbox.Enabled = true;
             A_Specialpizzacheckbox.Enabled = true;
-            
+
+            A_Cokecheckbox.Checked = true;
+            A_FriedChickencheckbox.Checked = true;
+            A_Mojocheckbox.Checked = true;
+            A_Sidedishescheckbox.Checked = true;
+            A_Specialpizzacheckbox.Checked = true;
+
             B_Carbonaracheckbox.Enabled = false;
             B_Dessertpizza.Enabled = false;
             B_FriedChickencheckbox.Enabled = false;
@@ -97,6 +104,7 @@ namespace CRUZ_OOP_CPE201
 
         private void bundleB_CheckedChanged(object sender, EventArgs e)
         {
+            double price;
             this.BackColor = Color.LightCyan;
             bundleA.Checked = false;
             displayPicture.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Family Meal 2.png");
@@ -113,9 +121,22 @@ namespace CRUZ_OOP_CPE201
             B_Mojobcktcheckbox.Enabled = true;
             B_pizzacheckbox.Enabled = true;
 
+            B_Carbonaracheckbox.Checked = true;
+            B_Dessertpizza.Checked = true;
+            B_FriedChickencheckbox.Checked = true;
+            B_Mojobcktcheckbox.Checked = true;
+            B_pizzacheckbox.Checked = true;
+
             pricetxtbox.Text = "1,299.00";
-            discntamttxtbox.Text = "(15% of the Price) P194.85";
-            displayListbox.Items.Add(bundleB.Text);
+            discntamttxtbox.Text = "194.85";
+            price = Convert.ToDouble(pricetxtbox.Text);
+
+            displayListbox.Items.Add(bundleB.Text + "   "
+                + pricetxtbox.Text);
+            displayListbox.Items.Add("         Discount Amount:    " + " "
+                + discntamttxtbox.Text);
+            quantitytxtbox.Text = "0";
+            quantitytxtbox.Focus();
         }
 
         private void calculateBtn_Click(object sender, EventArgs e)
@@ -153,6 +174,7 @@ namespace CRUZ_OOP_CPE201
 
         private void newBtn_Click(object sender, EventArgs e)
         {
+            can_change = false;
             bundleA.Checked = false;
             bundleB.Checked = false;
 
@@ -171,6 +193,12 @@ namespace CRUZ_OOP_CPE201
 
             pricetxtbox.Clear();
             quantitytxtbox.Clear();
+            discntamttxtbox.Clear();
+            discntedamttxtbox.Clear();
+            totalBillstxtbox.Clear();
+            changetxtbox.Clear();
+            totalqtytxtbox.Clear();
+            cashgvntxtbox.Clear();
             pizzano1.Checked = false;
             pizzano2.Checked = false;
             pizzano3.Checked = false;
@@ -194,6 +222,9 @@ namespace CRUZ_OOP_CPE201
 
             displayListbox.Items.Clear();
 
+            
+            can_change = true;
+
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -203,18 +234,20 @@ namespace CRUZ_OOP_CPE201
 
         private void quantitytxtbox_TextChanged(object sender, EventArgs e)
         {
-            double price, discounted_amount, discount_amount;
-            int qty;
-            price = Convert.ToDouble(pricetxtbox.Text);
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            discount_amount = Convert.ToDouble(discntamttxtbox.Text);
-            discounted_amount = (price * qty) - discount_amount;
-            total_qty += qty;
-            totalqtytxtbox.Text = total_qty.ToString();
-            total_amount += discounted_amount;
-            totalBillstxtbox.Text = total_amount.ToString("N");
-            discntedamttxtbox.Text = discounted_amount.ToString("N");
-
+            if (can_change) {
+                double price, discounted_amount, discount_amount;
+                int qty;
+                price = Convert.ToDouble(pricetxtbox.Text);
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                discount_amount = Convert.ToDouble(discntamttxtbox.Text);
+                discounted_amount = (price * qty) - discount_amount;
+                total_qty += qty;
+                totalqtytxtbox.Text = total_qty.ToString();
+                total_amount += discounted_amount;
+                totalBillstxtbox.Text = total_amount.ToString("N");
+                discntedamttxtbox.Text = discounted_amount.ToString("N");
+            }
+           
         }
 
         private void pizzano1_CheckedChanged(object sender, EventArgs e)

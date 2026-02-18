@@ -158,8 +158,7 @@
             this.bundleB.Location = new System.Drawing.Point(38, 74);
             this.bundleB.Name = "bundleB";
             this.bundleB.Size = new System.Drawing.Size(141, 24);
-            this.bundleB.TabIndex = 1;
-            this.bundleB.TabStop = true;
+            this.bundleB.TabIndex = 0;
             this.bundleB.Text = "Food Bundle B";
             this.bundleB.UseVisualStyleBackColor = true;
             this.bundleB.CheckedChanged += new System.EventHandler(this.bundleB_CheckedChanged);
@@ -172,7 +171,6 @@
             this.bundleA.Name = "bundleA";
             this.bundleA.Size = new System.Drawing.Size(140, 24);
             this.bundleA.TabIndex = 0;
-            this.bundleA.TabStop = true;
             this.bundleA.Text = "Food Bundle A";
             this.bundleA.UseVisualStyleBackColor = true;
             this.bundleA.CheckedChanged += new System.EventHandler(this.bundleA_CheckedChanged);
@@ -232,6 +230,7 @@
             // 
             // cashgvntxtbox
             // 
+            this.cashgvntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cashgvntxtbox.Location = new System.Drawing.Point(148, 260);
             this.cashgvntxtbox.Multiline = true;
             this.cashgvntxtbox.Name = "cashgvntxtbox";

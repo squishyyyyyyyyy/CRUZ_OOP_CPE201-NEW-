@@ -112,7 +112,6 @@
             this.printpayslipBtn = new System.Windows.Forms.Button();
             this.prevpayslipdetBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -750,7 +749,7 @@
             // other_loancombo
             // 
             this.other_loancombo.FormattingEnabled = true;
-            this.other_loancombo.Location = new System.Drawing.Point(216, 267);
+            this.other_loancombo.Location = new System.Drawing.Point(216, 233);
             this.other_loancombo.Name = "other_loancombo";
             this.other_loancombo.Size = new System.Drawing.Size(355, 28);
             this.other_loancombo.TabIndex = 34;
@@ -777,7 +776,7 @@
             // 
             // other_loantxtbox
             // 
-            this.other_loantxtbox.Location = new System.Drawing.Point(216, 233);
+            this.other_loantxtbox.Location = new System.Drawing.Point(216, 267);
             this.other_loantxtbox.Multiline = true;
             this.other_loantxtbox.Name = "other_loantxtbox";
             this.other_loantxtbox.Size = new System.Drawing.Size(355, 28);
@@ -980,10 +979,6 @@
             this.exitBtn.UseVisualStyleBackColor = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // Lesson3Example5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1115,6 +1110,5 @@
         private System.Windows.Forms.Button printpayslipBtn;
         private System.Windows.Forms.Button prevpayslipdetBtn;
         private System.Windows.Forms.Button exitBtn;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -51,18 +51,36 @@ namespace CRUZ_OOP_CPE201
             tax_contritxtbox.Clear();
             sss_loantxtbox.Clear();
             pagibig_loantxtbox.Clear();
+            faculty_savingsdeptxtbox.Clear();
+            faculty_svgsloantxtbox.Clear();
+            salary_loantxtbox.Clear();
+            other_loantxtbox.Clear();
+            other_loancombo.SelectedIndex = -1;
+            other_loancombo.Text = "Select other deduction";
+            sss_contritxtbox.Text = "0.00";
+            pagibig_contritxtbox.Text = "0.00";
+            philhlt_contritxtbox.Text = "0.00";
+            tax_contritxtbox.Text = "0.00";
+            sss_loantxtbox.Text = "0.00";
+            pagibig_loantxtbox.Text = "0.00";
+            faculty_savingsdeptxtbox.Text = "0.00";
+            faculty_svgsloantxtbox.Text = "0.00";
+            salary_loantxtbox.Text = "0.00";
+            other_loantxtbox.Text = "0.00";
+            total_deductxtbox.Clear();
 
         }
 
         private void browseBtn_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
-            openFileDialog1.Title = "Select Employee Picture";
-            openFileDialog1.ShowDialog();
-            picpath = openFileDialog1.FileName;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+            openFileDialog.Title = "Select Employee Picture";
+            openFileDialog.ShowDialog();
+            picpath = openFileDialog.FileName;
             picpathtxtbox.Text = picpath;
-            pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+            pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -72,28 +90,29 @@ namespace CRUZ_OOP_CPE201
 
         private void no_hoursbscpaytxtbox_TextChanged(object sender, EventArgs e)
         {
-            basic_numhrs = Double.Parse(no_hoursbscpaytxtbox.Text);
-            basic_rate = Convert.ToDouble(rthrbscpaytxtbox.Text);
-            basic_netincome = basic_numhrs * basic_rate;
-            incmbscpaytxtbox.Text = basic_netincome.ToString("N");
+           // basic_numhrs = Double.Parse(no_hoursbscpaytxtbox.Text);
+           // basic_rate = Convert.ToDouble(rthrbscpaytxtbox.Text);
+           // basic_netincome = basic_numhrs * basic_rate;
+           // incmbscpaytxtbox.Text = basic_netincome.ToString("N");
+
         }
 
         private void no_hourshonotxtbox_TextChanged(object sender, EventArgs e)
         {
-            hono_numhrs = Convert.ToDouble(no_hourshonotxtbox.Text);
-            hono_rate = Convert.ToDouble(rthrhonotxtbox.Text);
-            hono_netincome = hono_numhrs * hono_rate;
-            total_honopaytxtbox.Text = hono_netincome.ToString("N");
+           // hono_numhrs = Convert.ToDouble(no_hourshonotxtbox.Text);
+           // hono_rate = Convert.ToDouble(rthrhonotxtbox.Text);
+           // hono_netincome = hono_numhrs * hono_rate;
+           // total_honopaytxtbox.Text = hono_netincome.ToString("N");
         }
 
         private void no_hoursothtxtbox_TextChanged(object sender, EventArgs e)
         {
-            other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
-            other_rate = Convert.ToDouble(rthrothtxtbox.Text);
-            other_netincome = other_numhrs * other_rate;
-            total_othpaytxtbox.Text = other_netincome.ToString("N");
-            grossincome = basic_netincome + hono_netincome + other_netincome;
-            grossinctxtbox.Text = grossincome.ToString("N");
+           // other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
+           // other_rate = Convert.ToDouble(rthrothtxtbox.Text);
+           // other_netincome = other_numhrs * other_rate;
+           // total_othpaytxtbox.Text = other_netincome.ToString("N");
+           // grossincome = basic_netincome + hono_netincome + other_netincome;
+           // grossinctxtbox.Text = grossincome.ToString("N");
         }
 
         private void newBtn_Click(object sender, EventArgs e)
@@ -124,6 +143,23 @@ namespace CRUZ_OOP_CPE201
             tax_contritxtbox.Clear();
             sss_loantxtbox.Clear();
             pagibig_loantxtbox.Clear();
+            faculty_savingsdeptxtbox.Clear();
+            faculty_svgsloantxtbox.Clear(); 
+            salary_loantxtbox.Clear();  
+            other_loantxtbox.Clear();
+            other_loancombo.SelectedIndex = -1;
+            other_loancombo.Text = "Select other deduction";
+            sss_contritxtbox.Text = "0.00";
+            pagibig_contritxtbox.Text = "0.00";
+            philhlt_contritxtbox.Text = "0.00";
+            tax_contritxtbox.Text = "0.00";
+            sss_loantxtbox.Text = "0.00";
+            pagibig_loantxtbox.Text = "0.00";
+            faculty_savingsdeptxtbox.Text = "0.00";
+            faculty_svgsloantxtbox.Text = "0.00";
+            salary_loantxtbox.Text = "0.00";
+            other_loantxtbox.Text = "0.00";
+            total_deductxtbox.Clear();
 
         }
 
@@ -224,6 +260,21 @@ namespace CRUZ_OOP_CPE201
             faculty_sav_loan = Convert.ToDouble(faculty_svgsloantxtbox.Text);
             salary_savings = Convert.ToDouble(faculty_savingsdeptxtbox.Text);
             other_deduction = Convert.ToDouble(other_loantxtbox.Text);
+
+            basic_numhrs = Double.Parse(no_hoursbscpaytxtbox.Text);
+            basic_rate = Convert.ToDouble(rthrbscpaytxtbox.Text);
+            basic_netincome = basic_numhrs * basic_rate;
+            incmbscpaytxtbox.Text = basic_netincome.ToString("N");
+            hono_numhrs = Convert.ToDouble(no_hourshonotxtbox.Text);
+            hono_rate = Convert.ToDouble(rthrhonotxtbox.Text);
+            hono_netincome = hono_numhrs * hono_rate;
+            total_honopaytxtbox.Text = hono_netincome.ToString("N");
+            other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
+            other_rate = Convert.ToDouble(rthrothtxtbox.Text);
+            other_netincome = other_numhrs * other_rate;
+            total_othpaytxtbox.Text = other_netincome.ToString("N");
+            grossincome = basic_netincome + hono_netincome + other_netincome;
+            grossinctxtbox.Text = grossincome.ToString("N");
 
             total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;
             total_loan = sss_loan + pagibig_loan + salary_loan + faculty_sav_loan + salary_savings + other_deduction;
