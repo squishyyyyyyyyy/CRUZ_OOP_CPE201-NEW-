@@ -212,6 +212,7 @@
             // 
             // changetxtbox
             // 
+            this.changetxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changetxtbox.Location = new System.Drawing.Point(148, 317);
             this.changetxtbox.Multiline = true;
             this.changetxtbox.Name = "changetxtbox";
@@ -230,7 +231,7 @@
             // 
             // cashgvntxtbox
             // 
-            this.cashgvntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashgvntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cashgvntxtbox.Location = new System.Drawing.Point(148, 260);
             this.cashgvntxtbox.Multiline = true;
             this.cashgvntxtbox.Name = "cashgvntxtbox";

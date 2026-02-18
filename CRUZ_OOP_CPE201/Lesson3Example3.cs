@@ -193,12 +193,6 @@ namespace CRUZ_OOP_CPE201
 
             pricetxtbox.Clear();
             quantitytxtbox.Clear();
-            discntamttxtbox.Clear();
-            discntedamttxtbox.Clear();
-            totalBillstxtbox.Clear();
-            changetxtbox.Clear();
-            totalqtytxtbox.Clear();
-            cashgvntxtbox.Clear();
             pizzano1.Checked = false;
             pizzano2.Checked = false;
             pizzano3.Checked = false;
