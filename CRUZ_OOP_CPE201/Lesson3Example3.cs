@@ -63,6 +63,7 @@ namespace CRUZ_OOP_CPE201
         private void Lesson3Example3_Load(object sender, EventArgs e)
         {
             // Disable textboxes
+            this.WindowState = FormWindowState.Maximized; 
             pricetxtbox.Enabled = false;
             discntedamttxtbox.Enabled = false;
             changetxtbox.Enabled = false;
