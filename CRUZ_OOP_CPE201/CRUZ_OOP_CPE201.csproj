@@ -64,6 +64,12 @@
     <Compile Include="Activity 3.Designer.cs">
       <DependentUpon>Activity 3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson5Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson5Activity.Designer.cs">
+      <DependentUpon>Lesson5Activity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson3Example5PrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Activity 3.resx">
       <DependentUpon>Activity 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson5Activity.resx">
+      <DependentUpon>Lesson5Activity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson3Example3.resx">
       <DependentUpon>Lesson3Example3.cs</DependentUpon>

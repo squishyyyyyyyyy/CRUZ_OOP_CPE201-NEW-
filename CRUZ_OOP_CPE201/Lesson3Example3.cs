@@ -143,19 +143,27 @@ namespace CRUZ_OOP_CPE201
         private void calculateBtn_Click(object sender, EventArgs e)
         {
             double cash_given, change, total_amountPaid;
-            cash_given = Convert.ToDouble(cashgvntxtbox.Text);
-            total_amountPaid = Convert.ToDouble(totalBillstxtbox.Text);
-            change = cash_given - total_amountPaid;
-            changetxtbox.Text = change.ToString("N");
-            displayListbox.Items.Add("Total Bills:  " + " "
-                + totalBillstxtbox.Text);
-            displayListbox.Items.Add("Cash Given: " + " "
-                + cashgvntxtbox.Text);
-            displayListbox.Items.Add("Change: " + " "
-                + changetxtbox.Text);
-            displayListbox.Items.Add("Total No. of Items: " + " "
-                + totalqtytxtbox.Text);
-
+            try
+            {
+                cash_given = Convert.ToDouble(cashgvntxtbox.Text);
+                total_amountPaid = Convert.ToDouble(totalBillstxtbox.Text);
+                change = cash_given - total_amountPaid;
+                changetxtbox.Text = change.ToString("N");
+                displayListbox.Items.Add("Total Bills:  " + " "
+                    + totalBillstxtbox.Text);
+                displayListbox.Items.Add("Cash Given: " + " "
+                    + cashgvntxtbox.Text);
+                displayListbox.Items.Add("Change: " + " "
+                    + changetxtbox.Text);
+                displayListbox.Items.Add("Total No. of Items: " + " "
+                    + totalqtytxtbox.Text);
+            } 
+            catch (Exception)
+            {
+                MessageBox.Show("Enter valid data in cash given textbox");
+                cashgvntxtbox.Clear();
+                cashgvntxtbox.Focus();
+            }
         }
 
         private void prnttranscBtn_Click(object sender, EventArgs e)
@@ -229,20 +237,28 @@ namespace CRUZ_OOP_CPE201
 
         private void quantitytxtbox_TextChanged(object sender, EventArgs e)
         {
-            if (can_change) {
+            if (can_change)
+            {
                 double price, discounted_amount, discount_amount;
                 int qty;
-                price = Convert.ToDouble(pricetxtbox.Text);
-                qty = Convert.ToInt32(quantitytxtbox.Text);
-                discount_amount = Convert.ToDouble(discntamttxtbox.Text);
-                discounted_amount = (price * qty) - discount_amount;
-                total_qty += qty;
-                totalqtytxtbox.Text = total_qty.ToString();
-                total_amount += discounted_amount;
-                totalBillstxtbox.Text = total_amount.ToString("N");
-                discntedamttxtbox.Text = discounted_amount.ToString("N");
+                try
+                {
+                    price = Convert.ToDouble(pricetxtbox.Text);
+                    qty = Convert.ToInt32(quantitytxtbox.Text);
+                    discount_amount = Convert.ToDouble(discntamttxtbox.Text);
+                    discounted_amount = (price * qty) - discount_amount;
+                    total_qty += qty;
+                    totalqtytxtbox.Text = total_qty.ToString();
+                    total_amount += discounted_amount;
+                    totalBillstxtbox.Text = total_amount.ToString("N");
+                    discntedamttxtbox.Text = discounted_amount.ToString("N");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Enter number of quantity ordered");
+                    quantitytxtbox.Focus();
+                }
             }
-           
         }
 
         private void pizzano1_CheckedChanged(object sender, EventArgs e)

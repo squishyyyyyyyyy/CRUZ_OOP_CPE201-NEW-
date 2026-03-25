@@ -84,60 +84,84 @@ namespace CRUZ_OOP_CPE201
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
-            int qty;
-            double price, discount_amount, discounted_amount;
+            try
+            {
+                int qty;
+                double price, discount_amount, discounted_amount;
 
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            price = Convert.ToDouble(pricetextbox.Text);
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                price = Convert.ToDouble(pricetextbox.Text);
 
-            discount_amount = (qty * price) * 0.30;
-            discounted_amount = (qty * price) - discount_amount;
+                discount_amount = (qty * price) * 0.30;
+                discounted_amount = (qty * price) - discount_amount;
 
-            discounttxtbox.Text = discount_amount.ToString("n");
-            discountedtxtbox.Text = discounted_amount.ToString("n");
+                discounttxtbox.Text = discount_amount.ToString("n");
+                discountedtxtbox.Text = discounted_amount.ToString("n");
 
-            regularRbtn.Checked = false;
-            EmployeeRdbtn.Checked = false;
-            noTaxRdbtn.Checked = false;
-
+                regularRbtn.Checked = false;
+                EmployeeRdbtn.Checked = false;
+                noTaxRdbtn.Checked = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Input is invalid");
+                quantitytxtbox.Clear();
+                quantitytxtbox.Focus();
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             int qty;
             double price, discount_amt, discounted_amt;
+            try
+            {
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                price = Convert.ToDouble(pricetextbox.Text);
 
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            price = Convert.ToDouble(pricetextbox.Text);
+                discount_amt = (qty * price) * 0.10;
+                discounted_amt = (qty * price) - discount_amt;
 
-            discount_amt = (qty * price) * 0.10;
-            discounted_amt = (qty * price) - discount_amt;
+                discounttxtbox.Text = discount_amt.ToString("n");
+                discountedtxtbox.Text = discounted_amt.ToString("n");
 
-            discounttxtbox.Text = discount_amt.ToString("n");
-            discountedtxtbox.Text = discounted_amt.ToString("n");
-
-            radioButton1.Checked = false;
-            EmployeeRdbtn.Checked = false;
-            noTaxRdbtn.Checked = false;
+                radioButton1.Checked = false;
+                EmployeeRdbtn.Checked = false;
+                noTaxRdbtn.Checked = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Input is invalid");
+                quantitytxtbox.Clear();
+                quantitytxtbox.Focus();
+            }
         }
 
         private void EmployeeRdbtn_CheckedChanged(object sender, EventArgs e)
         {
             int qty;
             double price, discount_amt, discounted_amt;
+            try
+            {
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                price = Convert.ToDouble(pricetextbox.Text);
 
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            price = Convert.ToDouble(pricetextbox.Text);
+                discount_amt = (qty * price) * 0.15;
+                discounted_amt = (qty * price) - discount_amt;
 
-            discount_amt = (qty * price) * 0.15;
-            discounted_amt = (qty * price) - discount_amt;
+                discounttxtbox.Text = discount_amt.ToString("n");
+                discountedtxtbox.Text = discounted_amt.ToString("n");
 
-            discounttxtbox.Text = discount_amt.ToString("n");
-            discountedtxtbox.Text = discounted_amt.ToString("n");
-
-            radioButton1.Checked = false;
-            regularRbtn.Checked = false;
-            noTaxRdbtn.Checked = false;
+                radioButton1.Checked = false;
+                regularRbtn.Checked = false;
+                noTaxRdbtn.Checked = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Input is invalid");
+                quantitytxtbox.Clear();
+                quantitytxtbox.Focus();
+            }
         }
 
         private void noTaxRdbtn_CheckedChanged(object sender, EventArgs e)
@@ -164,20 +188,30 @@ namespace CRUZ_OOP_CPE201
             int qty;
             double discount_amount, discounted_amount, cash_rendered, change;
 
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            discount_amount = Convert.ToDouble(discounttxtbox.Text);
-            discounted_amount = Convert.ToDouble(discountedtxtbox.Text);
-            cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
+            try
+            {
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                discount_amount = Convert.ToDouble(discounttxtbox.Text);
+                discounted_amount = Convert.ToDouble(discountedtxtbox.Text);
+                cash_rendered = Convert.ToDouble(cashrenderedtxtbox.Text);
 
-            qty_total += qty;
-            discount_total += discount_amount;
-            discounted_total += discounted_amount;
-            change = cash_rendered - discounted_amount;
+                qty_total += qty;
+                discount_total += discount_amount;
+                discounted_total += discounted_amount;
+                change = cash_rendered - discounted_amount;
 
-            qty_totaltxtbox.Text = qty_total.ToString();
-            discount_totaltxtbox.Text = discount_total.ToString("n");
-            discounted_totaltxtbox.Text = discounted_total.ToString("n");
-            changetxtbox.Text = change.ToString("n");
+                qty_totaltxtbox.Text = qty_total.ToString();
+                discount_totaltxtbox.Text = discount_total.ToString("n");
+                discounted_totaltxtbox.Text = discounted_total.ToString("n");
+                changetxtbox.Text = change.ToString("n");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Make sure cash given textbox is not empty       invalid");
+                cashrenderedtxtbox.Clear();
+                cashrenderedtxtbox.Focus();
+
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
