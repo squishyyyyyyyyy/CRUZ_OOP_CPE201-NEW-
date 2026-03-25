@@ -26,19 +26,19 @@ namespace CRUZ_OOP_CPE201
         private void Lesson5Activity_Load(object sender, EventArgs e)
         {
             {
-                department.Enabled = false;
+                //department.Enabled = false;
                 basicincincomecuttxt.Enabled = false;
                 honoincincomecuttxt.Enabled = false;
                 otherincincomecuttxt.Enabled = false;
                 netincometxt.Enabled = false;
                 totaldeductxt.Enabled = false;
                 grossincometxt.Enabled = false;
-                firstname.Enabled = false;
-                middlename.Enabled = false;
-                surname.Enabled = false;
-                civilstatus.Enabled = false;
-                employeestat.Enabled = false;
-                designation.Enabled = false;
+                //firstname.Enabled = false;
+                //middlename.Enabled = false;
+                //surname.Enabled = false;
+                //civilstatus.Enabled = false;
+                //employeestat.Enabled = false;
+                //designation.Enabled = false;
                 ssscontritxt.Enabled = false;
                 philhealthcontritxt.Enabled = false;
                 pagibigcontritxt.Enabled = false;
@@ -81,35 +81,35 @@ namespace CRUZ_OOP_CPE201
                 ssscontrib = 581.30;
                 philhealthcontrib = 300.00;
                 pagibigcontrib = 200.00;
-                taxcontrib = 2000.00;
+                taxcontrib = 0.00;
             }
             else if (grossincome <= 40000)
             {
                 ssscontrib = 581.30;
                 philhealthcontrib = 300.00;
                 pagibigcontrib = 200.00;
-                taxcontrib = 2000.00;
+                taxcontrib = 0.00;
             }
             else if (grossincome <= 60000)
             {
                 ssscontrib = 581.30;
                 philhealthcontrib = 300.00;
                 pagibigcontrib = 200.00;
-                taxcontrib = 2000.00;
+                taxcontrib = 0.00;
             }
             else if (grossincome <= 80000)
             {
                 ssscontrib = 581.30;
                 philhealthcontrib = 300.00;
                 pagibigcontrib = 200.00;
-                taxcontrib = 2000.00;
+                taxcontrib = 0.00;
             }
             else if (grossincome <= 100000)
             {
                 ssscontrib = 581.30;
                 philhealthcontrib = 300.00;
                 pagibigcontrib = 200.00;
-                taxcontrib = 2000.00;
+                taxcontrib = 0.00;
             }
             else
             {
@@ -177,6 +177,32 @@ namespace CRUZ_OOP_CPE201
             salaryloantxt.Clear();
             otherloanstxt.Clear();
             totaldeductxt.Clear();
+            paydate.Clear();
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            Lesson5ActivityPrintForm save = new Lesson5ActivityPrintForm();
+            save.Show();
+
+            save.companytxt.Text = "Lyceum of the Philippines University Cavite";
+            save.employeecodetxt.Text = employeeno.Text;
+            string fullname = firstname.Text + " " + middlename.Text + " " + surname.Text;
+            save.employeenametxt.Text = fullname;
+            save.departmenttxt.Text = department.Text;
+            save.cutofftxt.Text = paydate.Text;
+            save.payperiodtxt.Text = paydate.Text;
+            save.basicpaytxt.Text = basicincincomecuttxt.Text.ToString();
+            save.honotxt.Text = honoincincomecuttxt.Text.ToString();
+            save.overtimetxt.Text = otherincincomecuttxt.Text.ToString();
+            save.honoadjtxt.Text = "0.00";
+            save.substxt.Text = "0.00";
+            save.tardytxt.Text = "0.00";
+            save.ssscontritxt.Text = ssscontritxt.Text.ToString();
+            save.philcontritxt.Text = philhealthcontritxt.Text.ToString();
+            save.taxcontritxt.Text = taxcontritxt.Text.ToString();
+            save.hdmftxt.Text = pagibigcontritxt.Text.ToString();
+            save.ssswisptxt.Text = "750.00";
         }
     }
 }

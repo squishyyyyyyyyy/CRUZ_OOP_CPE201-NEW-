@@ -73,44 +73,52 @@ namespace CRUZ_OOP_CPE201
         private void computebtn_Click(object sender, EventArgs e)
         {
             // i total tuition
-            double lec_ut1 = Convert.ToInt32(lec1.Text);
-            double lec_ut2 = Convert.ToInt32(lec2.Text);
-            double lec_ut3 = Convert.ToInt32(lec3.Text);
-            double lec_ut4 = Convert.ToInt32(lec4.Text);
-            double lec_ut5 = Convert.ToInt32(lec5.Text);
-            double lec_ut6 = Convert.ToInt32(lec6.Text);
-            double lec_ut7 = Convert.ToInt32(lec7.Text);
-            
-            double total_lecunits = lec_ut1 + lec_ut2 + lec_ut3 + lec_ut4 + lec_ut5 + lec_ut6 + lec_ut7;
-            double total_tuition = Convert.ToInt32(total_crunits.Text) * 1500;
-            total_tuitiontxt.Text = total_tuition.ToString();
+            try
+            { 
+               double lec_ut1 = Convert.ToInt32(lec1.Text);
+                double lec_ut2 = Convert.ToInt32(lec2.Text);
+                double lec_ut3 = Convert.ToInt32(lec3.Text);
+                double lec_ut4 = Convert.ToInt32(lec4.Text);
+                double lec_ut5 = Convert.ToInt32(lec5.Text);
+                double lec_ut6 = Convert.ToInt32(lec6.Text);
+                double lec_ut7 = Convert.ToInt32(lec7.Text);
+
+                double total_lecunits = lec_ut1 + lec_ut2 + lec_ut3 + lec_ut4 + lec_ut5 + lec_ut6 + lec_ut7;
+                double total_tuition = Convert.ToInt32(total_crunits.Text) * 1500;
+                total_tuitiontxt.Text = total_tuition.ToString();
 
             // j total miscellaneous
-            double lab_ut1 = Convert.ToInt32(lab1.Text);
-            double lab_ut2 = Convert.ToInt32(lab2.Text);
-            double lab_ut3 = Convert.ToInt32(lab3.Text);
-            double lab_ut4 = Convert.ToInt32(lab4.Text);
-            double lab_ut5 = Convert.ToInt32(lab5.Text);
-            double lab_ut6 = Convert.ToInt32(lab6.Text);
-            double lab_ut7 = Convert.ToInt32(lab7.Text);
+                double lab_ut1 = Convert.ToInt32(lab1.Text);
+                double lab_ut2 = Convert.ToInt32(lab2.Text);
+                double lab_ut3 = Convert.ToInt32(lab3.Text);
+                double lab_ut4 = Convert.ToInt32(lab4.Text);
+                double lab_ut5 = Convert.ToInt32(lab5.Text);
+                double lab_ut6 = Convert.ToInt32(lab6.Text);
+                double lab_ut7 = Convert.ToInt32(lab7.Text);
 
-            double total_labunits = lab_ut1 + lab_ut2 + lab_ut3 + lab_ut4 + lab_ut5 + lab_ut6 + lab_ut7;
-            comlabfee = 2500 * (total_labunits);
-            comlabfeetxt.Text = comlabfee.ToString();
-            double total_misc = comlabfee + sapfee + ciscolabfee + exambookfee;
+                double total_labunits = lab_ut1 + lab_ut2 + lab_ut3 + lab_ut4 + lab_ut5 + lab_ut6 + lab_ut7;
+                comlabfee = 2500 * (total_labunits);
+                comlabfeetxt.Text = comlabfee.ToString();
+                double total_misc = comlabfee + sapfee + ciscolabfee + exambookfee;
 
-            misctxt.Text = total_misc.ToString();
-            total_othschtxt.Text = total_misc.ToString();
+                misctxt.Text = total_misc.ToString();
+                total_othschtxt.Text = total_misc.ToString();
 
-            comlabfee = (total_labunits) * 2500;
+                comlabfee = (total_labunits) * 2500;
 
-            double total_tuitandfees = total_tuition + total_misc;
-            total_tui_feetxt.Text = total_tuitandfees.ToString();
+                double total_tuitandfees = total_tuition + total_misc;
+                total_tui_feetxt.Text = total_tuitandfees.ToString();
 
-            double instmnt_fee = (total_tuitandfees - 8000) / 3;
-            firstinstxt.Text = instmnt_fee.ToString("N");
-            secondinstxt.Text = instmnt_fee.ToString("N");
-            thirdinstxt.Text = instmnt_fee.ToString("N");
+                double instmnt_fee = (total_tuitandfees - 8000) / 3;
+                firstinstxt.Text = instmnt_fee.ToString("N");
+                secondinstxt.Text = instmnt_fee.ToString("N");
+                thirdinstxt.Text = instmnt_fee.ToString("N");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please fill in all the required fields and ensure that they contain valid numeric values.");
+
+            }
         }
 
         private void exitbtn_Click(object sender, EventArgs e)
