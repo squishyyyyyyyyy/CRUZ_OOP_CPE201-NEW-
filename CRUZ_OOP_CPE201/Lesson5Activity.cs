@@ -76,53 +76,299 @@ namespace CRUZ_OOP_CPE201
             grossincometxt.Text = grossincome.ToString("N");
 
             // regular deductions
-            if (grossincome <= 20000)
+            if (grossincome <= 5249)
             {
-                ssscontrib = 581.30;
-                philhealthcontrib = 300.00;
-                pagibigcontrib = 200.00;
-                taxcontrib = 0.00;
+                ssscontrib = 760.00;
+
             }
-            else if (grossincome <= 40000)
+            else if (grossincome >= 5250 && grossincome <= 5749.99)
             {
-                ssscontrib = 581.30;
-                philhealthcontrib = 300.00;
-                pagibigcontrib = 200.00;
-                taxcontrib = 0.00;
+                ssscontrib = 835.00;
             }
-            else if (grossincome <= 60000)
+            else if (grossincome >= 5750 && grossincome <= 6249.99)
             {
-                ssscontrib = 581.30;
-                philhealthcontrib = 300.00;
-                pagibigcontrib = 200.00;
-                taxcontrib = 0.00;
+                ssscontrib = 910.00;
+
             }
-            else if (grossincome <= 80000)
+            else if (grossincome >= 6250 && grossincome <= 6749.99)
             {
-                ssscontrib = 581.30;
-                philhealthcontrib = 300.00;
-                pagibigcontrib = 200.00;
-                taxcontrib = 0.00;
+                ssscontrib = 985.00;
             }
-            else if (grossincome <= 100000)
+            else if (grossincome >= 6750 && grossincome <= 7249.99)
             {
-                ssscontrib = 581.30;
-                philhealthcontrib = 300.00;
-                pagibigcontrib = 200.00;
-                taxcontrib = 0.00;
+                ssscontrib = 1060.00;
+            }
+            else if (grossincome >= 7250 && grossincome <= 7749.99)
+            {
+                ssscontrib = 1135.00;
+            }
+            else if (grossincome >= 7750 && grossincome <= 8249.99)
+            {
+                ssscontrib = 1210.00;
+            }
+            else if (grossincome >= 8250 && grossincome <= 8749.99)
+            {
+                ssscontrib = 1285.00;
+            }
+            else if (grossincome >= 8750 && grossincome <= 9249.99)
+            {
+                ssscontrib = 1360.00;
+            }
+            else if (grossincome >= 9250 && grossincome <= 9749.99)
+            {
+                ssscontrib = 1435.00;
+            }
+            else if (grossincome >= 9750 && grossincome <= 10249.99)
+            {
+                ssscontrib = 1510.00;
+            }
+            else if (grossincome >= 10250 && grossincome <= 10749.99)
+            {
+                ssscontrib = 1585.00;
+            }
+            else if (grossincome >= 10750 && grossincome <= 11249.99)
+            {
+                ssscontrib = 1660.00;
+            }
+            else if (grossincome >= 11250 && grossincome <= 11749.99)
+            {
+                ssscontrib = 1735.00;
+            }
+            else if (grossincome >= 11750 && grossincome <= 12249.99)
+            {
+                ssscontrib = 1810.00;
+            }
+            else if (grossincome >= 12250 && grossincome <= 12749.99)
+            {
+                ssscontrib = 1885.00;
+            }
+            else if (grossincome >= 12750 && grossincome <= 13249.99)
+            {
+                ssscontrib = 1960.00;
+            }
+            else if (grossincome >= 13250 && grossincome <= 13749.99)
+            {
+                ssscontrib = 2035.00;
+            }
+            else if (grossincome >= 13750 && grossincome <= 14249.99)
+            {
+                ssscontrib = 2110.00;
+            }
+            else if (grossincome >= 14250 && grossincome <= 14749.99)
+            {
+                ssscontrib = 2185.00;
+            }
+            else if (grossincome >= 14750 && grossincome <= 15249.99)
+            {
+                ssscontrib = 2280.00;
+            }
+            else if (grossincome >= 15250 && grossincome <= 15749.99)
+            {
+                ssscontrib = 2355.00;
+            }
+            else if (grossincome >= 15750 && grossincome <= 16249.99)
+            {
+                ssscontrib = 2430.00;
+            }
+            else if (grossincome >= 16250 && grossincome <= 16749.99)
+            {
+                ssscontrib = 2505.00;
+            }
+            else if (grossincome >= 16750 && grossincome <= 17249.99)
+            {
+                ssscontrib = 2580.00;
+            }
+            else if (grossincome >= 17250 && grossincome <= 17749.99)
+            {
+                ssscontrib = 2655.00;
+            }
+            else if (grossincome >= 17750 && grossincome <= 18249.99)
+            {
+                ssscontrib = 2730.00;
+            }
+            else if (grossincome >= 18250 && grossincome <= 18749.99)
+            {
+                ssscontrib = 2805.00;
+            }
+            else if (grossincome >= 18750 && grossincome <= 19249.99)
+            {
+                ssscontrib = 2880.00;
+            }
+            else if (grossincome >= 19250 && grossincome <= 19749.99)
+            {
+                ssscontrib = 2955.00;
+            }
+            else if (grossincome >= 19750 && grossincome <= 20249.99)
+            {
+                ssscontrib = 3030.00;
+            }
+            else if (grossincome >= 20250 && grossincome <= 20749.99)
+            {
+                ssscontrib = 3105.00;
+            }
+            else if (grossincome >= 20750 && grossincome <= 21249.99)
+            {
+                ssscontrib = 3180.00;
+            }
+            else if (grossincome >= 21250 && grossincome <= 21749.99)
+            {
+                ssscontrib = 3255.00;
+            }
+            else if (grossincome >= 21750 && grossincome <= 22249.99)
+            {
+                ssscontrib = 3330.00;
+            }
+            else if (grossincome >= 22250 && grossincome <= 22749.99)
+            {
+                ssscontrib = 3405.00;
+            }
+            else if (grossincome >= 22750 && grossincome <= 23249.99)
+            {
+                ssscontrib = 3480.00;
+            }
+            else if (grossincome >= 23250 && grossincome <= 23749.99)
+            {
+                ssscontrib = 3555.00;
+            }
+            else if (grossincome >= 23750 && grossincome <= 24249.99)
+            {
+                ssscontrib = 3630.00;
+            }
+            else if (grossincome >= 24250 && grossincome <= 24749.99)
+            {
+                ssscontrib = 3705.00;
+            }
+            else if (grossincome >= 24750 && grossincome <= 25249.99)
+            {
+                ssscontrib = 3780.00;
+            }
+            else if (grossincome >= 25250 && grossincome <= 25749.99)
+            {
+                ssscontrib = 3855.00;
+            }
+            else if (grossincome >= 25750 && grossincome <= 26249.99)
+            {
+                ssscontrib = 3930.00;
+            }
+            else if (grossincome >= 26250 && grossincome <= 26749.99)
+            {
+                ssscontrib = 4005.00;
+            }
+            else if (grossincome >= 26750 && grossincome <= 27249.99)
+            {
+                ssscontrib = 4080.00;
+            }
+            else if (grossincome >= 27250 && grossincome <= 27749.99)
+            {
+                ssscontrib = 4155.00;
+            }
+            else if (grossincome >= 27750 && grossincome <= 28249.99)
+            {
+                ssscontrib = 4230.00;
+            }
+            else if (grossincome >= 28250 && grossincome <= 28749.99)
+            {
+                ssscontrib = 4305.00;
+            }
+            else if (grossincome >= 28750 && grossincome <= 29249.99)
+            {
+                ssscontrib = 4380.00;
+            }
+            else if (grossincome >= 29250 && grossincome <= 29749.99)
+            {
+                ssscontrib = 4455.00;
+            }
+            else if (grossincome >= 29750 && grossincome <= 30249.99)
+            {
+                ssscontrib = 4530.00;
+            }
+            else if (grossincome >= 30250 && grossincome <= 30749.99)
+            {
+                ssscontrib = 4605.00;
+            }
+            else if (grossincome >= 30750 && grossincome <= 31249.99)
+            {
+                ssscontrib = 4680.00;
+            }
+            else if (grossincome >= 31250 && grossincome <= 31749.99)
+            {
+                ssscontrib = 4755.00;
+            }
+            else if (grossincome >= 31750 && grossincome <= 32249.99)
+            {
+                ssscontrib = 4830.00;
+            }
+            else if (grossincome >= 32250 && grossincome <= 32749.99)
+            {
+                ssscontrib = 4905.00;
+            }
+            else if (grossincome >= 32750 && grossincome <= 33249.99)
+            {
+                ssscontrib = 4980.00;
+            }
+            else if (grossincome >= 33250 && grossincome <= 33749.99)
+            {
+                ssscontrib = 5055.00;
+            }
+            else if (grossincome >= 33750 && grossincome <= 34249.99)
+            {
+                ssscontrib = 5130.00;
+            }
+            else if (grossincome >= 34250 && grossincome <= 34749.99)
+            {
+                ssscontrib = 5205.00;
             }
             else
             {
-                ssscontrib = 0.00;
-                philhealthcontrib = 0.00;
-                pagibigcontrib = 0.00;
-                taxcontrib = 0.00;
+                ssscontrib = 5280.00;
             }
+
+            if (grossincome <= 10000)
+            {
+                philhealthcontrib = 500.00;
+            }
+            else if (grossincome > 10000 && grossincome <= 99999.99)
+            {
+                philhealthcontrib = grossincome * 0.05;
+            }
+            else
+            {
+                philhealthcontrib = 5000.00;
+            }
+
+            pagibigcontrib = 200.00;
+
+            if (grossincome <= 250000)
+            {
+                taxcontrib = 0;
+            }
+            else if (grossincome <= 400000)
+            {
+                taxcontrib = 0.15 * (grossincome - 250000);
+            }
+            else if (grossincome <= 800000)
+            {
+                taxcontrib = 22500 + 0.20 * (grossincome - 400000);
+            }
+            else if (grossincome <= 2000000)
+            {
+                taxcontrib = 102500 + 0.25 * (grossincome - 800000);
+            }
+            else if (grossincome <= 8000000)
+            {
+                taxcontrib = 402500 + 0.30 * (grossincome - 2000000);
+            }
+            else
+            {
+                taxcontrib = 2202500 + 0.35 * (grossincome - 8000000);
+            }
+
             ssscontritxt.Text = ssscontrib.ToString("N");
             philhealthcontritxt.Text = philhealthcontrib.ToString("N");
             pagibigcontritxt.Text = pagibigcontrib.ToString("N");
             taxcontritxt.Text = taxcontrib.ToString("N");
         }
+            
 
         private void netBtn_Click(object sender, EventArgs e)
         {
