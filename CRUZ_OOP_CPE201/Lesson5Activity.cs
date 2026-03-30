@@ -28,8 +28,11 @@ namespace CRUZ_OOP_CPE201
             {
                 //department.Enabled = false;
                 basicincincomecuttxt.Clear();
+                basicincincomecuttxt.Enabled = false;
                 honoincincomecuttxt.Clear();
+                honoincincomecuttxt.Enabled = false;
                 otherincincomecuttxt.Clear();
+                otherincincomecuttxt.Enabled = false;
                 netincometxt.Clear();
                 totaldeductxt.Clear();
                 grossincometxt.Clear();
@@ -43,6 +46,13 @@ namespace CRUZ_OOP_CPE201
                 philhealthcontritxt.Clear();
                 pagibigcontritxt.Clear();
                 taxcontritxt.Clear();
+                taxcontritxt.Enabled = false;
+                pagibigcontritxt.Enabled = false;
+                philhealthcontritxt.Enabled = false;
+                ssscontritxt.Enabled = false;
+                grossincometxt.Enabled = false;
+                netincometxt.Enabled = false;
+                totaldeductxt.Enabled = false;
 
             }
         }
