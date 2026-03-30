@@ -27,22 +27,22 @@ namespace CRUZ_OOP_CPE201
         {
             {
                 //department.Enabled = false;
-                basicincincomecuttxt.Enabled = false;
-                honoincincomecuttxt.Enabled = false;
-                otherincincomecuttxt.Enabled = false;
-                netincometxt.Enabled = false;
-                totaldeductxt.Enabled = false;
-                grossincometxt.Enabled = false;
+                basicincincomecuttxt.Clear();
+                honoincincomecuttxt.Clear();
+                otherincincomecuttxt.Clear();
+                netincometxt.Clear();
+                totaldeductxt.Clear();
+                grossincometxt.Clear();
                 //firstname.Enabled = false;
                 //middlename.Enabled = false;
                 //surname.Enabled = false;
                 //civilstatus.Enabled = false;
                 //employeestat.Enabled = false;
                 //designation.Enabled = false;
-                ssscontritxt.Enabled = false;
-                philhealthcontritxt.Enabled = false;
-                pagibigcontritxt.Enabled = false;
-                taxcontritxt.Enabled = false;
+                ssscontritxt.Clear();
+                philhealthcontritxt.Clear();
+                pagibigcontritxt.Clear();
+                taxcontritxt.Clear();
 
             }
         }
@@ -178,6 +178,15 @@ namespace CRUZ_OOP_CPE201
             otherloanstxt.Clear();
             totaldeductxt.Clear();
             paydate.Clear();
+            firstname.Clear();
+            middlename.Clear();
+            surname.Clear();
+            civilstatus.Clear();
+            employeestat.Clear();
+            designation.Clear();
+            qualified.Clear();
+            employeeno.Clear();
+            department.Clear();
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -203,6 +212,12 @@ namespace CRUZ_OOP_CPE201
             save.taxcontritxt.Text = taxcontritxt.Text.ToString();
             save.hdmftxt.Text = pagibigcontritxt.Text.ToString();
             save.ssswisptxt.Text = "750.00";
+            save.earningstxt.Text = grossincometxt.Text.ToString();
+            save.deductionstxt.Text = totaldeductxt.Text.ToString();
+            save.overtimetotaltxt.Text = otherincincomecuttxt.Text.ToString();
+            save.grossearnings.Text = grossincometxt.Text.ToString();
+            save.deductions.Text = totaldeductxt.Text.ToString();
+            save.netpay.Text = netincometxt.Text.ToString();
         }
     }
 }
