@@ -64,6 +64,18 @@
     <Compile Include="Activity 3.Designer.cs">
       <DependentUpon>Activity 3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson7Example6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson7Example6.Designer.cs">
+      <DependentUpon>Lesson7Example6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7Example4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson7Example4.Designer.cs">
+      <DependentUpon>Lesson7Example4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson5ActivityPrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,18 @@
     <Compile Include="Lesson2Activity.Designer.cs">
       <DependentUpon>Lesson2Activity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson7Example5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson7Example5.Designer.cs">
+      <DependentUpon>Lesson7Example5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson7Example5PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson7Example5PrintForm.Designer.cs">
+      <DependentUpon>Lesson7Example5PrintForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Activity 1.resx">
@@ -146,6 +170,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson5ActivityPrintForm.resx">
       <DependentUpon>Lesson5ActivityPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson7Example4.resx">
+      <DependentUpon>Lesson7Example4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson7Example5.resx">
+      <DependentUpon>Lesson7Example5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson7Example5PrintForm.resx">
+      <DependentUpon>Lesson7Example5PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson7Example6.resx">
+      <DependentUpon>Lesson7Example6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

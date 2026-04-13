@@ -168,19 +168,28 @@ namespace CRUZ_OOP_CPE201
         {
             int qty;
             double price, discount_amt, discounted_amt;
+            try
+            {
+                qty = Convert.ToInt32(quantitytxtbox.Text);
+                price = Convert.ToDouble(pricetextbox.Text);
 
-            qty = Convert.ToInt32(quantitytxtbox.Text);
-            price = Convert.ToDouble(pricetextbox.Text);
+                discount_amt = (qty * price) * 0;
+                discounted_amt = (qty * price) - discount_amt;
 
-            discount_amt = (qty * price) * 0;
-            discounted_amt = (qty * price) - discount_amt;
+                discounttxtbox.Text = discount_amt.ToString("n");
+                discountedtxtbox.Text = discounted_amt.ToString("n");
 
-            discounttxtbox.Text = discount_amt.ToString("n");
-            discountedtxtbox.Text = discounted_amt.ToString("n");
+                radioButton1.Checked = false;
+                regularRbtn.Checked = false;
+                EmployeeRdbtn.Checked = false;
+            }
+            catch
+            {
+                MessageBox.Show("Input is invalid");
+                quantitytxtbox.Clear();
+                quantitytxtbox.Focus();
+            }
 
-            radioButton1.Checked = false;
-            regularRbtn.Checked = false;
-            EmployeeRdbtn.Checked = false;
         }
 
         private void calculateBtn_Click(object sender, EventArgs e)
