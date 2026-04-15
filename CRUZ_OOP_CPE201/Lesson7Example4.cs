@@ -67,9 +67,9 @@ namespace CRUZ_OOP_CPE201
                 tax = Convert.ToDouble(taxtxt.Text);
                 total_deductions = sss_contrib + pagibig_contrib + philhealth_contrib + tax;
                 net_income = grossincome - total_deductions;
-                net_inctxt.Text = net_income.ToString("C");
-                total_deducttxt.Text = total_deductions.ToString("C");
-                gross_inctxt.Text = grossincome.ToString("C");
+                net_inctxt.Text = net_income.ToString("n");
+                total_deducttxt.Text = total_deductions.ToString("n");
+                gross_inctxt.Text = grossincome.ToString("n");
             }
             catch (Exception) 
             {

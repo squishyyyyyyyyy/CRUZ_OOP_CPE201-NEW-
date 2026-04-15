@@ -118,6 +118,11 @@ namespace CRUZ_OOP_CPE201
         {
             this.LayoutMdi(MdiLayout.Cascade);
         }
+
+        private void windowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

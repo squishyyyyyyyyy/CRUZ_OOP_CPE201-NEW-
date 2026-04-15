@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lesson7Example4));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.basic_incometxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -77,210 +78,136 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.basic_incometxt);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.basic_nohourstxt);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.basic_ratehrstxt);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(579, 169);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "BASIC PAY";
             // 
             // basic_incometxt
             // 
-            this.basic_incometxt.Location = new System.Drawing.Point(261, 103);
+            resources.ApplyResources(this.basic_incometxt, "basic_incometxt");
             this.basic_incometxt.Name = "basic_incometxt";
-            this.basic_incometxt.Size = new System.Drawing.Size(285, 27);
-            this.basic_incometxt.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 106);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Income Per Cut Off:";
             // 
             // basic_nohourstxt
             // 
-            this.basic_nohourstxt.Location = new System.Drawing.Point(261, 70);
+            resources.ApplyResources(this.basic_nohourstxt, "basic_nohourstxt");
             this.basic_nohourstxt.Name = "basic_nohourstxt";
-            this.basic_nohourstxt.Size = new System.Drawing.Size(285, 27);
-            this.basic_nohourstxt.TabIndex = 3;
             this.basic_nohourstxt.TextChanged += new System.EventHandler(this.basic_nohours_TextChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 73);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "No. of Hours / Cut Off:";
             // 
             // basic_ratehrstxt
             // 
-            this.basic_ratehrstxt.Location = new System.Drawing.Point(261, 37);
+            resources.ApplyResources(this.basic_ratehrstxt, "basic_ratehrstxt");
             this.basic_ratehrstxt.Name = "basic_ratehrstxt";
-            this.basic_ratehrstxt.Size = new System.Drawing.Size(285, 27);
-            this.basic_ratehrstxt.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 40);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rate / Hour:";
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.hono_incometxt);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.hono_nohourstxt);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.hono_ratehrstxt);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 187);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(579, 169);
-            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "HONORARIUM";
             // 
             // hono_incometxt
             // 
-            this.hono_incometxt.Location = new System.Drawing.Point(261, 103);
+            resources.ApplyResources(this.hono_incometxt, "hono_incometxt");
             this.hono_incometxt.Name = "hono_incometxt";
-            this.hono_incometxt.Size = new System.Drawing.Size(285, 27);
-            this.hono_incometxt.TabIndex = 5;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 106);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Income Per Cut Off:";
             // 
             // hono_nohourstxt
             // 
-            this.hono_nohourstxt.Location = new System.Drawing.Point(261, 70);
+            resources.ApplyResources(this.hono_nohourstxt, "hono_nohourstxt");
             this.hono_nohourstxt.Name = "hono_nohourstxt";
-            this.hono_nohourstxt.Size = new System.Drawing.Size(285, 27);
-            this.hono_nohourstxt.TabIndex = 3;
             this.hono_nohourstxt.TextChanged += new System.EventHandler(this.hono_nohourstxt_TextChanged);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 73);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "No. of Hours / Cut Off:";
             // 
             // hono_ratehrstxt
             // 
-            this.hono_ratehrstxt.Location = new System.Drawing.Point(261, 37);
+            resources.ApplyResources(this.hono_ratehrstxt, "hono_ratehrstxt");
             this.hono_ratehrstxt.Name = "hono_ratehrstxt";
-            this.hono_ratehrstxt.Size = new System.Drawing.Size(285, 27);
-            this.hono_ratehrstxt.TabIndex = 1;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 40);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Rate / Hour:";
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.other_incometxt);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.other_nohourstxt);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.other_ratehrstxt);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 362);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(579, 169);
-            this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "OTHER INCOME";
             // 
             // other_incometxt
             // 
-            this.other_incometxt.Location = new System.Drawing.Point(261, 103);
+            resources.ApplyResources(this.other_incometxt, "other_incometxt");
             this.other_incometxt.Name = "other_incometxt";
-            this.other_incometxt.Size = new System.Drawing.Size(285, 27);
-            this.other_incometxt.TabIndex = 5;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(37, 106);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Income Per Cut Off:";
             // 
             // other_nohourstxt
             // 
-            this.other_nohourstxt.Location = new System.Drawing.Point(261, 70);
+            resources.ApplyResources(this.other_nohourstxt, "other_nohourstxt");
             this.other_nohourstxt.Name = "other_nohourstxt";
-            this.other_nohourstxt.Size = new System.Drawing.Size(285, 27);
-            this.other_nohourstxt.TabIndex = 3;
             this.other_nohourstxt.TextChanged += new System.EventHandler(this.other_nohourstxt_TextChanged);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(37, 73);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(178, 20);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "No. of Hours / Cut Off:";
             // 
             // other_ratehrstxt
             // 
-            this.other_ratehrstxt.Location = new System.Drawing.Point(261, 37);
+            resources.ApplyResources(this.other_ratehrstxt, "other_ratehrstxt");
             this.other_ratehrstxt.Name = "other_ratehrstxt";
-            this.other_ratehrstxt.Size = new System.Drawing.Size(285, 27);
-            this.other_ratehrstxt.TabIndex = 1;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(37, 40);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Rate / Hour:";
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.taxtxt);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.pagibigcontribtxt);
@@ -289,189 +216,116 @@
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.ssscontribtxt);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(638, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(579, 190);
-            this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "REGULAR DEDUCTIONS";
             // 
             // taxtxt
             // 
-            this.taxtxt.Location = new System.Drawing.Point(261, 136);
+            resources.ApplyResources(this.taxtxt, "taxtxt");
             this.taxtxt.Name = "taxtxt";
-            this.taxtxt.Size = new System.Drawing.Size(285, 27);
-            this.taxtxt.TabIndex = 7;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(37, 139);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 20);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Tax:";
             // 
             // pagibigcontribtxt
             // 
-            this.pagibigcontribtxt.Location = new System.Drawing.Point(261, 103);
+            resources.ApplyResources(this.pagibigcontribtxt, "pagibigcontribtxt");
             this.pagibigcontribtxt.Name = "pagibigcontribtxt";
-            this.pagibigcontribtxt.Size = new System.Drawing.Size(285, 27);
-            this.pagibigcontribtxt.TabIndex = 5;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(37, 106);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(164, 20);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Pagibig Contribution:";
             // 
             // philcontribtxt
             // 
-            this.philcontribtxt.Location = new System.Drawing.Point(261, 70);
+            resources.ApplyResources(this.philcontribtxt, "philcontribtxt");
             this.philcontribtxt.Name = "philcontribtxt";
-            this.philcontribtxt.Size = new System.Drawing.Size(285, 27);
-            this.philcontribtxt.TabIndex = 3;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(37, 73);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(186, 20);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "PhilHealth Contribution:";
             // 
             // ssscontribtxt
             // 
-            this.ssscontribtxt.Location = new System.Drawing.Point(261, 37);
+            resources.ApplyResources(this.ssscontribtxt, "ssscontribtxt");
             this.ssscontribtxt.Name = "ssscontribtxt";
-            this.ssscontribtxt.Size = new System.Drawing.Size(285, 27);
-            this.ssscontribtxt.TabIndex = 1;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(37, 40);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(142, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "SSS Contribution:";
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.net_inctxt);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.gross_inctxt);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.total_deducttxt);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(638, 208);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(579, 190);
-            this.groupBox5.TabIndex = 8;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "INCOME SUMMARY";
             // 
             // net_inctxt
             // 
-            this.net_inctxt.Location = new System.Drawing.Point(261, 132);
+            resources.ApplyResources(this.net_inctxt, "net_inctxt");
             this.net_inctxt.Name = "net_inctxt";
-            this.net_inctxt.Size = new System.Drawing.Size(285, 27);
-            this.net_inctxt.TabIndex = 5;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(37, 135);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(118, 20);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "NET INCOME:";
             // 
             // gross_inctxt
             // 
-            this.gross_inctxt.Location = new System.Drawing.Point(261, 99);
+            resources.ApplyResources(this.gross_inctxt, "gross_inctxt");
             this.gross_inctxt.Name = "gross_inctxt";
-            this.gross_inctxt.Size = new System.Drawing.Size(285, 27);
-            this.gross_inctxt.TabIndex = 3;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(37, 102);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(145, 20);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "GROSS INCOME:";
             // 
             // total_deducttxt
             // 
-            this.total_deducttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_deducttxt.Location = new System.Drawing.Point(261, 37);
-            this.total_deducttxt.Multiline = true;
+            resources.ApplyResources(this.total_deducttxt, "total_deducttxt");
             this.total_deducttxt.Name = "total_deducttxt";
-            this.total_deducttxt.Size = new System.Drawing.Size(285, 56);
-            this.total_deducttxt.TabIndex = 1;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(37, 56);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(184, 20);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "TOTAL DEDUCTIONS:";
             // 
             // calculateBtn
             // 
-            this.calculateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateBtn.Location = new System.Drawing.Point(654, 448);
+            resources.ApplyResources(this.calculateBtn, "calculateBtn");
             this.calculateBtn.Name = "calculateBtn";
-            this.calculateBtn.Size = new System.Drawing.Size(218, 40);
-            this.calculateBtn.TabIndex = 9;
-            this.calculateBtn.Text = "CALCULATE";
             this.calculateBtn.UseVisualStyleBackColor = true;
             this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
             // 
             // newBtn
             // 
-            this.newBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newBtn.Location = new System.Drawing.Point(878, 448);
+            resources.ApplyResources(this.newBtn, "newBtn");
             this.newBtn.Name = "newBtn";
-            this.newBtn.Size = new System.Drawing.Size(158, 40);
-            this.newBtn.TabIndex = 10;
-            this.newBtn.Text = "NEW";
             this.newBtn.UseVisualStyleBackColor = true;
             this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
             // exitBtn
             // 
-            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.Location = new System.Drawing.Point(1042, 448);
+            resources.ApplyResources(this.exitBtn, "exitBtn");
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(158, 40);
-            this.exitBtn.TabIndex = 11;
-            this.exitBtn.Text = "EXIT";
             this.exitBtn.UseVisualStyleBackColor = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Lesson7Example4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 546);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.newBtn);
             this.Controls.Add(this.calculateBtn);
@@ -481,7 +335,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Lesson7Example4";
-            this.Text = "Form2";
             this.Load += new System.EventHandler(this.Lesson7Example4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

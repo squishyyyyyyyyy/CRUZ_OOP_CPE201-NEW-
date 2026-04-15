@@ -127,22 +127,44 @@ namespace CRUZ_OOP_CPE201
 
         private void no_hoursothtxtbox_TextChanged(object sender, EventArgs e)
         {
-            /*try
-                {
-                 if (!can_change) return;
+            try
+            {
+                double philhealth_value = 0;
+                if (!can_change) return;
                 other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
                 other_rate = Convert.ToDouble(rthrothtxtbox.Text);
                 other_netincome = other_numhrs * other_rate;
                 total_othpaytxtbox.Text = other_netincome.ToString("N");
                 grossincome = basic_netincome + hono_netincome + other_netincome;
                 grossinctxtbox.Text = grossincome.ToString("N");
-                
+
+                if (grossincome < 10000)
+                {
+                    philhealth_value = 137.50;
+                }
+                else
+                {
+                    double philhealth_employshare = 137.50;
+
+                    for (int x = 10000; x <= 40000; x += 1000)
+                    {
+                        if (grossincome >= x && grossincome < x + 1000 || grossincome > x + 1000)
+                        {
+                            philhealth_value = philhealth_employshare;
+                        }
+                        philhealth_employshare += 13.75;
+                    }
+                }
+                philhlt_contritxtbox.Text = philhealth_value.ToString("N");
+            }
+
             catch (Exception)
             {
                 MessageBox.Show("Please enter valid numeric values for Overtime hours and rate.");
             }
-            */
-            double philhealth_value = 0;
+        }
+            
+  /*
             if (grossincome < 10000)
             {
                 philhealth_value = 137.50;
@@ -160,14 +182,7 @@ namespace CRUZ_OOP_CPE201
                     philhealth_employshare += 13.75;
                 }
             }
-            philhlt_contritxtbox.Text = philhealth_value.ToString("n");
-            other_numhrs = Convert.ToDouble(no_hoursothtxtbox.Text);
-            other_rate = Convert.ToDouble(rthrothtxtbox.Text);
-            other_netincome = other_numhrs * other_rate;
-            total_othpaytxtbox.Text = other_netincome.ToString("N");
-            grossincome = basic_netincome + hono_netincome + other_netincome;
-            grossinctxtbox.Text = grossincome.ToString("N");
-        }
+            */
 
 
         private void newBtn_Click(object sender, EventArgs e)
