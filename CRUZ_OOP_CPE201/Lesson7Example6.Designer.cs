@@ -114,7 +114,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Lesson7Example6";
-            this.Text = "Form2";
+            this.Text = "Lesson7Example6";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -78,13 +78,13 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.basic_incometxt);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.basic_nohourstxt);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.basic_ratehrstxt);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -121,13 +121,13 @@
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.hono_incometxt);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.hono_nohourstxt);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.hono_ratehrstxt);
             this.groupBox2.Controls.Add(this.label6);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -164,13 +164,13 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.other_incometxt);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.other_nohourstxt);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.other_ratehrstxt);
             this.groupBox3.Controls.Add(this.label9);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -207,7 +207,6 @@
             // 
             // groupBox4
             // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.taxtxt);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.pagibigcontribtxt);
@@ -216,6 +215,7 @@
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.ssscontribtxt);
             this.groupBox4.Controls.Add(this.label12);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -261,13 +261,13 @@
             // 
             // groupBox5
             // 
-            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.net_inctxt);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.gross_inctxt);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.total_deducttxt);
             this.groupBox5.Controls.Add(this.label17);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
