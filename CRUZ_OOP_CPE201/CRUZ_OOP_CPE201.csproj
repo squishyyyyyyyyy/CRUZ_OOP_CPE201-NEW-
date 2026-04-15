@@ -46,23 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity 1.cs">
+    <Compile Include="Activity1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity 1.Designer.cs">
-      <DependentUpon>Activity 1.cs</DependentUpon>
+    <Compile Include="Activity1.Designer.cs">
+      <DependentUpon>Activity1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity 2.cs">
+    <Compile Include="Activity2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity 2.Designer.cs">
-      <DependentUpon>Activity 2.cs</DependentUpon>
+    <Compile Include="Activity2.Designer.cs">
+      <DependentUpon>Activity2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Activity 3.cs">
+    <Compile Include="Activity3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Activity 3.Designer.cs">
-      <DependentUpon>Activity 3.cs</DependentUpon>
+    <Compile Include="Activity3.Designer.cs">
+      <DependentUpon>Activity3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Lesson7Example6.cs">
       <SubType>Form</SubType>
@@ -138,14 +144,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Activity 1.resx">
-      <DependentUpon>Activity 1.cs</DependentUpon>
+    <EmbeddedResource Include="Activity1.resx">
+      <DependentUpon>Activity1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity 2.resx">
-      <DependentUpon>Activity 2.cs</DependentUpon>
+    <EmbeddedResource Include="Activity2.resx">
+      <DependentUpon>Activity2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Activity 3.resx">
-      <DependentUpon>Activity 3.cs</DependentUpon>
+    <EmbeddedResource Include="Activity3.resx">
+      <DependentUpon>Activity3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson5Activity.resx">
       <DependentUpon>Lesson5Activity.cs</DependentUpon>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson7Example6.resx">
       <DependentUpon>Lesson7Example6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
