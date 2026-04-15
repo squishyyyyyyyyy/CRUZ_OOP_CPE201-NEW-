@@ -115,6 +115,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Lesson7Example6";
             this.Text = "Lesson7Example6";
+            this.Load += new System.EventHandler(this.Lesson7Example6_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

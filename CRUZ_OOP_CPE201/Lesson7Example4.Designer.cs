@@ -103,6 +103,7 @@
             resources.ApplyResources(this.basic_nohourstxt, "basic_nohourstxt");
             this.basic_nohourstxt.Name = "basic_nohourstxt";
             this.basic_nohourstxt.TextChanged += new System.EventHandler(this.basic_nohours_TextChanged);
+            this.basic_nohourstxt.Leave += new System.EventHandler(this.basic_nohourstxt_Leave);
             // 
             // label2
             // 
@@ -146,6 +147,7 @@
             resources.ApplyResources(this.hono_nohourstxt, "hono_nohourstxt");
             this.hono_nohourstxt.Name = "hono_nohourstxt";
             this.hono_nohourstxt.TextChanged += new System.EventHandler(this.hono_nohourstxt_TextChanged);
+            this.hono_nohourstxt.Leave += new System.EventHandler(this.hono_nohourstxt_Leave);
             // 
             // label5
             // 
@@ -189,6 +191,7 @@
             resources.ApplyResources(this.other_nohourstxt, "other_nohourstxt");
             this.other_nohourstxt.Name = "other_nohourstxt";
             this.other_nohourstxt.TextChanged += new System.EventHandler(this.other_nohourstxt_TextChanged);
+            this.other_nohourstxt.Leave += new System.EventHandler(this.other_nohourstxt_Leave);
             // 
             // label8
             // 

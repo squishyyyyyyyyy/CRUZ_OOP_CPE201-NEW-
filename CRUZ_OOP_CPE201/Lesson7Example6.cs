@@ -29,7 +29,7 @@ namespace CRUZ_OOP_CPE201
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int InitialValue = 0;
+            int InitialValue = 1;
             int numTimesDisplay;
             numTimesDisplay = Convert.ToInt32(numTimesDisplaytxt.Text);
 
@@ -38,6 +38,11 @@ namespace CRUZ_OOP_CPE201
                 displayListbox.Items.Add(countryCombobox.Text);
                 InitialValue++;
             } while (InitialValue <= numTimesDisplay);
+        }
+
+        private void Lesson7Example6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
