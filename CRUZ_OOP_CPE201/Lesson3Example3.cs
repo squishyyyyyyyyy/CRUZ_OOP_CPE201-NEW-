@@ -25,7 +25,7 @@ namespace CRUZ_OOP_CPE201
             double price;
             this.BackColor = Color.LightCyan;
             bundleB.Checked = false;
-            displayPicture.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Family Meal.png");
+            displayPicture.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Family Meal.png");
 
             // Codes to enable and disable checkboxes
             A_Cokecheckbox.Enabled = true;
@@ -72,21 +72,21 @@ namespace CRUZ_OOP_CPE201
             totalqtytxtbox.Enabled = false;
 
             // Codes for inserting pictures in pictureboxes
-            pizza6.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\6.png");
-            pizza7.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\7.png");
-            pizza8.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\8.png");
-            pizza9.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\9.png");
-            pizza10.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\10.png");
-            pizza11.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\11.png");
-            pizza12.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\12.png");
-            pizza13.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\13.png");
-            pizza14.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\14.png");
-            pizza15.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\15.png");
-            pizza16.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\16.png");
-            pizza17.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\17.png");
-            pizza18.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\18.png");
-            pizza19.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\19.png");
-            pizza20.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\20.png");
+            pizza6.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\6.png");
+            pizza7.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\7.png");
+            pizza8.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\8.png");
+            pizza9.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\9.png");
+            pizza10.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\10.png");
+            pizza11.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\11.png");
+            pizza12.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\12.png");
+            pizza13.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\13.png");
+            pizza14.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\14.png");
+            pizza15.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\15.png");
+            pizza16.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\16.png");
+            pizza17.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\17.png");
+            pizza18.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\18.png");
+            pizza19.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\19.png");
+            pizza20.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Pizzas\\20.png");
 
             // Codes to disable checkboxes
             A_Cokecheckbox.Enabled = false;
@@ -108,7 +108,7 @@ namespace CRUZ_OOP_CPE201
             double price;
             this.BackColor = Color.LightCyan;
             bundleA.Checked = false;
-            displayPicture.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Family Meal 2.png");
+            displayPicture.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Family Meal 2.png");
 
             A_Cokecheckbox.Enabled = false;
             A_FriedChickencheckbox.Enabled = false;
@@ -187,7 +187,7 @@ namespace CRUZ_OOP_CPE201
             bundleA.Checked = false;
             bundleB.Checked = false;
 
-            displayPicture.Image = Image.FromFile("C:\\Users\\aron\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Default.png");
+            displayPicture.Image = Image.FromFile("C:\\Users\\Ken Cruz\\source\\repos\\squishyyyyyyyyy\\CRUZ_OOP_CPE201-NEW-\\Image New\\Default.png");
             
             A_Cokecheckbox.Enabled = false;
             A_FriedChickencheckbox.Enabled = false;
