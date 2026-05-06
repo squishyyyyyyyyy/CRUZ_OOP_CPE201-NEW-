@@ -355,6 +355,7 @@
             this.qtytxtbox.Name = "qtytxtbox";
             this.qtytxtbox.Size = new System.Drawing.Size(208, 22);
             this.qtytxtbox.TabIndex = 23;
+            this.qtytxtbox.TextChanged += new System.EventHandler(this.qtytxtbox_TextChanged);
             // 
             // amountpaidtxtbox
             // 

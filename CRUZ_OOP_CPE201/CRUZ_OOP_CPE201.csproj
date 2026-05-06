@@ -190,8 +190,10 @@
     <Compile Include="Lesson7Example5PrintForm.Designer.cs">
       <DependentUpon>Lesson7Example5PrintForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Price_Item_Value.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variables.cs" />
     <EmbeddedResource Include="Activity1_Classes.resx">
       <DependentUpon>Activity1_Classes.cs</DependentUpon>
     </EmbeddedResource>

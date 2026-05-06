@@ -19,6 +19,15 @@ namespace CRUZ_OOP_CPE201
             InitializeComponent();
         }
 
+        Price_Item_Value price_item_value = new Price_Item_Value();
+        Variables variables = new Variables();
+
+        private void GetPriceItemValue()
+        {
+            itemnameTextbox.Text = price_item_value.GetItemName();
+            priceTextbox.Text = price_item_value.GetPrice();
+        }
+
         private void displayTxtbox(string itemname, string price)
         {
             itemnameTextbox.Text = itemname;
@@ -33,31 +42,36 @@ namespace CRUZ_OOP_CPE201
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            displayTxtbox("1pc Chicken Joy w Burger Steak & Spaghetti", "198.75");
+            price_item_value.SetPriceItemValue("1pc Chicken Joy w Burger Steak & Spaghetti", "198.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            displayTxtbox("1pc Chicken Joy w Burger Steak", "149.75");
+            price_item_value.SetPriceItemValue("1pc Chicken Joy w Burger Steak", "149.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            displayTxtbox("8 pcs Chicken Joy w Spaghetti Pan", "799.75");
+            price_item_value.SetPriceItemValue("8 pcs Chicken Joy w Spaghetti Pan", "799.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            displayTxtbox("2 pcs Chicken Joy w Coke", "179.75")     ;
+            price_item_value.SetPriceItemValue("2 pcs Chicken Joy w Coke", "179.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            displayTxtbox("8 pcs Chicken Joy", "599.75");
+            price_item_value.SetPriceItemValue("8 pcs Chicken Joy", "599.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
@@ -93,25 +107,29 @@ namespace CRUZ_OOP_CPE201
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Aloha Champ Jr. Burger", "189.75");
+            price_item_value.SetPriceItemValue("Aloha Champ Jr. Burger", "189.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Bacon Cheese Yumburger", "139.75");
+            price_item_value.SetPriceItemValue("Bacon Cheese Yumburger", "139.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Champ Burger", "229.75");
+            price_item_value.SetPriceItemValue("Champ Burger", "229.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Chocolate Sundae", "49.75");
+            price_item_value.SetPriceItemValue("Chocolate Sundae", "49.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
@@ -124,46 +142,73 @@ namespace CRUZ_OOP_CPE201
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Coke Float", "39.75");
+            price_item_value.SetPriceItemValue("Coke Float", "39.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Double Aloha Champ Jr. Burger", "219.75");
+            price_item_value.SetPriceItemValue("Double Aloha Champ Jr. Burger", "219.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Jolly Hotdog", "89.75");
+            price_item_value.SetPriceItemValue("Jolly Hotdog", "89.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Palabok", "149.75");
+            price_item_value.SetPriceItemValue("Palabok", "149.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Peach Mango Pie 6 pcs", "299.75");
+            price_item_value.SetPriceItemValue("Peach Mango Pie 6 pcs", "299.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
         private void calculateBtn_Click(object sender, EventArgs e)
         {
-            price = Convert.ToDouble(priceTextbox.Text);
+            /*price = Convert.ToDouble(priceTextbox.Text);
             quantity = Convert.ToInt32(qtytxtbox.Text);
             amount_paid = price * quantity;
             amountpaidtxtbox.Text = amount_paid.ToString("n");
-            cashgiventxtbox.Focus();
+            cashgiventxtbox.Focus();*/
+            try
+            {
+                variables.amount_paid = Convert.ToDouble(amountpaidtxtbox.Text);
+                variables.cash_given = Convert.ToDouble (cashgiventxtbox.Text);
+                variables.change = variables.cash_given - variables.amount_paid;
+                changetxtbox.Text = variables.change.ToString("n");
+                amountpaidtxtbox.Text = variables.amount_paid.ToString("n");
+                cashgiventxtbox.Text = variables.cash_given.ToString("n");
+            }
+        }
+
+        private void qtytxtbox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                variables.price = Convert.ToDouble(priceTextbox.Text);
+                variables.quantity = Convert.ToInt32(qtytxtbox.Text);
+                variables.amount_paid = variables.price * variables.quantity;
+                amountpaidtxtbox.Text = variables.amount_paid.ToString("n");
+                cashgiventxtbox.Focus();
+            }
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            displayTxtbox("Spaghetti Kiddie Meal w Drink", "179.75");
+            price_item_value.SetPriceItemValue("Spaghetti Kiddie Meal w Drink", "179.75");
+            GetPriceItemValue();
             quantityTxtbox("");
         }
 
