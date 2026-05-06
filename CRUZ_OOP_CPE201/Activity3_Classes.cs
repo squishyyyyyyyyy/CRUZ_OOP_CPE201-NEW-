@@ -16,11 +16,26 @@ namespace CRUZ_OOP_CPE201
         double discount_total = 0;
         double discounted_total = 0;
         double price = 0;
+
+        Price_Item_Value price_item_value = new Price_Item_Value();
+        Variables variables = new Variables();
         public Activity3_Classes()
         {
             InitializeComponent();
         }
 
+        private void computation_Formula_and_DisplayData()
+        {
+            variables.discounted_amt = (variables.quantity * variables.price) - variables.discount_amt;
+            discounttxtbox.Text = variables.discount_amt.ToString("n");
+            discountedtxtbox.Text = variables.discounted_amt.ToString("n");
+        }
+
+        private void GetPriceItemValue()
+        {
+            itemnametxtbox.Text = (price_item_value.GetItemName());
+            pricetextbox.Text = (price_item_value.GetPrice());
+        }
         private void quantityTxtbox()
         {
             quantitytxtbox.Clear();
@@ -29,16 +44,10 @@ namespace CRUZ_OOP_CPE201
 
         private void quantity_price_Convert()
         {
-            qty_total = Convert.ToInt32(quantitytxtbox.Text);
-            price = Convert.ToDouble(pricetextbox.Text);
+            variables.quantity = Convert.ToInt32(quantitytxtbox.Text);
+            variables.price = Convert.ToDouble(pricetextbox.Text);
         }
 
-        private void computation_Formula_and_DisplayData()
-        {
-            discounted_total = (qty_total * price) - discount_total;
-            discounttxtbox.Text = discount_total.ToString("n");
-            discountedtxtbox.Text = discounted_total.ToString("n");
-        }
         public void price_item_TextValue(string itemname, string price) 
         {
             itemnametxtbox.Text = itemname;
@@ -123,9 +132,9 @@ namespace CRUZ_OOP_CPE201
                 regularRbtn.Checked = false;
                 EmployeeRdbtn.Checked = false;
                 noTaxRdbtn.Checked = false;*/
-                    quantity_price_Convert();
-                    discount_total = (qty_total * price) * 0.30;
-                    computation_Formula_and_DisplayData();
+                quantity_price_Convert();
+                variables.discount_amt = (variables.quantity * variables.price) * 0.30;    
+                computation_Formula_and_DisplayData();
 
                 regularRbtn.Checked = false;
                 EmployeeRdbtn.Checked = false;
@@ -153,9 +162,9 @@ namespace CRUZ_OOP_CPE201
                 discounttxtbox.Text = discount_amt.ToString("n");
                 discountedtxtbox.Text = discounted_amt.ToString("n");*/
 
-                    quantity_price_Convert();
-                    discount_total = (qty_total * price) * 0.30;
-                    computation_Formula_and_DisplayData();
+                quantity_price_Convert();
+                variables.discount_amt = (variables.quantity * variables.price) * 0.10;    
+                computation_Formula_and_DisplayData();
 
                 radioButton1.Checked = false;
                 EmployeeRdbtn.Checked = false;
@@ -183,9 +192,9 @@ namespace CRUZ_OOP_CPE201
                 discounttxtbox.Text = discount_amt.ToString("n");
                 discountedtxtbox.Text = discounted_amt.ToString("n");*/
 
-                    quantity_price_Convert();
-                    discount_total = (qty_total * price) * 0.15;
-                    computation_Formula_and_DisplayData();
+                quantity_price_Convert();
+                variables.discount_amt = (variables.quantity * variables.price) * 0.15;
+                computation_Formula_and_DisplayData();
 
                 radioButton1.Checked = false;
                 regularRbtn.Checked = false;
@@ -213,9 +222,9 @@ namespace CRUZ_OOP_CPE201
                 discounttxtbox.Text = discount_amt.ToString("n");
                 discountedtxtbox.Text = discounted_amt.ToString("n");*/
 
-                    quantity_price_Convert();
-                    discount_total = (qty_total * price) * 0;
-                    computation_Formula_and_DisplayData();
+                quantity_price_Convert();
+                variables.discount_amt = (variables.quantity * variables.price) * 0;
+                computation_Formula_and_DisplayData();
 
                 radioButton1.Checked = false;
                 regularRbtn.Checked = false;
@@ -231,11 +240,10 @@ namespace CRUZ_OOP_CPE201
 
         private void calculateBtn_Click(object sender, EventArgs e)
         {
-            int qty;
-            double discount_amount, discounted_amount, cash_rendered, change;
-
-            try
+            /*try
             {
+                int qty;
+                double discount_amount, discounted_amount, cash_rendered, change;
                 qty = Convert.ToInt32(quantitytxtbox.Text);
                 discount_amount = Convert.ToDouble(discounttxtbox.Text);
                 discounted_amount = Convert.ToDouble(discountedtxtbox.Text);
@@ -250,6 +258,23 @@ namespace CRUZ_OOP_CPE201
                 discount_totaltxtbox.Text = discount_total.ToString("n");
                 discounted_totaltxtbox.Text = discounted_total.ToString("n");
                 changetxtbox.Text = change.ToString("n");
+            }*/
+            try
+            {
+                variables.quantity = Convert.ToInt32(quantitytxtbox.Text);
+                variables.discount_amt = Convert.ToDouble(discounttxtbox.Text);
+                variables.discounted_amt = Convert.ToDouble(discountedtxtbox.Text);
+                variables.cash_given = Convert.ToDouble(cashrenderedtxtbox.Text);
+
+                variables.qty_total += variables.quantity;
+                variables.discount_totalgiven += variables.discount_amt;
+                variables.discounted_total += variables.discounted_amt;
+                variables.change = variables.cash_given - variables.discounted_amt;
+
+                qty_totaltxtbox.Text = variables.qty_total.ToString();
+                discount_totaltxtbox.Text = variables.discount_totalgiven.ToString("n");
+                discounted_totaltxtbox.Text = variables.discounted_total.ToString("n");
+                cashrenderedtxtbox.Text = variables.cash_given.ToString("n");
             }
             catch (Exception)
             {
@@ -283,115 +308,134 @@ namespace CRUZ_OOP_CPE201
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name1lbl.Text, "198.75");
+            price_item_value.SetPriceItemValue(name1lbl.Text, "198.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name2lbl.Text, "149.75");
+            price_item_value.SetPriceItemValue(name2lbl.Text, "149.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name3lbl.Text, "799.75");
+            price_item_value.SetPriceItemValue(name3lbl.Text, "799.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name4lbl.Text, "179.75");
+            price_item_value.SetPriceItemValue(name4lbl.Text, "179.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name5lbl.Text, "599.75");
+            price_item_value.SetPriceItemValue(name5lbl.Text, "599.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name6lbl.Text, "189.75");
+            price_item_value.SetPriceItemValue(name6lbl.Text, "189.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name7lbl.Text, "139.75");
+            price_item_value.SetPriceItemValue(name7lbl.Text, "139.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name8lbl.Text, "229.75");
+            price_item_value.SetPriceItemValue(name8lbl.Text, "229.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name9lbl.Text, "49.75");
+            price_item_value.SetPriceItemValue(name9lbl.Text, "49.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name10lbl.Text, "39.75");
+            price_item_value.SetPriceItemValue(name10lbl.Text, "39.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name11lbl.Text, "219.75");
+            price_item_value.SetPriceItemValue(name11lbl.Text, "219.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name12lbl.Text, "89.75");
+            price_item_value.SetPriceItemValue(name12lbl.Text, "89.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name13lbl.Text, "149.75");
+            price_item_value.SetPriceItemValue(name13lbl.Text, "149.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name14lbl.Text, "299.75");
+            price_item_value.SetPriceItemValue(name14lbl.Text, "299.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name15lbl.Text, "179.75");
+            price_item_value.SetPriceItemValue(name15lbl.Text, "179.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name17lbl.Text, "89.75");
+            price_item_value.SetPriceItemValue(name17lbl.Text, "89.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name18lbl.Text, "169.75");
+            price_item_value.SetPriceItemValue(name18lbl.Text, "169.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name19lbl.Text, "219.75");
+            price_item_value.SetPriceItemValue(name19lbl.Text, "219.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            price_item_TextValue(name20lbl.Text, "179.75");
+            price_item_value.SetPriceItemValue(name20lbl.Text, "179.75");
+            GetPriceItemValue();
             quantityTxtbox();
         }
 

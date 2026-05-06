@@ -185,12 +185,17 @@ namespace CRUZ_OOP_CPE201
             try
             {
                 variables.amount_paid = Convert.ToDouble(amountpaidtxtbox.Text);
-                variables.cash_given = Convert.ToDouble (cashgiventxtbox.Text);
+                variables.cash_given = Convert.ToDouble(cashgiventxtbox.Text);
                 variables.change = variables.cash_given - variables.amount_paid;
                 changetxtbox.Text = variables.change.ToString("n");
                 amountpaidtxtbox.Text = variables.amount_paid.ToString("n");
                 cashgiventxtbox.Text = variables.cash_given.ToString("n");
             }
+            catch
+            { 
+                
+            }
+
         }
 
         private void qtytxtbox_TextChanged(object sender, EventArgs e)
@@ -202,6 +207,10 @@ namespace CRUZ_OOP_CPE201
                 variables.amount_paid = variables.price * variables.quantity;
                 amountpaidtxtbox.Text = variables.amount_paid.ToString("n");
                 cashgiventxtbox.Focus();
+            }
+            catch
+            {
+
             }
         }
 

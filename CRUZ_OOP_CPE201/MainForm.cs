@@ -123,6 +123,48 @@ namespace CRUZ_OOP_CPE201
         {
 
         }
+
+        private void activity1FunctionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity_Function activity1_Function = new Activity_Function();
+            activity1_Function.MdiParent = this;
+            activity1_Function.Show();
+        }
+
+        private void activity3FunctionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity3_Function activity3_Function = new Activity3_Function();
+            activity3_Function.MdiParent = this;
+            activity3_Function.Show();
+        }
+
+        private void lesson3Example3FunctionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lesson3Example3_Function lesson3Example3_function = new Lesson3Example3_Function();
+            lesson3Example3_function.MdiParent = this;
+            lesson3Example3_function.Show();
+        }
+
+        private void activity1ClassesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity_Classes activity1_Classes = new Activity_Classes();
+            activity1_Classes.MdiParent = this;
+            activity1_Classes.Show();
+        }
+
+        private void activity3ClassesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity3_Classes activity3_Classes = new Activity3_Classes();
+            activity3_Classes.MdiParent = this;
+            activity3_Classes.Show();
+        }
+
+        private void lesson3Example3ClassesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lesson3Example3_Classes lesson3Example3_Classes = new Lesson3Example3_Classes();
+            lesson3Example3_Classes.MdiParent = this;
+            lesson3Example3_Classes.Show();
+        }
     }
     
 }

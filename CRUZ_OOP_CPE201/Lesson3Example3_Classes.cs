@@ -14,6 +14,8 @@ namespace CRUZ_OOP_CPE201
     {
         private double total_amount = 0;
         private int total_qty = 0;
+        Price_Item_Value price_discountamount_value = new Price_Item_Value(); 
+        Variables variables = new Variables();  
         public Lesson3Example3_Classes()
         {
             InitializeComponent();
@@ -25,10 +27,20 @@ namespace CRUZ_OOP_CPE201
         }
         private void quantitytxtbox()
         {
-            qtytxtbox.Clear();
+            qtytxtbox.Text = "0";
             qtytxtbox.Focus();
         }
-
+        private void foodradiobtn()
+        {
+            bundleA.Checked = false;
+            bundleB.Checked = false;
+        }
+        private void GetPriceDiscountAmount()
+        {
+            pricetxtbox.Text = (price_discountamount_value.GetPriceItem());
+            discntamttxtbox.Text = (price_discountamount_value.GetDiscountAmount());
+            variables.price = Convert.ToDouble(pricetxtbox.Text);
+        }
         bool can_change = true;
         private void bundleA_CheckedChanged(object sender, EventArgs e)
         {
