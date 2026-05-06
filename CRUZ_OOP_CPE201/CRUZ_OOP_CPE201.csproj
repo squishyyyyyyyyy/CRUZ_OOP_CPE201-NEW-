@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity1_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity1_Classes.Designer.cs">
+      <DependentUpon>Activity1_Classes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Activity1_Function.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     <Compile Include="Activity2.Designer.cs">
       <DependentUpon>Activity2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Activity3_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity3_Classes.Designer.cs">
+      <DependentUpon>Activity3_Classes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Activity3_Function.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +88,23 @@
     <Compile Include="Activity3.Designer.cs">
       <DependentUpon>Activity3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson3Example3PrintForm_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example3PrintForm_Classes.Designer.cs">
+      <DependentUpon>Lesson3Example3PrintForm_Classes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson3Example3PrintForm_Function.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lesson3Example3PrintForm_Function.Designer.cs">
       <DependentUpon>Lesson3Example3PrintForm_Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson3Example3_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example3_Classes.Designer.cs">
+      <DependentUpon>Lesson3Example3_Classes.cs</DependentUpon>
     </Compile>
     <Compile Include="Lesson3Example3_Function.cs">
       <SubType>Form</SubType>
@@ -168,6 +192,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Activity1_Classes.resx">
+      <DependentUpon>Activity1_Classes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Activity1_Function.resx">
       <DependentUpon>Activity1_Function.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,14 +204,23 @@
     <EmbeddedResource Include="Activity2.resx">
       <DependentUpon>Activity2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Activity3_Classes.resx">
+      <DependentUpon>Activity3_Classes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Activity3_Function.resx">
       <DependentUpon>Activity3_Function.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Activity3.resx">
       <DependentUpon>Activity3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example3PrintForm_Classes.resx">
+      <DependentUpon>Lesson3Example3PrintForm_Classes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lesson3Example3PrintForm_Function.resx">
       <DependentUpon>Lesson3Example3PrintForm_Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example3_Classes.resx">
+      <DependentUpon>Lesson3Example3_Classes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson3Example3_Function.resx">
       <DependentUpon>Lesson3Example3_Function.cs</DependentUpon>
