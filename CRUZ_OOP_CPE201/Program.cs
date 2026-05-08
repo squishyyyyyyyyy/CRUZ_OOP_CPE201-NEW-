@@ -16,7 +16,7 @@ namespace CRUZ_OOP_CPE201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new POS_Admin());
         }
     }
 }
