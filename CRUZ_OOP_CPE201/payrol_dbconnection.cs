@@ -17,7 +17,47 @@ namespace CRUZ_OOP_CPE201
         public SqlDataAdapter payrol_sql_dataadapter;
         public string payrol_sql = null;
 
+        public void payrol_connString()
+        {
+            payrol_sql_connection = new SqlConnection();
+            payrol_connectionString = "Data Source=LAPTOP-IF0I8NES\\SQLEXPRESS;Initial Catalog=POSDB;Trusted_Connection=True";
+            payrol_sql_connection = new SqlConnection(payrol_connectionString);
+            payrol_sql_connection.ConnectionString = payrol_connectionString;
+            payrol_sql_connection.Open();
 
+        }
 
+        public void payrol_cmd()
+        {
+            payrol_sql_command = new SqlCommand(payrol_sql, payrol_sql_connection);
+            payrol_sql_command.CommandType = CommandType.Text;
+        }
+
+        public void payrol_sqladapterSelect()
+        {
+            payrol_sql_dataadapter = new SqlDataAdapter();
+            payrol_sql_dataadapter.SelectCommand = payrol_sql_command;
+            payrol_sql_command.ExecuteNonQuery();
+        }
+
+        public void payrol_sqladapterInsert()
+        {
+            payrol_sql_dataadapter = new SqlDataAdapter();
+            payrol_sql_dataadapter.InsertCommand = payrol_sql_command;
+            payrol_sql_command.ExecuteNonQuery();
+        }
+        public void payrol_sqladapterDelete()
+        {
+            payrol_sql_dataadapter = new SqlDataAdapter();
+            payrol_sql_dataadapter.DeleteCommand = payrol_sql_command;
+            payrol_sql_command.ExecuteNonQuery();
+        }
+
+        public void payrol_sqladapterUpdate()
+        {
+            payrol_sql_dataadapter = new SqlDataAdapter();
+            payrol_sql_dataadapter.UpdateCommand = payrol_sql_command;
+            payrol_sql_command.ExecuteNonQuery();
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace CRUZ_OOP_CPE201
         public void pos_connString()
         {
             pos_sql_connection = new SqlConnection();
-            pos_connectionString = "Data Source=LAPTOP-IF0I8NES;Initial Catalog=POSDB;Trusted_Connection=True";
+            pos_connectionString = "Data Source=LAPTOP-IF0I8NES\\SQLEXPRESS;Initial Catalog=POSDB;Trusted_Connection=True";
             pos_sql_connection = new SqlConnection(pos_connectionString);
             pos_sql_connection.ConnectionString = pos_connectionString;
             pos_sql_connection.Open();
